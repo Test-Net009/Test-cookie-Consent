@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="english">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Heal - Consent Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="seqrite-config.css"/>
+  </head>
+  <body>
+    <!-- User Info Block (separate, above consent) -->
+    <div class="user-info-block">
+      <div class="user-info-row">
+        <input type="text" id="inputFirstName" name="firstName" placeholder="First name" class="user-input" required>
+        <input type="text" id="inputLastName" name="lastName" placeholder="Last name" class="user-input" required>
+      </div>
+      <div class="user-info-row">
+        <input type="email" id="inputEmail" name="email" placeholder="Email" class="user-input" required>
+      </div>
+      <div class="user-info-row">
+        <input type="text" id="inputPhone" name="phone" placeholder="Phone" class="user-input">
+        <input type="text" id="inputAddress" name="address" placeholder="Address" class="user-input">
+      </div>
+    </div>
+    <div class="consent">
+      <div class="card">
+        <div class="logo-language-wrapper">
+          <div class="language-selector">
+            <select id="languageDropdown">
+              <option value="english">English</option>
+              <option value="telugu">Telugu</option>
+              <option value="gujarati">Gujarati</option>
+              <option value="nepali">Nepali</option>
+            </select>
+          </div>
+          <div class="logo-container center">
+            <img src="https://qa-hs.qhtpl.com/cpm-api/upload/v1/fileDownloads?fileUrl=hdfs://sdp-hdfs-namenode.hdfs.svc.cluster.local:9820/jars/1750838411997_logo.png" class="logo">
+            <span class="company-name" data-translate="companyName">Quick Heal</span>
+          </div>
+        </div>
+        <!-- Permissions -->
+        <div id="permissions">
+          <div class="permission-block">
+            <p data-translate-text="686ce318208471114aa794e4">
+              <p><strong>I am agree with following terms and condition.</strong></p> <span class="mandatory">*</span>
+            </p>
+            <label class="radio-label">
+              <input type="radio" name="686ce318208471114aa794e4" value="I accept the Terms and Conditions" data-translate-option="686ce318208471114aa794e4"> I accept the Terms and Conditions
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="686ce318208471114aa794e4" value="I agree to receive email updates" data-translate-option="686ce318208471114aa794e4"> I agree to receive email updates
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="686ce318208471114aa794e4" value="I Reject the Terms and Conditions" data-translate-option="686ce318208471114aa794e4"> I Reject the Terms and Conditions
+            </label>
+          </div>
+          <div class="permission-block">
+            <p data-translate-text="686ce318208471114aa794e5">
+              <p><strong>select below option:</strong></p>
+            </p>
+            <label class="checkbox-label">
+              <input type="checkbox" name="686ce318208471114aa794e5" value="Email" data-translate-option="686ce318208471114aa794e5"> Email
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="686ce318208471114aa794e5" value="Phone" data-translate-option="686ce318208471114aa794e5"> Phone
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="686ce318208471114aa794e5" value="SMS" data-translate-option="686ce318208471114aa794e5"> SMS
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="686ce318208471114aa794e5" value="None Of the Above" data-translate-option="686ce318208471114aa794e5"> None Of the Above
+            </label>
+          </div>
+          <div class="permission-block">
+            <p data-translate-text="686ce318208471114aa794e6">
+              <p><strong>Do you give consent to share your information?</strong></p>
+            </p>
+            <select class="dropdown" name="686ce318208471114aa794e6" data-translate-dropdown="686ce318208471114aa794e6">
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+          </div>
+        </div>
+        <div id="error-message" class="error-message"></div>
+        <div id="toast" style="
+          visibility: hidden;
+          min-width: 175px;
+          margin-left: -125px;
+          background-color: #333;
+          color: #fff;
+          text-align: center;
+          border-radius: 4px;
+          padding: 16px;
+          position: fixed;
+          z-index: 1000;
+          right:10px;
+          top:10px;
+          font-size: 12px;
+        "></div>
+        <!-- Buttons -->
+        <div class="button-group">
+          <button type="button" class="cancel" data-translate="cancelBtn">
+            Reject
+          </button>
+          <button type="submit" class="submit" id="submitButton" data-translate="submitBtn">
+            Submit
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-12345678-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-12345678-1');
+    </script>
+    <!-- Facebook Pixel -->
+    <script>
+      !function(f,b,e,v,n,t,s){
+        if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)
+      }(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '123456789012345'); 
+      fbq('track', 'PageView');
+    </script>
+    <noscript>
+      <img height="1" width="1" style="display:none"
+           src="https://www.facebook.com/tr?id=123456789012345&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- Hotjar Tracking Code -->
+    <script>
+      (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:1234567,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+    <script data-config="seqriteConfig" type="application/javascript" src="seqrite.js"></script>
+    <script type="application/javascript" src="seqrite-config.js"></script>
+  </body>
+</html>
