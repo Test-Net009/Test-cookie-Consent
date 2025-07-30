@@ -1,27 +1,17 @@
+
 .consent, .consent * {
-  font-family: Arial, sans-serif;
+  font-family: Calibri, sans-serif;
 }
 
 body {
-  min-height: 100vh;
-  width: 100vw;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  background: #f4f4f4;
+  height: 127vh;
+  width: 400px;
 }
 
 .consent {
   background-color: #f4f4f4;
   margin: 0;
   border: none;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  min-height: unset;
-  width: 100vw;
 }
 
 .consent .custom-multiselect-wrapper {
@@ -103,9 +93,9 @@ body {
   position: relative;
   background: white;
   padding: 20px;
-  width: 400px;
+  width: auto;
   border-radius: 8px;
-  margin: 0 auto;
+  // text-align: center;
 }
 
 .consent .card .logo-language-wrapper {
@@ -242,10 +232,10 @@ body {
 }
 
 .consent .card .button-group .cancel {
-  background: #f44336;
+  background: #fafafa;
   margin-right: 4px;
-  border: 1px solid #404040;
-  color: #f9fbe7;
+  border: 1px solid #ff5722;
+  color: #f44336;
   font-size: 14px;
   font-weight: normal;
   max-width: 110px;
@@ -256,51 +246,12 @@ body {
 
 .consent .card .button-group .submit {
   background: #fafafa;
-  border: 1px solid #404040;
-  color: #f44336;
+  border: 1px solid #66bb6a;
+  color: #2e7d32;
   font-size: 14px;
   font-weight: normal;
   max-width: 110px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-}
-
-.user-info-block {
-  margin-top: 40px;
-  margin-bottom: 20px;
-  background: #fff;
-  padding: 20px 24px 10px 24px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-  width: 400px;
-  max-width: 90vw;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-}
-
-.user-info-row {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 10px;
-}
-
-.user-input {
-  flex: 1;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 14px;
-}
-
-@media (max-width: 500px) {
-  .user-info-block, .consent .card {
-    width: 98vw;
-    padding: 10px;
-  }
-  .user-info-row {
-    flex-direction: column;
-    gap: 0;
-  }
 }
