@@ -1,7 +1,7 @@
 
     :root {
-      --btn-accept-text-color: #f2f2f2;
-      --btn-accept-background-color: #b39ddb;
+      --btn-accept-text-color: #222121;
+      --btn-accept-background-color: #ff5722;
 
       --btn-accept-all-text-color: #f2f2f2;
       --btn-accept-all-background-color: #5249EB;
@@ -9,8 +9,8 @@
       --btn-accept-selected-text-color: #5249EB;
       --btn-accept-selected-background-color: #fff0;
 
-      --btn-ok-text-color: #f2f2f2;
-      --btn-ok-background-color: #b39ddb;
+      --btn-ok-text-color: #222121;
+      --btn-ok-background-color: #ff5722;
 
       --btn-decline-text-color: #7879A1;
       --btn-decline-background-color: #fff0;
