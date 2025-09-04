@@ -8,7 +8,7 @@ window.klaroConfig = {
   "elementID": "SEQRITE",
   lang: userLang,
   "storageMethod": "cookie",
-  "storageName": "https://cookieconsenttestqa.netlify.app/",
+  "storageName": "https://cookieconsenttestdev.netlify.app/",
   "cookieExpiresAfterDays": 365,
   "default": false,
   "mustConsent": false,
