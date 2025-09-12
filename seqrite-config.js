@@ -2,7 +2,7 @@
 let userLang = (navigator.language || (navigator).userLanguage || 'en').slice(0, 2);
 window.klaroConfig = {
   "consentManagerId": "68ad4116a1e1d577646d93f6",
-  "uuid": "8cdcbd9c-d0ab-46c0-9f3d-1b0aed8cab62",
+  "uuid": "317987de-12ba-4273-830f-4c67a153abda",
   "domain": "https://qa-hs.qhtpl.com/cmapi",
   "version": 1,
   "elementID": "SEQRITE",
