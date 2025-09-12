@@ -1,9 +1,9 @@
 
 let userLang = (navigator.language || (navigator).userLanguage || 'en').slice(0, 2);
 window.klaroConfig = {
-  "consentManagerId": "6899797c939bb223903abf65",
-  "uuid": "4c252af9-a633-4f52-a3b1-9c6b7749bdb3",
-  "domain": "https://dev-hs.qhtpl.com/cmapi",
+  "consentManagerId": "68ad4116a1e1d577646d93f6",
+  "uuid": "8cdcbd9c-d0ab-46c0-9f3d-1b0aed8cab62",
+  "domain": "https://qa-hs.qhtpl.com/cmapi",
   "version": 1,
   "elementID": "SEQRITE",
   lang: userLang,
@@ -14,7 +14,7 @@ window.klaroConfig = {
   "mustConsent": false,
   "acceptAll": true,
   "hideDeclineAll": false,
-  "hideLearnMore": true,
+  "hideLearnMore": false,
   "disablePoweredBy": false,
   "translations": {},
   "styling": {
@@ -28,9 +28,9 @@ window.klaroConfig = {
   "declarative": false,
   "groupByPurpose": true,
   "hideToggleAll": false,
-  "appName": "test2",
+  "appName": "Test The Bhashini ",
   "description": "We respects your privacy and is committed to protecting your personal data.",
-  "companyName": "test2",
+  "companyName": "Test The Bhashini ",
   "companyAddress": " ",
   "services": [
     {
@@ -40,7 +40,7 @@ window.klaroConfig = {
         "Others"
       ],
       "required": false,
-      "default": false,
+      "default": true,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
@@ -54,7 +54,7 @@ window.klaroConfig = {
         "Analytics"
       ],
       "required": false,
-      "default": false,
+      "default": true,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
