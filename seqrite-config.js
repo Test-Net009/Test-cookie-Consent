@@ -2,7 +2,7 @@
 let userLang = (navigator.language || (navigator).userLanguage || 'en').slice(0, 2);
 window.klaroConfig = {
   "consentManagerId": "68ad4116a1e1d577646d93f6",
-  "uuid": "47ce5029-9037-4592-bb01-0c70849cb1c9",
+  "uuid": "8c33a44d-636f-47a2-acc5-a10d54632821",
   "domain": "https://qa-hs.qhtpl.com/cmapi",
   "version": 1,
   "elementID": "SEQRITE",
@@ -616,33 +616,33 @@ window.klaroConfig = {
       }
     },
     "mai": {
-      "acceptAll": "सभकेँ स्वीकार करू",
-      "accept": "स्वीकार करू",
-      "decline": "सभकेँ अस्वीकार करू",
-      "acceptSelected": "चुनल गेलकेँ स्वीकार करू",
-      "ok": "सभकेँ स्वीकार करू",
+      "acceptAll": "",
+      "accept": "",
+      "decline": "",
+      "acceptSelected": "",
+      "ok": "",
       "consentNotice": {
-        "description": "<p> हम के वाई सी सत्यापनक लेल अपन पैन साझा करबाक लेल सहमति दैत छी </p> <p> कृपया अहाँक पंजीकृत मोबाइल नंबर पर पठाओल गेल ओ टी पी दर्ज करू </p> <p> हम पहचान सत्यापनक लेल अपन आधार संख्या प्रदान करबाक लेल सहमत छी </p> <p> हम अहाँक जी एस टी आई एन केँ मात्र बिलिंग उद्देश्यक लेल भंडारित करब </p> <p> </p> <p> <a हरेफ = \"https://wwwgooglecom\" शीर्षक = \"https://wwwgooglecom\" लक्ष्य = \"_ ब्लैंक\"> <u> कुकी नीति",
-        "learnMore": "अनुकूलित करू",
+        "description": "",
+        "learnMore": "",
         "changeDescription": " "
       },
-      "save": "स्वीकार करू",
+      "save": "",
       "consentModal": {
-        "title": "सहमति प्राथमिकता केँ अनुकूलित करू",
-        "description": "<p> हम के वाई सी सत्यापनक लेल अपन पैन साझा करबाक लेल सहमति दैत छी </p> <p> कृपया अहाँक पंजीकृत मोबाइल नंबर पर पठाओल गेल ओ टी पी दर्ज करू </p> <p> हम पहचान सत्यापनक लेल अपन आधार नंबर प्रदान करबाक लेल सहमत छी </p> <p> हम अहाँक जी एस टी आई एन केँ मात्र बिलिंग उद्देश्यक लेल भंडारित करब",
+        "title": "",
+        "description": "",
         "buttons": {
-          "save": "स्वीकार करू",
-          "acceptAll": "सभकेँ स्वीकार करू",
-          "decline": "सभकेँ अस्वीकार करू"
+          "save": "",
+          "acceptAll": "",
+          "decline": ""
         }
       },
       "poweredBy": "Powered by Seqrite",
       "purposes": {
         "Analytics": {
-          "description": "<p> ई कुकीज वेबसाइटक यातायात, उपयोगकर्ता व्यवहार, आ संलग्नक स्वरूपक विश्लेषण करबामे हमरा सभक सहायता करैत अछि एकत्रित अंतर्दृष्टि हमरा सभकेँ सामग्रीकेँ अनुकूलित करबाक, उपयोगितामे वृद्धि करबाक, आ समग्र साइट प्रदर्शनमे सुधार करबाक अनुमति दैत अछि </p> <p> ई श्रेणी अनिवार्य अछि </p>"
+          "description": ""
         },
         "Others": {
-          "description": "<p> एहि श्रेणीमे कुकीज शामिल अछि जे पूर्वनिर्धारित श्रेणीमे फिट नहि होइत अछि मुदा वेबसाइटक किछु कार्यक्षमता वा सुधारक लेल आवश्यक भऽ सकैत अछि"
+          "description": ""
         }
       },
       "service": {
@@ -654,11 +654,11 @@ window.klaroConfig = {
           "description": "Opt Out",
           "title": "Opt Out"
         },
-        "purpose": "उद्देश्य"
+        "purpose": ""
       },
       "purposeItem": {
-        "service": "सेवा",
-        "services": "सेवा"
+        "service": "",
+        "services": ""
       }
     },
     "ta": {
@@ -708,33 +708,33 @@ window.klaroConfig = {
       }
     },
     "sd": {
-      "acceptAll": "سڀنی کی قبول ڪریو",
-      "accept": "قبول ڪریو",
-      "decline": "سڀنی کی رد ڪریو",
-      "acceptSelected": "چونڊیل قبول ڪریو",
-      "ok": "سڀ قبول ڪریو",
+      "acceptAll": "",
+      "accept": "",
+      "decline": "",
+      "acceptSelected": "",
+      "ok": "",
       "consentNotice": {
-        "description": "<p> مان پنھنجی پین کی ڪی۔ وائی۔ سی جی تصدیق لاء شیئر ڪرڻ لاء رضامند آہیان۔ </p> <p> مہربانی ڪری توہان جی رجسٽرڊ موبائیل نمبر تی موڪلیو ویو او۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔",
-        "learnMore": "حسب ضرورت ٺاہیو",
+        "description": "",
+        "learnMore": "",
         "changeDescription": " "
       },
-      "save": "قبول ڪریو",
+      "save": "",
       "consentModal": {
-        "title": "رضامندی جی ترجیحن کی ترتیب ڏیو",
-        "description": "<p> مان پنھنجی پین کی ڪی وائی سی جی تصدیق لاء شیئر ڪرڻ لاء رضامند آہیان۔ </p> <p> مہربانی ڪری توہان جی رجسٽرڊ موبائیل نمبر تی موڪلیو ویو او ٽی پی داخل ڪریو۔ </p> <p> مان سڃاڻپ جی تصدیق لاء پنھنجو آدھار نمبر مہیا ڪرڻ لاء راضی آہیان۔ </p> <p> اسان توہان جی جی ایس ٽی آئی این کی صرف بلنگ جی مقصدن لاء محفوظ ڪنداسین۔",
+        "title": "",
+        "description": "",
         "buttons": {
-          "save": "قبول ڪریو",
-          "acceptAll": "سڀنی کی قبول ڪریو",
-          "decline": "سڀنی کی رد ڪریو"
+          "save": "",
+          "acceptAll": "",
+          "decline": ""
         }
       },
       "poweredBy": "Powered by Seqrite",
       "purposes": {
         "Analytics": {
-          "description": "<p> ہی ڪوڪیز اسان کی ویب سائیٽ ٽرئفڪ، صارف جی رویا، ۽ مصروفیت جی نمونن جو تجزیو ڪرڻ ۾ مدد ڪن ٿیون گڏ ڪیل بصیرت اسان کی مواد کی بہتر بڻائڻ، استعمال کی وڌائڻ، ۽ مجموعی سائیٽ جی ڪارڪردگی کی بہتر بڻائڻ جی اجازت ڏئی ٿی"
+          "description": ""
         },
         "Others": {
-          "description": "<p> ھن درجی ۾ ڪوڪیز شامل آھن جیڪی اڳ ۾ مقرر ڪیل قسمن ۾ فٽ نہ ٿیون ٿین پر شاید ویب سائیٽ جی ڪجھ ڪارڪردگی یا واڌارن لاء ضروری آھن"
+          "description": ""
         }
       },
       "service": {
@@ -746,11 +746,11 @@ window.klaroConfig = {
           "description": "Opt Out",
           "title": "Opt Out"
         },
-        "purpose": "مقصد"
+        "purpose": ""
       },
       "purposeItem": {
-        "service": "خدمت",
-        "services": "خدمتون"
+        "service": "",
+        "services": ""
       }
     },
     "bn": {
@@ -889,52 +889,6 @@ window.klaroConfig = {
       "purposeItem": {
         "service": "ಸೇವೆ",
         "services": "ಸೇವೆಗಳು"
-      }
-    },
-    "gu": {
-      "acceptAll": "બધા સ્વીકારો",
-      "accept": "સ્વીકારો",
-      "decline": "બધાને નકારી કાઢો",
-      "acceptSelected": "પસંદ કરેલ સ્વીકારો",
-      "ok": "બધાને સ્વીકારો",
-      "consentNotice": {
-        "description": "<p> હું કેવાયસી ચકાસણી માટે મારું પાન શેર કરવા માટે સંમતિ આપું છું </p> <p> કૃપા કરીને તમારા નોંધાયેલા મોબાઇલ નંબર પર મોકલવામાં આવેલ ઓ ટી પી દાખલ કરો </p> <p> હું ઓળખ ચકાસણી માટે મારો આધાર નંબર આપવા માટે સંમત છું </p> <p> અમે તમારું જી એસ ટી આઈ એન માત્ર બિલિંગ હેતુઓ માટે સંગ્રહિત કરીશું </p> <p> </p> <p> <a હરેફ = \"https://wwwgooglecom\" શીર્ષક = \"https://wwwgooglecom\" લક્ષ્ય = \"_ બ્લેન્ક\"> <u> કૂકી નીતિ </u> </a> </p>",
-        "learnMore": "કસ્ટમાઇઝ કરો",
-        "changeDescription": " "
-      },
-      "save": "સ્વીકારો",
-      "consentModal": {
-        "title": "સંમતિ પસંદગીઓને કસ્ટમાઇઝ કરો",
-        "description": "<p> હું કેવાયસી ચકાસણી માટે મારું પાન શેર કરવા માટે સંમતિ આપું છું </p> <p> મહેરબાની કરીને તમારા નોંધાયેલા મોબાઇલ નંબર પર મોકલવામાં આવેલ ઓ ટી પી દાખલ કરો </p> <p> હું ઓળખ ચકાસણી માટે મારો આધાર નંબર આપવા માટે સંમત છું </p> <p> અમે તમારું જી એસ ટી આઈ એન માત્ર બિલિંગ હેતુઓ માટે સંગ્રહિત કરીશું",
-        "buttons": {
-          "save": "સ્વીકારો",
-          "acceptAll": "બધા સ્વીકારો",
-          "decline": "બધાને નકારી કાઢો"
-        }
-      },
-      "poweredBy": "Powered by Seqrite",
-      "purposes": {
-        "Analytics": {
-          "description": "<p> આ કૂકીઝ અમને વેબસાઇટ ટ્રાફિક, વપરાશકર્તાની વર્તણૂક અને જોડાણની રીતોનું વિશ્લેષણ કરવામાં મદદ કરે છે એકત્રિત કરવામાં આવેલી આંતરદૃષ્ટિ અમને સામગ્રીને શ્રેષ્ઠ બનાવવા, ઉપયોગીતા વધારવા અને એકંદર સાઇટ પ્રદર્શનમાં સુધારો કરવાની મંજૂરી આપે છે </p> <p> આ શ્રેણી ફરજિયાત છે </p>"
-        },
-        "Others": {
-          "description": "<p> આ શ્રેણીમાં એવી કૂકીઝનો સમાવેશ થાય છે જે પૂર્વવ્યાખ્યાયિત શ્રેણીઓમાં બંધબેસતી નથી પરંતુ ચોક્કસ વેબસાઇટ કાર્યક્ષમતાઓ અથવા સુધારાઓ માટે જરૂરી હોઈ શકે છે"
-        }
-      },
-      "service": {
-        "disableAll": {
-          "description": "DisableAll",
-          "title": "Disable"
-        },
-        "optOut": {
-          "description": "Opt Out",
-          "title": "Opt Out"
-        },
-        "purpose": "હેતુ"
-      },
-      "purposeItem": {
-        "service": "સેવા",
-        "services": "સેવાઓ"
       }
     },
     "ne": {
@@ -1167,34 +1121,34 @@ window.klaroConfig = {
         "services": "सेवाः"
       }
     },
-    "bew": {
-      "acceptAll": "Terima semua",
-      "accept": "Nerima",
-      "decline": "Tolak Semua",
-      "acceptSelected": "Terima yang dipilih",
-      "ok": "Terima Semua",
+    "gu": {
+      "acceptAll": "બધા સ્વીકારો",
+      "accept": "સ્વીકારો",
+      "decline": "બધાને નકારો",
+      "acceptSelected": "પસંદ કરેલ સ્વીકારો",
+      "ok": "બધા સ્વીકારો",
       "consentNotice": {
-        "description": "<p>Gue setuju buat bagiin PAN gue buat verifikasi KYC.</p><p> Tolong masukin OTP yang dikirim ke nomor ponsel lu yang terdaftar.</p><p> Gue setuju buat ngasih nomor Aadhaar gue buat verifikasi identitas.</p><p> Kita bakal nyimpen GSTIN lu cuma buat penagihan.</p><p></p><p> .</p><p></p><p> <a href=\"https://www.google.com/\" title=\"https://www.google.com/\" target=\"_blank\"><u>Kebijakan Kukis.</u></a></p>",
-        "learnMore": "Sesuaikan",
+        "description": "<p>હું KYC ચકાસણી માટે મારો PAN શેર કરવા માટે સંમતિ આપું છું.</p><p> કૃપા કરીને તમારા રજિસ્ટર્ડ મોબાઇલ નંબર પર મોકલવામાં આવેલ OTP દાખલ કરો.</p><p> હું ઓળખ ચકાસણી માટે મારો આધાર નંબર આપવા માટે સંમત છું.</p><p> અમે તમારા GSTIN ને ફક્ત બિલિંગ હેતુ માટે સંગ્રહિત કરીશું.</p><p></p><p> .</p><p></p><p> <a href=\"https://www.google.com/\" title=\"https://www.google.com/\" target=\"_blank\"><u>કૂકી નીતિ.</u></a></p>",
+        "learnMore": "કસ્ટમાઇઝ કરો",
         "changeDescription": " "
       },
-      "save": "Nerima",
+      "save": "સ્વીકારો",
       "consentModal": {
-        "title": "Sesuaikan Preferensi Persetujuan",
-        "description": "<p>Gue setuju buat bagiin PAN gue buat verifikasi KYC.</p><p> Tolong masukin OTP yang dikirim ke nomor ponsel lu yang terdaftar.</p><p> Gue setuju buat ngasih nomor Aadhaar gue buat verifikasi identitas.</p><p> Kita bakal nyimpen GSTIN lu cuma buat penagihan.</p><p></p>",
+        "title": "સંમતિ પસંદગીઓને કસ્ટમાઇઝ કરો",
+        "description": "<p>હું KYC ચકાસણી માટે મારો PAN શેર કરવા માટે સંમતિ આપું છું.</p><p> કૃપા કરીને તમારા રજિસ્ટર્ડ મોબાઇલ નંબર પર મોકલવામાં આવેલ OTP દાખલ કરો.</p><p> હું ઓળખ ચકાસણી માટે મારો આધાર નંબર આપવા માટે સંમત છું.</p><p> અમે તમારા GSTIN ને ફક્ત બિલિંગ હેતુ માટે સંગ્રહિત કરીશું.</p><p></p>",
         "buttons": {
-          "save": "Nerima",
-          "acceptAll": "Terima semua",
-          "decline": "Tolak Semua"
+          "save": "સ્વીકારો",
+          "acceptAll": "બધા સ્વીકારો",
+          "decline": "બધાને નકારો"
         }
       },
       "poweredBy": "Powered by Seqrite",
       "purposes": {
         "Analytics": {
-          "description": "<p>Cookies ini membantu kita menganalisis lalu lintas situs web, perilaku pengguna, dan pola keterlibatan. Wawasan yang dikumpulkan memungkinkan kita untuk mengoptimalkan konten, meningkatkan kegunaan, dan meningkatkan kinerja situs secara keseluruhan.</p><p><br> Kategori ini wajib</p>"
+          "description": "<p>આ કૂકીઝ અમને વેબસાઇટ ટ્રાફિક, વપરાશકર્તા વર્તણૂક અને જોડાણ પેટર્નનું વિશ્લેષણ કરવામાં મદદ કરે છે. એકત્રિત કરેલી આંતરદૃષ્ટિ અમને સામગ્રીને ઑપ્ટિમાઇઝ કરવા, ઉપયોગીતા વધારવા અને એકંદર સાઇટ પ્રદર્શનને સુધારવાની મંજૂરી આપે છે.</p><p><br> આ શ્રેણી ફરજિયાત છે</p>"
         },
         "Others": {
-          "description": "<p>Kategori ini termasuk kuki yang kagak masuk ke dalam kategori yang udah ditentuin sebelumnya, tapi mungkin diperlukan untuk fungsionalitas atau perbaikan situs web tertentu.</p>"
+          "description": "<p>આ શ્રેણીમાં એવી કૂકીઝનો સમાવેશ થાય છે જે પૂર્વવ્યાખ્યાયિત શ્રેણીઓમાં બંધબેસતી નથી પરંતુ ચોક્કસ વેબસાઇટ કાર્યક્ષમતા અથવા સુધારાઓ માટે જરૂરી હોઈ શકે છે.</p>"
         }
       },
       "service": {
@@ -1206,11 +1160,57 @@ window.klaroConfig = {
           "description": "Opt Out",
           "title": "Opt Out"
         },
-        "purpose": "maknanye"
+        "purpose": "હેતુ"
       },
       "purposeItem": {
-        "service": "ngopenin",
-        "services": "jasa"
+        "service": "સેવા",
+        "services": "સેવાઓ"
+      }
+    },
+    "zh": {
+      "acceptAll": "全部接受",
+      "accept": "接受",
+      "decline": "全部拒绝",
+      "acceptSelected": "接受选定",
+      "ok": "全部接受",
+      "consentNotice": {
+        "description": "<p>我同意分享我的 PAN 以进行 KYC 验证。</p><p>请输入发送到您注册的手机号码的 OTP。</p><p>我同意提供我的 Aadhaar 号码以进行身份验证。</p><p>我们将仅出于计费目的存储您的 GSTIN。</p><p></p><p> 。</p><p></p><p> <a href=\"https://www.google.com/\" title=\"https://www.google.com/\" target=\"_blank\"><u>Cookie 政策。</u></a></p>",
+        "learnMore": "定制",
+        "changeDescription": " "
+      },
+      "save": "接受",
+      "consentModal": {
+        "title": "自定义同意偏好",
+        "description": "<p>我同意分享我的 PAN 以进行 KYC 验证。</p><p>请输入发送到您注册的手机号码的 OTP。</p><p>我同意提供我的 Aadhaar 号码以进行身份验证。</p><p>我们将仅出于计费目的存储您的 GSTIN。</p><p></p>",
+        "buttons": {
+          "save": "接受",
+          "acceptAll": "全部接受",
+          "decline": "全部拒绝"
+        }
+      },
+      "poweredBy": "Powered by Seqrite",
+      "purposes": {
+        "Analytics": {
+          "description": "<p>这些 Cookie 帮助我们分析网站流量、用户行为和参与模式。收集到的洞察信息有助于我们优化内容、增强可用性并提升网站的整体性能。</p><p><br>此类别为必填项</p>"
+        },
+        "Others": {
+          "description": "<p>此类别包括不属于预定义类别但可能对某些网站功能或改进必不可少的 cookie。</p>"
+        }
+      },
+      "service": {
+        "disableAll": {
+          "description": "DisableAll",
+          "title": "Disable"
+        },
+        "optOut": {
+          "description": "Opt Out",
+          "title": "Opt Out"
+        },
+        "purpose": "目的"
+      },
+      "purposeItem": {
+        "service": "服务",
+        "services": "服务"
       }
     }
   },
