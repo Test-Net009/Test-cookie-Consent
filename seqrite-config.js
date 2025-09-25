@@ -2,7 +2,7 @@
 let userLang = (navigator.language || (navigator).userLanguage || 'en').slice(0, 2);
 window.klaroConfig = {
   "consentManagerId": "68ad4116a1e1d577646d93f6",
-  "uuid": "53de92e4-11bb-46f4-81bd-c38c2e75834d",
+  "uuid": "676f01cc-882c-459b-8812-5cf72b8a8695",
   "domain": "https://qa-hs.qhtpl.com/cmapi",
   "version": 1,
   "elementID": "SEQRITE",
@@ -155,34 +155,34 @@ window.klaroConfig = {
         "services": "services"
       }
     },
-    "sa": {
-      "acceptAll": "सर्वं स्वीकरोतु",
-      "accept": "स्वीकरोतु",
-      "decline": "सर्वं निराकरोतु",
-      "acceptSelected": "चयनं स्वीकरोतु",
-      "ok": "सर्वं स्वीकरोतु",
+    "it": {
+      "acceptAll": "Accetta tutto",
+      "accept": "Accettare",
+      "decline": "Rifiuta tutto",
+      "acceptSelected": "Accetta selezionati",
+      "ok": "Accetta tutto",
       "consentNotice": {
-        "description": "<p>वयं भवतः विहरणानुभवं वर्धयितुं, जालपुटस्य यातायातस्य विश्लेषणं कर्तुं, सामग्रीं वैयक्तिकं कर्तुं च कुकीस् इत्येतान् उपयुज्यामः अस्माकं जालपुटस्य उपयोगं निरन्तरं कुर्वन्, भवान् अस्माकं कुकी-नीतिम् अनुसृत्य कुकीस् इत्यस्य उपयोगाय सम्मतिं ददति भवान् स्वस्य कुकी-प्राथमिकतां परिवर्तयितुं शक्नोति अथवा \"कस्टमैस्\" इति बटन् उपरि क्लिक् कृत्वा कस्मिंश्चित् अपि स्वसम्मतं निष्कासयितुं शक्नोति</p>",
-        "learnMore": "कस्टमैस् कुरु",
+        "description": "<p><em>Utilizziamo i cookie per migliorare la tua esperienza di navigazione, analizzare il traffico del sito e personalizzare i contenuti. Continuando a utilizzare il nostro sito web, acconsenti all&#39;utilizzo dei cookie in conformità con la nostra Politica sui cookie. Puoi modificare le tue preferenze sui cookie o revocare il tuo consenso in qualsiasi momento cliccando sul pulsante &quot;Personalizza&quot;.</em></p><ol><li><p> <strong>Cookie essenziali</strong> : questi cookie sono necessari per il corretto funzionamento del sito web.</p></li><li><p> <strong>Cookie analitici</strong> : questi cookie ci aiutano a capire come i visitatori interagiscono con il sito web.</p></li><li><p> <strong>Cookie di marketing</strong> : questi cookie vengono utilizzati per fornire annunci pubblicitari personalizzati.</p></li></ol><p></p><p> <a href=\"https://www.google.com/\" title=\"https://www.google.com/\" target=\"_blank\"><u>Informativa sui cookie.</u></a></p>",
+        "learnMore": "Personalizza",
         "changeDescription": " "
       },
-      "save": "स्वीकरोतु",
+      "save": "Accettare",
       "consentModal": {
-        "title": "<p>सहमतिप्राधान्यतां स्वकीयीकरोतु</p>",
-        "description": "<p>अहं के वै सी सत्यापनाय मम पान्-पत्रं दातुम् अङ्गीकरोमि</p><p>कृपया भवतः पञ्जीकृत-चरदूरध्वनिसङ्ख्यां प्रति प्रेषितं ओटिपि प्रविशतु</p><p>अहं परिचय-सत्यापनाय मम आधारसङ्ख्या दातुं अङ्गीकरोमि</p><p>वयं भवतः जि एस् टि ऐ एन् इतीदं केवलं बिल्लिङ्ग्-प्रयोजनार्थं एव सञ्चयामः</p>",
+        "title": "Personalizza le preferenze di consenso",
+        "description": "<p>Acconsento a condividere il mio PAN per la verifica KYC.</p><p> Inserisci l&#39;OTP inviato al numero di cellulare registrato.</p><p> Accetto di fornire il mio numero Aadhaar per la verifica dell&#39;identità.</p><p> Conserveremo il tuo GSTIN solo a fini di fatturazione.</p><p></p>",
         "buttons": {
-          "save": "स्वीकरोतु",
-          "acceptAll": "सर्वं स्वीकरोतु",
-          "decline": "सर्वं निराकरोतु"
+          "save": "Accettare",
+          "acceptAll": "Accetta tutto",
+          "decline": "Rifiuta tutto"
         }
       },
       "poweredBy": "Powered by Seqrite",
       "purposes": {
         "Analytics": {
-          "description": "<p> अस्मिन् वर्गे कुकीस् इत्येतानि अन्तर्भवन्ति यानि पूर्वपरिभाषितवर्गेषु न योजयन्ति परन्तु कतिपय-जालपुट-क्रियात्मकतायै वा सुधाराय वा आवश्यकानि भवितुम् अर्हन्ति <b> <b> एषा श्रेणी अनिवार्या अस्ति </p> <p> <b> अधुना प्रयतताम् </p>"
+          "description": "<p>Questa categoria include i cookie che non rientrano nelle categorie predefinite ma che potrebbero essere necessari per alcune funzionalità o miglioramenti del sito web.<br><br> Questa categoria è obbligatoria</p><p><br> Prova ora</p>"
         },
         "Others": {
-          "description": "<p> अस्मिन् वर्गे कुकीस् इत्येतानि अन्तर्भवन्ति यानि पूर्वनिर्धारितेषु वर्गेषु न योजयन्ति परन्तु कतिपय-जालपुट-क्रियात्मकतासु अथवा सुधारणेषु वा आवश्यकानि भवन्ति"
+          "description": "<p>Questa categoria include i cookie che non rientrano nelle categorie predefinite ma che potrebbero essere necessari per alcune funzionalità o miglioramenti del sito web.</p><p><br> Prova ora</p>"
         }
       },
       "service": {
@@ -194,11 +194,149 @@ window.klaroConfig = {
           "description": "Opt Out",
           "title": "Opt Out"
         },
-        "purpose": "प्रयोजनम्"
+        "purpose": "scopo"
       },
       "purposeItem": {
-        "service": "सेवाः",
-        "services": "सेवाः"
+        "service": "servizio",
+        "services": "servizi"
+      }
+    },
+    "fr": {
+      "acceptAll": "Accepter tout",
+      "accept": "Accepter",
+      "decline": "Tout rejeter",
+      "acceptSelected": "Accepter la sélection",
+      "ok": "Accepter tout",
+      "consentNotice": {
+        "description": "<p><em>Nous utilisons des cookies pour améliorer votre expérience de navigation, analyser le trafic du site et personnaliser le contenu. En continuant à utiliser notre site web, vous consentez à l&#39;utilisation de cookies conformément à notre politique de confidentialité. Vous pouvez modifier vos préférences en matière de cookies ou retirer votre consentement à tout moment en cliquant sur le bouton « Personnaliser ».</em></p><ol><li><p> <strong>Cookies essentiels</strong> : Ces cookies sont nécessaires au bon fonctionnement du site.</p></li><li><p> <strong>Cookies d&#39;analyse</strong> : Ces cookies nous aident à comprendre comment les visiteurs interagissent avec le site Web.</p></li><li><p> <strong>Cookies marketing</strong> : Ces cookies sont utilisés pour diffuser des publicités personnalisées.</p></li></ol><p></p><p> <a href=\"https://www.google.com/\" title=\"https://www.google.com/\" target=\"_blank\"><u>Politique relative aux cookies.</u></a></p>",
+        "learnMore": "Personnaliser",
+        "changeDescription": " "
+      },
+      "save": "Accepter",
+      "consentModal": {
+        "title": "Personnaliser les préférences de consentement",
+        "description": "<p>J&#39;accepte de partager mon PAN pour la vérification KYC.</p><p> Veuillez saisir l&#39;OTP envoyé à votre numéro de mobile enregistré.</p><p> J&#39;accepte de fournir mon numéro Aadhaar pour la vérification d&#39;identité.</p><p> Nous conserverons votre GSTIN à des fins de facturation uniquement.</p><p></p>",
+        "buttons": {
+          "save": "Accepter",
+          "acceptAll": "Accepter tout",
+          "decline": "Tout rejeter"
+        }
+      },
+      "poweredBy": "Powered by Seqrite",
+      "purposes": {
+        "Analytics": {
+          "description": "<p>Cette catégorie comprend les cookies qui ne rentrent pas dans les catégories prédéfinies mais qui peuvent être nécessaires à certaines fonctionnalités ou améliorations du site Web.<br><br> Cette catégorie est obligatoire</p><p><br> Essayez maintenant</p>"
+        },
+        "Others": {
+          "description": "<p>Cette catégorie comprend les cookies qui ne rentrent pas dans les catégories prédéfinies mais qui peuvent être nécessaires à certaines fonctionnalités ou améliorations du site Web.</p><p><br> Essayez maintenant</p>"
+        }
+      },
+      "service": {
+        "disableAll": {
+          "description": "DisableAll",
+          "title": "Disable"
+        },
+        "optOut": {
+          "description": "Opt Out",
+          "title": "Opt Out"
+        },
+        "purpose": "but"
+      },
+      "purposeItem": {
+        "service": "service",
+        "services": "services"
+      }
+    },
+    "de": {
+      "acceptAll": "Alle akzeptieren",
+      "accept": "Akzeptieren",
+      "decline": "Alle ablehnen",
+      "acceptSelected": "Auswahl akzeptieren",
+      "ok": "Alle akzeptieren",
+      "consentNotice": {
+        "description": "<p><em>Wir verwenden Cookies, um Ihr Browser-Erlebnis zu verbessern, den Website-Verkehr zu analysieren und Inhalte zu personalisieren. Durch die weitere Nutzung unserer Website stimmen Sie der Verwendung von Cookies gemäß unserer Cookie-Richtlinie zu. Sie können Ihre Cookie-Einstellungen jederzeit ändern oder Ihre Zustimmung widerrufen, indem Sie auf die Schaltfläche „Anpassen“ klicken.</em></p><ol><li><p> <strong>Unbedingt erforderliche Cookies</strong> : Diese Cookies sind für die ordnungsgemäße Funktion der Website erforderlich.</p></li><li><p> <strong>Analyse-Cookies</strong> : Diese Cookies helfen uns zu verstehen, wie Besucher mit der Website interagieren.</p></li><li><p> <strong>Marketing-Cookies</strong> : Diese Cookies werden verwendet, um personalisierte Werbung anzuzeigen.</p></li></ol><p></p><p> <a href=\"https://www.google.com/\" title=\"https://www.google.com/\" target=\"_blank\"><u>Cookie-Richtlinie.</u></a></p>",
+        "learnMore": "Anpassen",
+        "changeDescription": " "
+      },
+      "save": "Akzeptieren",
+      "consentModal": {
+        "title": "Einwilligungspräferenzen anpassen",
+        "description": "<p>Ich bin damit einverstanden, meine PAN zur KYC-Verifizierung weiterzugeben.</p><p> Bitte geben Sie das OTP ein, das an Ihre registrierte Mobiltelefonnummer gesendet wurde.</p><p> Ich bin damit einverstanden, meine Aadhaar-Nummer zur Identitätsprüfung anzugeben.</p><p> Wir speichern Ihre GSTIN nur zu Abrechnungszwecken.</p><p></p>",
+        "buttons": {
+          "save": "Akzeptieren",
+          "acceptAll": "Alle akzeptieren",
+          "decline": "Alle ablehnen"
+        }
+      },
+      "poweredBy": "Powered by Seqrite",
+      "purposes": {
+        "Analytics": {
+          "description": "<p>Diese Kategorie umfasst Cookies, die nicht in die vordefinierten Kategorien passen, aber für bestimmte Website-Funktionen oder -Verbesserungen erforderlich sein können.<br><br> Diese Kategorie ist obligatorisch</p><p><br> Jetzt testen</p>"
+        },
+        "Others": {
+          "description": "<p>Diese Kategorie umfasst Cookies, die nicht in die vordefinierten Kategorien passen, aber für bestimmte Website-Funktionen oder -Verbesserungen erforderlich sein können.</p><p><br> Jetzt testen</p>"
+        }
+      },
+      "service": {
+        "disableAll": {
+          "description": "DisableAll",
+          "title": "Disable"
+        },
+        "optOut": {
+          "description": "Opt Out",
+          "title": "Opt Out"
+        },
+        "purpose": "Zweck"
+      },
+      "purposeItem": {
+        "service": "Service",
+        "services": "Dienstleistungen"
+      }
+    },
+    "ja": {
+      "acceptAll": "すべて受け入れる",
+      "accept": "受け入れる",
+      "decline": "すべて拒否",
+      "acceptSelected": "選択を受け入れる",
+      "ok": "すべて受け入れる",
+      "consentNotice": {
+        "description": "<p><em>当社は、お客様のブラウジング体験の向上、サイトトラフィックの分析、コンテンツのパーソナライズのためにCookieを使用しています。引き続き当社のウェブサイトをご利用いただくことで、お客様は当社のCookieポリシーに従ってCookieを使用することに同意したものとみなされます。「カスタマイズ」ボタンをクリックすることで、いつでもCookieの設定を変更したり、同意を取り消したりすることができます。</em></p><ol><li><p><strong>必須 Cookie</strong> : これらの Cookie は、Web サイトが適切に機能するために必要です。</p></li><li><p><strong>分析 Cookie</strong> : これらの Cookie は、訪問者が Web サイトとどのようにやり取りしているかを理解するのに役立ちます。</p></li><li><p><strong>マーケティング Cookie</strong> : これらの Cookie は、パーソナライズされた広告を配信するために使用されます。</p></li></ol><p></p><p><a href=\"https://www.google.com/\" title=\"https://www.google.com/\" target=\"_blank\"><u>クッキーポリシー。</u></a></p>",
+        "learnMore": "カスタマイズ",
+        "changeDescription": " "
+      },
+      "save": "受け入れる",
+      "consentModal": {
+        "title": "同意設定をカスタマイズする",
+        "description": "<p>KYC 検証のために PAN を共有することに同意します。</p><p>登録した携帯電話番号に送信されたOTPを入力してください。</p><p>本人確認のために Aadhaar 番号を提供することに同意します。</p><p> GSTIN は請求目的のみに保存されます。</p><p></p>",
+        "buttons": {
+          "save": "受け入れる",
+          "acceptAll": "すべて受け入れる",
+          "decline": "すべて拒否"
+        }
+      },
+      "poweredBy": "Powered by Seqrite",
+      "purposes": {
+        "Analytics": {
+          "description": "<p>このカテゴリには、事前定義されたカテゴリには当てはまらないが、特定の Web サイトの機能や改善に必要な場合がある Cookie が含まれます。<br><br>このカテゴリは必須です</p><p><br>今すぐ試す</p>"
+        },
+        "Others": {
+          "description": "<p>このカテゴリには、事前定義されたカテゴリには当てはまらないが、特定の Web サイトの機能や改善に必要な場合がある Cookie が含まれます。</p><p><br>今すぐ試す</p>"
+        }
+      },
+      "service": {
+        "disableAll": {
+          "description": "DisableAll",
+          "title": "Disable"
+        },
+        "optOut": {
+          "description": "Opt Out",
+          "title": "Opt Out"
+        },
+        "purpose": "目的"
+      },
+      "purposeItem": {
+        "service": "サービス",
+        "services": "サービス"
       }
     }
   },
