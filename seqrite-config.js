@@ -3,7 +3,7 @@ let userLang = (navigator.language || (navigator).userLanguage || 'en');
 console.log("Browser Language Code: ", userLang);
 window.klaroConfig = {
   "consentManagerId": "68ecea6b4f91d33c7dabe706",
-  "uuid": "5d5ce90a-df3d-4958-9fbb-9f095685bc4a",
+  "uuid": "32e24481-0606-408d-93a9-b3173b8e4fbc",
   "domain": "https://vurbi7.sqdataprivacy.com/cmapi",
   "version": 1,
   "elementID": "SEQRITE",
@@ -15,7 +15,7 @@ window.klaroConfig = {
   "mustConsent": false,
   "acceptAll": true,
   "hideDeclineAll": false,
-  "hideLearnMore": true,
+  "hideLearnMore": false,
   "disablePoweredBy": false,
   "translations": {
     "english": {
@@ -1192,7 +1192,7 @@ window.klaroConfig = {
         "Others"
       ],
       "required": false,
-      "default": true,
+      "default": false,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
@@ -1206,7 +1206,7 @@ window.klaroConfig = {
         "Analytics"
       ],
       "required": false,
-      "default": true,
+      "default": false,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
