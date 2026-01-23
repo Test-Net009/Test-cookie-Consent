@@ -1,27 +1,27 @@
 
     :root {
-      --btn-accept-text-color: #f2f2f2;
-      --btn-accept-background-color: #5249EB;
+      --btn-accept-text-color: undefined;
+      --btn-accept-background-color: undefined;
 
-      --btn-accept-all-text-color: #f2f2f2;
-      --btn-accept-all-background-color: #5249EB;
+      --btn-accept-all-text-color: undefined;
+      --btn-accept-all-background-color: undefined;
 
-      --btn-accept-selected-text-color: #5249EB;
-      --btn-accept-selected-background-color: #fff0;
+      --btn-accept-selected-text-color: undefined;
+      --btn-accept-selected-background-color: undefined;
 
-      --btn-ok-text-color: #f2f2f2;
-      --btn-ok-background-color: #5249EB;
+      --btn-ok-text-color: undefined;
+      --btn-ok-background-color: undefined;
 
-      --btn-decline-text-color: #7879A1;
-      --btn-decline-background-color: #fff0;
+      --btn-decline-text-color: undefined;
+      --btn-decline-background-color: undefined;
 
-      --btn-learn-more-text-color: #5249EB;
+      --btn-learn-more-text-color: undefined;
 
-      --banner-body-text-color: #43436c;
-      --banner-body-background-color: #fafafa;
+      --banner-body-text-color: undefined;
+      --banner-body-background-color: undefined;
 
-      --overlay-body-text-color: #43436c;
-      --overlay-body-background-color: #f9f9ff;
+      --overlay-body-text-color: null;
+      --overlay-body-background-color: null;
       --overlay-position-left: auto;    
       --overlay-position-Top: auto;    
       --overlay-pos: fixed;
