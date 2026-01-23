@@ -2,9 +2,9 @@
 let userLang = (navigator.language || (navigator).userLanguage || 'en');
 console.log("Browser Language Code: ", userLang);
 window.klaroConfig = {
-  "consentManagerId": "67e131f60a2edd67f71e4b0f",
-  "uuid": "17f98fee-170b-44bd-bf7b-98ab08e2daa9",
-  "domain": "https://qhhawkkscan.qhtpl.com/cmapi",
+  "consentManagerId": "69734f57f3387c313e9fe034",
+  "uuid": "7e571d4c-0f9f-4d84-90f2-46b12e1edda6",
+  "domain": "https://qa-op.pre-dataprivacy.com/cmapi",
   "version": 1,
   "elementID": "SEQRITE",
   lang: userLang,
@@ -29,9 +29,9 @@ window.klaroConfig = {
   "declarative": false,
   "groupByPurpose": true,
   "hideToggleAll": false,
-  "appName": "Sanity 2.3.3 ",
+  "appName": "2.3.4 Manish Cookies Regression",
   "description": "We respects your privacy and is committed to protecting your personal data.",
-  "companyName": "Sanity 2.3.3 ",
+  "companyName": "2.3.4 Manish Cookies Regression",
   "companyAddress": " ",
   "services": [
     {
