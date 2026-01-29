@@ -3,7 +3,7 @@ let userLang = (navigator.language || (navigator).userLanguage || 'en');
 console.log("Browser Language Code: ", userLang);
 window.klaroConfig = {
   "consentManagerId": "6974ccc61a2bc74b5dd8c937",
-  "uuid": "ad44fb1d-bebc-4287-acc6-e3939c5ac559",
+  "uuid": "baa2e944-00b0-4435-bcc4-a7daa346252c",
   "domain": "https://preprod.pre-dataprivacy.com/cmapi",
   "version": 1,
   "elementID": "SEQRITE",
@@ -1054,7 +1054,7 @@ window.klaroConfig = {
         "Marketing"
       ],
       "required": false,
-      "default": true,
+      "default": false,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
@@ -1068,7 +1068,7 @@ window.klaroConfig = {
         "Functional"
       ],
       "required": false,
-      "default": true,
+      "default": false,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
