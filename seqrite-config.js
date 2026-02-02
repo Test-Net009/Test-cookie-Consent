@@ -2,9 +2,9 @@
 let userLang = (navigator.language || (navigator).userLanguage || 'en');
 console.log("Browser Language Code: ", userLang);
 window.klaroConfig = {
-  "consentManagerId": "698050bd8a95ed71ccf9c7b4",
-  "uuid": "701f2831-2db7-4d31-9966-6ed6dbe18cae",
-  "domain": "https://preprod.pre-dataprivacy.com/cmapi",
+  "consentManagerId": "69809cf3459e824e513c34df",
+  "uuid": "4a5a407e-87d9-46a2-bff5-a830d3f02a75",
+  "domain": "https://starhealth.pre-dataprivacy.com/cmapi",
   "version": 1,
   "elementID": "SEQRITE",
   lang: userLang,
@@ -25,13 +25,13 @@ window.klaroConfig = {
       "acceptSelected": "Accept Selected",
       "ok": "Accept All",
       "consentNotice": {
-        "description": "<p><strong>We respect your privacy - 2 feb 2026</strong></p><p>We store cookies to enable essential site functionality, as well as marketing, personalization and analytics. By clicking “Accept All”, you consent to our use of cookies. You can change your settings at any time. <a href=\"https://www.google.com/\" title=\"https://www.google.com/\" target=\"_blank\"><u>Cookie Policy.</u></a></p>",
+        "description": "<p><strong>We respect your privacy - 2nd Feb 2026</strong></p><p>We store cookies to enable essential site functionality, as well as marketing, personalization and analytics. By clicking “Accept All”, you consent to our use of cookies. You can change your settings at any time. <a href=\"https://www.google.com/\" title=\"https://www.google.com/\" target=\"_blank\"><u>Cookie Policy.</u></a></p>",
         "learnMore": "Customize",
         "changeDescription": " "
       },
       "save": "Accept",
       "consentModal": {
-        "title": "<p>Customize Consent Preferences - 2nd  Feb 2026</p>",
+        "title": "<p>Customize Consent Preferences - 2nd Feb 2026</p>",
         "description": "We use cookies to help you navigate between pages efficiently, storing your preferences, and generally improving your experience of a website.  However, we acknowledge  your right to privacy and hence you can choose not to allow some types of cookies. Click on the different category headings to find out more and change our default settings. Please note that blocking certain types of cookies might affect your experience of the site. ",
         "buttons": {
           "save": "Accept",
@@ -71,13 +71,13 @@ window.klaroConfig = {
       "acceptSelected": "Accept Selected",
       "ok": "Accept All",
       "consentNotice": {
-        "description": "<p><strong>We respect your privacy - 2 feb 2026</strong></p><p>We store cookies to enable essential site functionality, as well as marketing, personalization and analytics. By clicking “Accept All”, you consent to our use of cookies. You can change your settings at any time. <a href=\"https://www.google.com/\" title=\"https://www.google.com/\" target=\"_blank\"><u>Cookie Policy.</u></a></p>",
+        "description": "<p><strong>We respect your privacy - 2nd Feb 2026</strong></p><p>We store cookies to enable essential site functionality, as well as marketing, personalization and analytics. By clicking “Accept All”, you consent to our use of cookies. You can change your settings at any time. <a href=\"https://www.google.com/\" title=\"https://www.google.com/\" target=\"_blank\"><u>Cookie Policy.</u></a></p>",
         "learnMore": "Customize",
         "changeDescription": " "
       },
       "save": "Accept",
       "consentModal": {
-        "title": "<p>Customize Consent Preferences - 2nd  Feb 2026</p>",
+        "title": "<p>Customize Consent Preferences - 2nd Feb 2026</p>",
         "description": "We use cookies to help you navigate between pages efficiently, storing your preferences, and generally improving your experience of a website.  However, we acknowledge  your right to privacy and hence you can choose not to allow some types of cookies. Click on the different category headings to find out more and change our default settings. Please note that blocking certain types of cookies might affect your experience of the site. ",
         "buttons": {
           "save": "Accept",
@@ -117,13 +117,13 @@ window.klaroConfig = {
       "acceptSelected": "Accept Selected",
       "ok": "Accept All",
       "consentNotice": {
-        "description": "<p><strong>We respect your privacy - 2 feb 2026</strong></p><p>We store cookies to enable essential site functionality, as well as marketing, personalization and analytics. By clicking “Accept All”, you consent to our use of cookies. You can change your settings at any time. <a href=\"https://www.google.com/\" title=\"https://www.google.com/\" target=\"_blank\"><u>Cookie Policy.</u></a></p>",
+        "description": "<p><strong>We respect your privacy - 2nd Feb 2026</strong></p><p>We store cookies to enable essential site functionality, as well as marketing, personalization and analytics. By clicking “Accept All”, you consent to our use of cookies. You can change your settings at any time. <a href=\"https://www.google.com/\" title=\"https://www.google.com/\" target=\"_blank\"><u>Cookie Policy.</u></a></p>",
         "learnMore": "Customize",
         "changeDescription": " "
       },
       "save": "Accept",
       "consentModal": {
-        "title": "<p>Customize Consent Preferences - 2nd  Feb 2026</p>",
+        "title": "<p>Customize Consent Preferences - 2nd Feb 2026</p>",
         "description": "We use cookies to help you navigate between pages efficiently, storing your preferences, and generally improving your experience of a website.  However, we acknowledge  your right to privacy and hence you can choose not to allow some types of cookies. Click on the different category headings to find out more and change our default settings. Please note that blocking certain types of cookies might affect your experience of the site. ",
         "buttons": {
           "save": "Accept",
@@ -168,9 +168,9 @@ window.klaroConfig = {
   "declarative": false,
   "groupByPurpose": true,
   "hideToggleAll": false,
-  "appName": "LatestCookie",
+  "appName": "Star_preprod",
   "description": "We respects your privacy and is committed to protecting your personal data.",
-  "companyName": "LatestCookie",
+  "companyName": "Star_preprod",
   "companyAddress": " ",
   "services": [
     {
