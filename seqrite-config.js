@@ -3,7 +3,7 @@ let userLang = (navigator.language || (navigator).userLanguage || 'en');
 console.log("Browser Language Code: ", userLang);
 window.klaroConfig = {
   "consentManagerId": "6980a2ed459e824e513c34ea",
-  "uuid": "4badfc2c-4ccc-469d-bdad-80da54f1613f",
+  "uuid": "ce4e69e9-9c83-4b73-b1ba-156a180f89c9",
   "domain": "https://starhealth.pre-dataprivacy.com/cmapi",
   "version": 1,
   "elementID": "SEQRITE",
@@ -15,7 +15,7 @@ window.klaroConfig = {
   "mustConsent": false,
   "acceptAll": true,
   "hideDeclineAll": false,
-  "hideLearnMore": false,
+  "hideLearnMore": true,
   "disablePoweredBy": false,
   "translations": {
     "english": {
@@ -25,7 +25,7 @@ window.klaroConfig = {
       "acceptSelected": "Accept Selected",
       "ok": "Accept All",
       "consentNotice": {
-        "description": "<p><strong>We respect your privacy - 2nd Feb 2026</strong></p><p>We store cookies to enable essential site functionality, as well as marketing, personalization and analytics. By clicking “Accept All”, you consent to our use of cookies. You can change your settings at any time. <a href=\"https://www.google.com/\" title=\"https://www.google.com/\" target=\"_blank\"><u>Cookie Policy.</u></a></p>",
+        "description": "<p><strong>We respect your privacy - For Star Health</strong></p><p>We store cookies to enable essential site functionality, as well as marketing, personalization and analytics. By clicking “Accept All”, you consent to our use of cookies. You can change your settings at any time. <a href=\"https://www.google.com/\" title=\"https://www.google.com/\" target=\"_blank\"><u>Cookie Policy.</u></a></p>",
         "learnMore": "Customize",
         "changeDescription": " "
       },
@@ -74,7 +74,7 @@ window.klaroConfig = {
       "acceptSelected": "Accept Selected",
       "ok": "Accept All",
       "consentNotice": {
-        "description": "<p><strong>We respect your privacy - 2nd Feb 2026</strong></p><p>We store cookies to enable essential site functionality, as well as marketing, personalization and analytics. By clicking “Accept All”, you consent to our use of cookies. You can change your settings at any time. <a href=\"https://www.google.com/\" title=\"https://www.google.com/\" target=\"_blank\"><u>Cookie Policy.</u></a></p>",
+        "description": "<p><strong>We respect your privacy - For Star Health</strong></p><p>We store cookies to enable essential site functionality, as well as marketing, personalization and analytics. By clicking “Accept All”, you consent to our use of cookies. You can change your settings at any time. <a href=\"https://www.google.com/\" title=\"https://www.google.com/\" target=\"_blank\"><u>Cookie Policy.</u></a></p>",
         "learnMore": "Customize",
         "changeDescription": " "
       },
@@ -123,7 +123,7 @@ window.klaroConfig = {
       "acceptSelected": "Accept Selected",
       "ok": "Accept All",
       "consentNotice": {
-        "description": "<p><strong>We respect your privacy - 2nd Feb 2026</strong></p><p>We store cookies to enable essential site functionality, as well as marketing, personalization and analytics. By clicking “Accept All”, you consent to our use of cookies. You can change your settings at any time. <a href=\"https://www.google.com/\" title=\"https://www.google.com/\" target=\"_blank\"><u>Cookie Policy.</u></a></p>",
+        "description": "<p><strong>We respect your privacy - For Star Health</strong></p><p>We store cookies to enable essential site functionality, as well as marketing, personalization and analytics. By clicking “Accept All”, you consent to our use of cookies. You can change your settings at any time. <a href=\"https://www.google.com/\" title=\"https://www.google.com/\" target=\"_blank\"><u>Cookie Policy.</u></a></p>",
         "learnMore": "Customize",
         "changeDescription": " "
       },
@@ -189,7 +189,7 @@ window.klaroConfig = {
         "Others"
       ],
       "required": false,
-      "default": false,
+      "default": true,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
@@ -203,7 +203,7 @@ window.klaroConfig = {
         "Functional"
       ],
       "required": false,
-      "default": false,
+      "default": true,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
@@ -217,7 +217,7 @@ window.klaroConfig = {
         "Others"
       ],
       "required": false,
-      "default": false,
+      "default": true,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
@@ -231,7 +231,7 @@ window.klaroConfig = {
         "Others"
       ],
       "required": false,
-      "default": false,
+      "default": true,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
@@ -245,7 +245,7 @@ window.klaroConfig = {
         "Others"
       ],
       "required": false,
-      "default": false,
+      "default": true,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
@@ -259,7 +259,7 @@ window.klaroConfig = {
         "Functional"
       ],
       "required": false,
-      "default": false,
+      "default": true,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
@@ -273,7 +273,7 @@ window.klaroConfig = {
         "Others"
       ],
       "required": false,
-      "default": false,
+      "default": true,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
@@ -287,7 +287,7 @@ window.klaroConfig = {
         "Others"
       ],
       "required": false,
-      "default": false,
+      "default": true,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
@@ -301,7 +301,7 @@ window.klaroConfig = {
         "Marketing"
       ],
       "required": false,
-      "default": false,
+      "default": true,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
@@ -315,7 +315,7 @@ window.klaroConfig = {
         "Others"
       ],
       "required": false,
-      "default": false,
+      "default": true,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
@@ -329,7 +329,7 @@ window.klaroConfig = {
         "Others"
       ],
       "required": false,
-      "default": false,
+      "default": true,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
