@@ -2,14 +2,14 @@
 let userLang = (navigator.language || (navigator).userLanguage || 'en');
 console.log("Browser Language Code: ", userLang);
 window.klaroConfig = {
-  "consentManagerId": "69809cf3459e824e513c34df",
-  "uuid": "4a5a407e-87d9-46a2-bff5-a830d3f02a75",
+  "consentManagerId": "6980a2ed459e824e513c34ea",
+  "uuid": "4badfc2c-4ccc-469d-bdad-80da54f1613f",
   "domain": "https://starhealth.pre-dataprivacy.com/cmapi",
   "version": 1,
   "elementID": "SEQRITE",
   lang: userLang,
   "storageMethod": "cookie",
-  "storageName": "https://praveen06041994.github.io/NewCookieConsentDemo/",
+  "storageName": "https://www.lg.com",
   "cookieExpiresAfterDays": 365,
   "default": false,
   "mustConsent": false,
@@ -41,11 +41,14 @@ window.klaroConfig = {
       },
       "poweredBy": "Powered by Seqrite",
       "purposes": {
-        "Analytics": {
-          "description": "<p>These cookies help us analyze website traffic, user behavior, and engagement patterns. The insights gathered allow us to optimize content, enhance usability, and improve overall site performance.</p>"
-        },
         "Others": {
           "description": "<p>This category includes cookies that do not fit into the predefined categories but may be necessary for certain website functionalities or improvements.</p>"
+        },
+        "Functional": {
+          "description": "<p>We use these cookies to enhance website functionality and improve user experience. Information can include login data, region, language, and enhanced content.</p>"
+        },
+        "Marketing": {
+          "description": "<p>These cookies are used by our advertising partners to deliver personalized ads and measure the effectiveness of marketing campaigns. They help provide relevant promotions based on user interests and browsing behavior.</p>"
         }
       },
       "service": {
@@ -87,11 +90,14 @@ window.klaroConfig = {
       },
       "poweredBy": "Powered by Seqrite",
       "purposes": {
-        "Analytics": {
-          "description": "<p>These cookies help us analyze website traffic, user behavior, and engagement patterns. The insights gathered allow us to optimize content, enhance usability, and improve overall site performance.</p>"
-        },
         "Others": {
           "description": "<p>This category includes cookies that do not fit into the predefined categories but may be necessary for certain website functionalities or improvements.</p>"
+        },
+        "Functional": {
+          "description": "<p>We use these cookies to enhance website functionality and improve user experience. Information can include login data, region, language, and enhanced content.</p>"
+        },
+        "Marketing": {
+          "description": "<p>These cookies are used by our advertising partners to deliver personalized ads and measure the effectiveness of marketing campaigns. They help provide relevant promotions based on user interests and browsing behavior.</p>"
         }
       },
       "service": {
@@ -133,11 +139,14 @@ window.klaroConfig = {
       },
       "poweredBy": "Powered by Seqrite",
       "purposes": {
-        "Analytics": {
-          "description": "<p>These cookies help us analyze website traffic, user behavior, and engagement patterns. The insights gathered allow us to optimize content, enhance usability, and improve overall site performance.</p>"
-        },
         "Others": {
           "description": "<p>This category includes cookies that do not fit into the predefined categories but may be necessary for certain website functionalities or improvements.</p>"
+        },
+        "Functional": {
+          "description": "<p>We use these cookies to enhance website functionality and improve user experience. Information can include login data, region, language, and enhanced content.</p>"
+        },
+        "Marketing": {
+          "description": "<p>These cookies are used by our advertising partners to deliver personalized ads and measure the effectiveness of marketing campaigns. They help provide relevant promotions based on user interests and browsing behavior.</p>"
         }
       },
       "service": {
@@ -168,37 +177,163 @@ window.klaroConfig = {
   "declarative": false,
   "groupByPurpose": true,
   "hideToggleAll": false,
-  "appName": "Star_preprod",
+  "appName": "Star_preprod_2",
   "description": "We respects your privacy and is committed to protecting your personal data.",
-  "companyName": "Star_preprod",
+  "companyName": "Star_preprod_2",
   "companyAddress": " ",
   "services": [
     {
-      "name": "_ga_0000000001",
-      "title": "_ga_0000000001",
+      "name": "AMCVS_91F51CFE532954550A490D45%40AdobeOrg",
+      "title": "AMCVS_91F51CFE532954550A490D45%40AdobeOrg",
       "purposes": [
         "Others"
       ],
       "required": false,
-      "default": true,
+      "default": false,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
-        "_ga_0000000001"
+        "AMCVS_91F51CFE532954550A490D45%40AdobeOrg"
       ]
     },
     {
-      "name": "_ga",
-      "title": "_ga",
+      "name": "AKA_A2",
+      "title": "AKA_A2",
       "purposes": [
-        "Analytics"
+        "Functional"
       ],
       "required": false,
-      "default": true,
+      "default": false,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
-        "_ga"
+        "AKA_A2"
+      ]
+    },
+    {
+      "name": "whatap_session_id_45677",
+      "title": "whatap_session_id_45677",
+      "purposes": [
+        "Others"
+      ],
+      "required": false,
+      "default": false,
+      "optOut": false,
+      "onlyOnce": true,
+      "cookies": [
+        "whatap_session_id_45677"
+      ]
+    },
+    {
+      "name": "whatap_session_collect_type_45677",
+      "title": "whatap_session_collect_type_45677",
+      "purposes": [
+        "Others"
+      ],
+      "required": false,
+      "default": false,
+      "optOut": false,
+      "onlyOnce": true,
+      "cookies": [
+        "whatap_session_collect_type_45677"
+      ]
+    },
+    {
+      "name": "whatap_session_max_expired_45677",
+      "title": "whatap_session_max_expired_45677",
+      "purposes": [
+        "Others"
+      ],
+      "required": false,
+      "default": false,
+      "optOut": false,
+      "onlyOnce": true,
+      "cookies": [
+        "whatap_session_max_expired_45677"
+      ]
+    },
+    {
+      "name": "at_check",
+      "title": "at_check",
+      "purposes": [
+        "Functional"
+      ],
+      "required": false,
+      "default": false,
+      "optOut": false,
+      "onlyOnce": true,
+      "cookies": [
+        "at_check"
+      ]
+    },
+    {
+      "name": "whatap_user_id_45677",
+      "title": "whatap_user_id_45677",
+      "purposes": [
+        "Others"
+      ],
+      "required": false,
+      "default": false,
+      "optOut": false,
+      "onlyOnce": true,
+      "cookies": [
+        "whatap_user_id_45677"
+      ]
+    },
+    {
+      "name": "AMCV_91F51CFE532954550A490D45%40AdobeOrg",
+      "title": "AMCV_91F51CFE532954550A490D45%40AdobeOrg",
+      "purposes": [
+        "Others"
+      ],
+      "required": false,
+      "default": false,
+      "optOut": false,
+      "onlyOnce": true,
+      "cookies": [
+        "AMCV_91F51CFE532954550A490D45%40AdobeOrg"
+      ]
+    },
+    {
+      "name": "mbox",
+      "title": "mbox",
+      "purposes": [
+        "Marketing"
+      ],
+      "required": false,
+      "default": false,
+      "optOut": false,
+      "onlyOnce": true,
+      "cookies": [
+        "mbox"
+      ]
+    },
+    {
+      "name": "coveo-search-token",
+      "title": "coveo-search-token",
+      "purposes": [
+        "Others"
+      ],
+      "required": false,
+      "default": false,
+      "optOut": false,
+      "onlyOnce": true,
+      "cookies": [
+        "coveo-search-token"
+      ]
+    },
+    {
+      "name": "coveo_visitorId",
+      "title": "coveo_visitorId",
+      "purposes": [
+        "Others"
+      ],
+      "required": false,
+      "default": false,
+      "optOut": false,
+      "onlyOnce": true,
+      "cookies": [
+        "coveo_visitorId"
       ]
     }
   ]
