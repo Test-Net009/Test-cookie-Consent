@@ -17,12 +17,12 @@
 
       --btn-learn-more-text-color: #5249EB;
 
-      --banner-body-text-color: #43436c;
+      --banner-body-text-color: #9575cd;
       --banner-body-background-color: #fafafa;
 
       --overlay-body-text-color: #d32f2f;
       --overlay-body-background-color: #f9f9ff;
-      --overlay-position-left: auto;    
+      --overlay-position-left: 10px;    
       --overlay-position-Top: auto;    
       --overlay-pos: fixed;
       --overlay-max-width-custom: revert-layer;;
