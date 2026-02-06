@@ -22,10 +22,10 @@
 
       --overlay-body-text-color: #2e7d32;
       --overlay-body-background-color: #f9f9ff;
-      --overlay-position-left: 6%;    
+      --overlay-position-left: auto;    
       --overlay-position-Top: auto;    
       --overlay-pos: fixed;
-      --overlay-max-width-custom: 90vw;
+      --overlay-max-width-custom: revert-layer;;
     }
     
 .klaro {
