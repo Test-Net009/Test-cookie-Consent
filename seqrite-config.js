@@ -3,7 +3,7 @@ let userLang = (navigator.language || (navigator).userLanguage || 'en');
 console.log("Browser Language Code: ", userLang);
 window.klaroConfig = {
   "consentManagerId": "6980d641f272561dc2e982c6",
-  "uuid": "bd487017-c4b7-4232-8406-1899cc6d81d4",
+  "uuid": "742d3f7f-f095-4691-83de-20ea1d7eb9bf",
   "domain": "https://starhealth.pre-dataprivacy.com/cmapi",
   "version": 1,
   "elementID": "SEQRITE",
@@ -25,13 +25,13 @@ window.klaroConfig = {
       "acceptSelected": "Accept Selected",
       "ok": "Accept All",
       "consentNotice": {
-        "description": "<p><strong>We respect your privacy - Banner Overlay , Opt in for GT</strong></p><p><strong>We store cookies to enable essential site functionality, as well as marketing, personalization and analytics. By clicking “Accept All”, you consent to our use of cookies. You can change your settings at any time. </strong><a href=\"https://www.google.com/\" title=\"https://www.google.com/\" target=\"_blank\"><strong><u>Cookie Policy.</u></strong></a></p>",
+        "description": "<p><strong>We respect your privacy - Banner Overlay , Opt Out for GT</strong></p><p><strong>We store cookies to enable essential site functionality, as well as marketing, personalization and analytics. By clicking “Accept All”, you consent to our use of cookies. You can change your settings at any time. </strong><a href=\"https://www.google.com/\" title=\"https://www.google.com/\" target=\"_blank\"><strong><u>Cookie Policy.</u></strong></a></p>",
         "learnMore": "Customize",
         "changeDescription": " "
       },
       "save": "Accept",
       "consentModal": {
-        "title": "<p>Customize Consent Preferences - <strong>Banner Overlay , Opt in for GT</strong></p>",
+        "title": "<p>Customize Consent Preferences - <strong>Banner Overlay , Opt Out for GT</strong></p>",
         "description": "<p><em>We use cookies to help you navigate between pages efficiently, storing your preferences, and generally improving your experience of a website. However, we acknowledge your right to privacy and hence you can choose not to allow some types of cookies. Click on the different category headings to find out more and change our default settings. Please note that blocking certain types of cookies might affect your experience of the site.</em></p>",
         "buttons": {
           "save": "Accept",
@@ -71,13 +71,13 @@ window.klaroConfig = {
       "acceptSelected": "Accept Selected",
       "ok": "Accept All",
       "consentNotice": {
-        "description": "<p><strong>We respect your privacy - Banner Overlay , Opt in for GT</strong></p><p><strong>We store cookies to enable essential site functionality, as well as marketing, personalization and analytics. By clicking “Accept All”, you consent to our use of cookies. You can change your settings at any time. </strong><a href=\"https://www.google.com/\" title=\"https://www.google.com/\" target=\"_blank\"><strong><u>Cookie Policy.</u></strong></a></p>",
+        "description": "<p><strong>We respect your privacy - Banner Overlay , Opt Out for GT</strong></p><p><strong>We store cookies to enable essential site functionality, as well as marketing, personalization and analytics. By clicking “Accept All”, you consent to our use of cookies. You can change your settings at any time. </strong><a href=\"https://www.google.com/\" title=\"https://www.google.com/\" target=\"_blank\"><strong><u>Cookie Policy.</u></strong></a></p>",
         "learnMore": "Customize",
         "changeDescription": " "
       },
       "save": "Accept",
       "consentModal": {
-        "title": "<p>Customize Consent Preferences - <strong>Banner Overlay , Opt in for GT</strong></p>",
+        "title": "<p>Customize Consent Preferences - <strong>Banner Overlay , Opt Out for GT</strong></p>",
         "description": "<p><em>We use cookies to help you navigate between pages efficiently, storing your preferences, and generally improving your experience of a website. However, we acknowledge your right to privacy and hence you can choose not to allow some types of cookies. Click on the different category headings to find out more and change our default settings. Please note that blocking certain types of cookies might affect your experience of the site.</em></p>",
         "buttons": {
           "save": "Accept",
@@ -117,13 +117,13 @@ window.klaroConfig = {
       "acceptSelected": "Accept Selected",
       "ok": "Accept All",
       "consentNotice": {
-        "description": "<p><strong>We respect your privacy - Banner Overlay , Opt in for GT</strong></p><p><strong>We store cookies to enable essential site functionality, as well as marketing, personalization and analytics. By clicking “Accept All”, you consent to our use of cookies. You can change your settings at any time. </strong><a href=\"https://www.google.com/\" title=\"https://www.google.com/\" target=\"_blank\"><strong><u>Cookie Policy.</u></strong></a></p>",
+        "description": "<p><strong>We respect your privacy - Banner Overlay , Opt Out for GT</strong></p><p><strong>We store cookies to enable essential site functionality, as well as marketing, personalization and analytics. By clicking “Accept All”, you consent to our use of cookies. You can change your settings at any time. </strong><a href=\"https://www.google.com/\" title=\"https://www.google.com/\" target=\"_blank\"><strong><u>Cookie Policy.</u></strong></a></p>",
         "learnMore": "Customize",
         "changeDescription": " "
       },
       "save": "Accept",
       "consentModal": {
-        "title": "<p>Customize Consent Preferences - <strong>Banner Overlay , Opt in for GT</strong></p>",
+        "title": "<p>Customize Consent Preferences - <strong>Banner Overlay , Opt Out for GT</strong></p>",
         "description": "<p><em>We use cookies to help you navigate between pages efficiently, storing your preferences, and generally improving your experience of a website. However, we acknowledge your right to privacy and hence you can choose not to allow some types of cookies. Click on the different category headings to find out more and change our default settings. Please note that blocking certain types of cookies might affect your experience of the site.</em></p>",
         "buttons": {
           "save": "Accept",
@@ -163,13 +163,13 @@ window.klaroConfig = {
       "acceptSelected": "Accetta selezionati",
       "ok": "Accetta tutto",
       "consentNotice": {
-        "description": "Rispettiamo la tua privacy - Banner Overlay, Accetta GT Memorizziamo i cookie per abilitare le funzionalità essenziali del sito, nonché marketing, personalizzazione e analisi. Facendo clic su &quot;Accetta tutto&quot;, acconsenti all&#39;utilizzo dei cookie. Puoi modificare le tue impostazioni in qualsiasi momento. Informativa sui cookie.",
+        "description": "Rispettiamo la tua privacy - Banner Overlay, Opt Out per GT Memorizziamo i cookie per abilitare le funzionalità essenziali del sito, nonché marketing, personalizzazione e analisi. Facendo clic su &quot;Accetta tutto&quot;, acconsenti all&#39;utilizzo dei cookie. Puoi modificare le tue impostazioni in qualsiasi momento. Informativa sui cookie.",
         "learnMore": "Personalizza",
         "changeDescription": " "
       },
       "save": "Accettare",
       "consentModal": {
-        "title": "Personalizza le preferenze di consenso - Banner Overlay, Accetta GT",
+        "title": "Personalizza le preferenze di consenso - Banner Overlay, Disattivazione per GT",
         "description": "Utilizziamo i cookie per aiutarti a navigare tra le pagine in modo efficiente, memorizzare le tue preferenze e, in generale, migliorare la tua esperienza di navigazione sul sito web. Tuttavia, riconosciamo il tuo diritto alla privacy e pertanto puoi scegliere di non consentire alcuni tipi di cookie. Clicca sulle diverse intestazioni delle categorie per saperne di più e modificare le nostre impostazioni predefinite. Tieni presente che il blocco di alcuni tipi di cookie potrebbe influire sulla tua esperienza di navigazione sul sito.",
         "buttons": {
           "save": "Accettare",
@@ -209,13 +209,13 @@ window.klaroConfig = {
       "acceptSelected": "Ausgewählte akzeptieren",
       "ok": "Alle akzeptieren",
       "consentNotice": {
-        "description": "Wir respektieren Ihre Privatsphäre – Banner-Overlay, Einwilligung für GT. Wir verwenden Cookies, um grundlegende Website-Funktionen sowie Marketing, Personalisierung und Analysen zu ermöglichen. Mit einem Klick auf „Alle akzeptieren“ stimmen Sie der Verwendung von Cookies zu. Sie können Ihre Einstellungen jederzeit ändern. Cookie-Richtlinie.",
+        "description": "Wir respektieren Ihre Privatsphäre – Banner-Overlay, Google Analytics deaktivieren. Wir verwenden Cookies, um grundlegende Website-Funktionen sowie Marketing, Personalisierung und Analysen zu ermöglichen. Mit einem Klick auf „Alle akzeptieren“ stimmen Sie der Verwendung von Cookies zu. Sie können Ihre Einstellungen jederzeit ändern. Cookie-Richtlinie.",
         "learnMore": "Anpassen",
         "changeDescription": " "
       },
       "save": "Akzeptieren",
       "consentModal": {
-        "title": "Einwilligungseinstellungen anpassen – Banner-Overlay, GT-Aktivierung",
+        "title": "Einwilligungseinstellungen anpassen – Banner-Overlay, GT deaktivieren",
         "description": "Wir verwenden Cookies, um Ihnen die Navigation zwischen den Seiten zu erleichtern, Ihre Präferenzen zu speichern und Ihr Website-Erlebnis allgemein zu verbessern. Wir respektieren jedoch Ihr Recht auf Datenschutz und Sie können daher bestimmte Arten von Cookies ablehnen. Klicken Sie auf die verschiedenen Kategorien, um mehr zu erfahren und unsere Standardeinstellungen zu ändern. Bitte beachten Sie, dass das Blockieren bestimmter Cookies Ihre Nutzung der Website beeinträchtigen kann.",
         "buttons": {
           "save": "Akzeptieren",
@@ -255,13 +255,13 @@ window.klaroConfig = {
       "acceptSelected": "Aceptar Seleccionados",
       "ok": "Aceptar todo",
       "consentNotice": {
-        "description": "Respetamos tu privacidad - Banner Overlay, suscríbete a GT. Almacenamos cookies para habilitar la funcionalidad esencial del sitio, así como para marketing, personalización y análisis. Al hacer clic en &quot;Aceptar todo&quot;, aceptas nuestro uso de cookies. Puedes cambiar tu configuración en cualquier momento. Política de cookies.",
+        "description": "Respetamos tu privacidad - Banner Overlay, Exclusión de GT. Almacenamos cookies para habilitar la funcionalidad esencial del sitio, así como para marketing, personalización y análisis. Al hacer clic en &quot;Aceptar todo&quot;, aceptas nuestro uso de cookies. Puedes cambiar tu configuración en cualquier momento. Política de cookies.",
         "learnMore": "Personalizar",
         "changeDescription": " "
       },
       "save": "Aceptar",
       "consentModal": {
-        "title": "Personalizar preferencias de consentimiento: superposición de banner, suscribirse a GT",
+        "title": "Personalizar preferencias de consentimiento: superposición de banner, exclusión voluntaria de GT",
         "description": "Utilizamos cookies para ayudarte a navegar entre páginas de forma eficiente, almacenar tus preferencias y, en general, mejorar tu experiencia en el sitio web. Sin embargo, reconocemos tu derecho a la privacidad y, por lo tanto, puedes optar por no permitir algunos tipos de cookies. Haz clic en los encabezados de las diferentes categorías para obtener más información y cambiar nuestra configuración predeterminada. Ten en cuenta que bloquear ciertos tipos de cookies podría afectar tu experiencia en el sitio.",
         "buttons": {
           "save": "Aceptar",
@@ -318,7 +318,7 @@ window.klaroConfig = {
         "Others"
       ],
       "required": false,
-      "default": true,
+      "default": false,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
@@ -332,7 +332,7 @@ window.klaroConfig = {
         "Analytics"
       ],
       "required": false,
-      "default": true,
+      "default": false,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
