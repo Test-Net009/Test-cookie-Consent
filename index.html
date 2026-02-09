@@ -128,6 +128,56 @@
   </div>
 </div>
   <script src="script.js"></script>
+  <!-- Functional Tracker -->
+<script type="text/plain" data-consent-category="functional">
+  document.cookie =
+    "qh_language_pref=english; path=/; max-age=31536000; SameSite=Lax";
+</script>
+
+<!-- Security Tracker -->
+<script type="text/plain" data-consent-category="security">
+  document.cookie =
+    "qh_security_token=" + Math.random().toString(36).substring(2) +
+    "; path=/; Secure; SameSite=Strict";
+</script>
+
+<!-- Consent Loader -->
+<script>
+  function loadConsentedScripts() {
+    document
+      .querySelectorAll('script[type="text/plain"]')
+      .forEach(script => {
+        const category = script.getAttribute('data-consent-category');
+        if (window.userConsent[category]) {
+          const s = document.createElement("script");
+
+          if (script.getAttribute("data-src")) {
+            s.src = script.getAttribute("data-src");
+            s.async = true;
+          } else {
+            s.text = script.innerHTML;
+          }
+          document.body.appendChild(s);
+        }
+      });
+  }
+</script>
+
+<!-- Example: Consent given on Submit -->
+<script>
+  document.getElementById("submitButton").addEventListener("click", function () {
+    // Example consent selection (adjust as per UI)
+    window.userConsent.functional = true;
+    window.userConsent.marketing = true;
+    window.userConsent.security = true;
+
+    loadConsentedScripts();
+  });
+</script>
+
+<script src="seqrite.js"></script>
+<script src="seqrite-config.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
