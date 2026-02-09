@@ -17,15 +17,15 @@
 
       --btn-learn-more-text-color: #5249EB;
 
-      --banner-body-text-color: #ab47bc;
+      --banner-body-text-color: #29b6f6;
       --banner-body-background-color: #fafafa;
 
-      --overlay-body-text-color: #d84315;
+      --overlay-body-text-color: #2e7d32;
       --overlay-body-background-color: #f9f9ff;
-      --overlay-position-left: auto;    
+      --overlay-position-left: 6%;    
       --overlay-position-Top: auto;    
       --overlay-pos: fixed;
-      --overlay-max-width-custom: revert-layer;;
+      --overlay-max-width-custom: 90vw;
     }
     
 .klaro {
