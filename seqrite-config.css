@@ -1,31 +1,31 @@
 
     :root {
-      --btn-accept-text-color: #f2f2f2;
-      --btn-accept-background-color: #5249EB;
+      --btn-accept-text-color: #fafafa;
+      --btn-accept-background-color: #3949ab;
 
-      --btn-accept-all-text-color: #f2f2f2;
-      --btn-accept-all-background-color: #5249EB;
+      --btn-accept-all-text-color: #fafafa;
+      --btn-accept-all-background-color: #3949ab;
 
       --btn-accept-selected-text-color: #5249EB;
       --btn-accept-selected-background-color: #fff0;
 
-      --btn-ok-text-color: #f2f2f2;
-      --btn-ok-background-color: #5249EB;
+      --btn-ok-text-color: #fafafa;
+      --btn-ok-background-color: #3949ab;
 
       --btn-decline-text-color: #7879A1;
       --btn-decline-background-color: #fff0;
 
       --btn-learn-more-text-color: #5249EB;
 
-      --banner-body-text-color: #ab47bc;
+      --banner-body-text-color: #455a64;
       --banner-body-background-color: #fafafa;
 
-      --overlay-body-text-color: #311b92;
+      --overlay-body-text-color: #546e7a;
       --overlay-body-background-color: #f9f9ff;
-      --overlay-position-left: auto;    
+      --overlay-position-left: 6%;    
       --overlay-position-Top: auto;    
       --overlay-pos: fixed;
-      --overlay-max-width-custom: revert-layer;;
+      --overlay-max-width-custom: 90vw;
     }
     
 .klaro {
