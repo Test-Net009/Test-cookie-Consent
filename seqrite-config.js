@@ -3,7 +3,7 @@ let userLang = (navigator.language || (navigator).userLanguage || 'en');
 console.log("Browser Language Code: ", userLang);
 window.klaroConfig = {
   "consentManagerId": "69097e41f295773bc2d8e5a5",
-  "uuid": "16fcaaec-7580-40cb-926c-e4468e4299e6",
+  "uuid": "49a27fcc-4b6d-4876-b29b-124f8608335b",
   "domain": "https://auto-hs.qhtpl.com/cmapi",
   "version": 1,
   "elementID": "SEQRITE",
@@ -163,14 +163,14 @@ window.klaroConfig = {
       "acceptSelected": "Accetta selezionati",
       "ok": "Accetta tutto",
       "consentNotice": {
-        "description": "<p>Rispettiamo la tua privacy -post config 2 Memorizziamo i cookie per abilitare le funzionalità essenziali del sito, nonché marketing, personalizzazione e analisi. Facendo clic su \"Accetta tutti\", acconsenti all'utilizzo dei cookie. Puoi modificare le tue impostazioni in qualsiasi momento. Informativa sui cookie.</p>",
+        "description": "Rispettiamo la tua privacy -post config 2 Memorizziamo i cookie per abilitare le funzionalità essenziali del sito, nonché marketing, personalizzazione e analisi. Facendo clic su &quot;Accetta tutti&quot;, acconsenti all&#39;utilizzo dei cookie. Puoi modificare le tue impostazioni in qualsiasi momento. Informativa sui cookie.",
         "learnMore": "Personalizza",
         "changeDescription": " "
       },
       "save": "Accettare",
       "consentModal": {
-        "title": "<p>Personalizza le preferenze di consenso post onfig</p>",
-        "description": "<p>Utilizziamo i cookie per aiutarti a navigare tra le pagine in modo efficiente, memorizzare le tue preferenze e, in generale, migliorare la tua esperienza di navigazione sul sito web. Tuttavia, riconosciamo il tuo diritto alla privacy e pertanto puoi scegliere di non consentire alcuni tipi di cookie. Clicca sulle diverse intestazioni delle categorie per saperne di più e modificare le nostre impostazioni predefinite. Tieni presente che il blocco di alcuni tipi di cookie potrebbe influire sulla tua esperienza di navigazione sul sito.</p>",
+        "title": "Personalizza le preferenze di consenso post onfig",
+        "description": "Utilizziamo i cookie per aiutarti a navigare tra le pagine in modo efficiente, memorizzare le tue preferenze e, in generale, migliorare la tua esperienza di navigazione sul sito web. Tuttavia, riconosciamo il tuo diritto alla privacy e pertanto puoi scegliere di non consentire alcuni tipi di cookie. Clicca sulle diverse intestazioni delle categorie per saperne di più e modificare le nostre impostazioni predefinite. Tieni presente che il blocco di alcuni tipi di cookie potrebbe influire sulla tua esperienza di navigazione sul sito.",
         "buttons": {
           "save": "Accettare",
           "acceptAll": "Accetta tutto",
@@ -318,7 +318,7 @@ window.klaroConfig = {
         "Others"
       ],
       "required": false,
-      "default": false,
+      "default": true,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
@@ -332,7 +332,7 @@ window.klaroConfig = {
         "Analytics"
       ],
       "required": false,
-      "default": false,
+      "default": true,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
