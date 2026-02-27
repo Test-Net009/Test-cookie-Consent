@@ -1,407 +1,456 @@
+const {
+  consentFormId,
+  apiUrl,
+  submitApiUrl,
+  showButtons,
+  showLanguageDropdown,
+  enableCheckboxes,
+  enableRadioButtons,
+  enableDropdowns
+} = window.consentWidgetConfig;
 
-document.addEventListener("DOMContentLoaded", function () {
-  const branding = {"id":"688907cac1571b72b5ff0074","name":"Test","description":"","logo":"https://sdpqa-hs.qhtpl.com/cpm-api/upload/v1/fileDownloads?fileUrl=hdfs://sdp-hdfs-namenode.hdfs.svc.cluster.local:9820/jars/1753812728744_Logo.jpg","companyName":"Quick Heal","logoAlignment":"center","headerFontFamily":"Calibri","headerFontSize":"Large","headerFontColor":"#f44336","headerFontStyle":null,"primaryButtonLabel":"Submit","primaryFontSize":null,"primaryFontStyle":null,"primaryFontColor":"#7cb342","primaryButtonColor":null,"secondaryButtonLabel":"Cancel","secondaryFontSize":null,"secondaryFontStyle":null,"secondaryFontColor":"#f44336","footerAlignment":"center","status":"PUBLISHED","createdOn":1753810890971,"assignTo":0,"brandingTranslation":[{"language":"English","languageCode":"en","companyName":"Quick Heal","primaryButtonLabel":"Submit","secondaryButtonLabel":"Cancel"},{"language":"Marathi","languageCode":"mr","companyName":"जलद उपचार","primaryButtonLabel":"सबमिट करा","secondaryButtonLabel":"रद्द करा"},{"language":"Hindi","languageCode":"hi","companyName":"शीघ्र उपचार","primaryButtonLabel":"जमा करना","secondaryButtonLabel":"रद्द करना"}],"primaryButtonbgColor":"#fafafa","primaryButtonborderColor":"#4caf50","secondaryButtonBgColor":"#fafafa","secondaryButtonBorderColor":"#f44336"};
-  const brandingTranslation = branding.brandingTranslation || [];
-  const permissions = [{"id":"68891013c1571b72b5ff00a1","text":"<p>1) Gender:</p>","templateId":"68890afbc1571b72b5ff007e","purposeId":"688905c9c1571b72b5ff0072","defineOptions":true,"elementType":"RADIOBUTTON","mandatory":true,"allowMultipleSelection":false,"options":["Male","Female","Other"],"permissionTranslation":[{"language":"English","languageCode":"en","text":"<p>1) Gender:</p>","options":["Male","Female","Other"]},{"language":"Marathi","languageCode":"mr","text":"<p>१) लिंग:</p>","options":["पुरुष","स्त्री","इतर"]},{"language":"Hindi","languageCode":"hi","text":"<p>1) लिंग:</p>","options":["पुरुष","महिला","अन्य"]}]},{"id":"68891013c1571b72b5ff00a2","text":"<p>2) Marital Status:</p>","templateId":"68890afbc1571b72b5ff007e","purposeId":"688905c9c1571b72b5ff0072","defineOptions":true,"elementType":"CHECKBOX","mandatory":false,"allowMultipleSelection":false,"options":["Single","Married","Divorced","Widowed","Seperated","Other"],"permissionTranslation":[{"language":"English","languageCode":"en","text":"<p>2) Marital Status:</p>","options":["Single","Married","Divorced","Widowed","Seperated","Other"]},{"language":"Marathi","languageCode":"mr","text":"<p>२) वैवाहिक स्थिती:</p>","options":["सिंगल","विवाहित","घटस्फोटित","विधवा","वेगळे केले","इतर"]},{"language":"Hindi","languageCode":"hi","text":"<p>2) वैवाहिक स्थिति:</p>","options":["अकेला","विवाहित","तलाकशुदा","विधवा","विभाजित","अन्य"]}]},{"id":"68891013c1571b72b5ff00a3","text":"<p>3) Is the patient under 18 years old?</p>","templateId":"68890afbc1571b72b5ff007e","purposeId":"688905c9c1571b72b5ff0072","defineOptions":true,"elementType":"DROPDOWN","mandatory":false,"allowMultipleSelection":false,"options":["Yes","No"],"permissionTranslation":[{"language":"English","languageCode":"en","text":"<p>3) Is the patient under 18 years old?</p>","options":["Yes","No"]},{"language":"Marathi","languageCode":"mr","text":"<p>३) रुग्ण १८ वर्षांपेक्षा कमी वयाचा आहे का?</p>","options":["होय","नाही"]},{"language":"Hindi","languageCode":"hi","text":"<p>3) क्या मरीज की आयु 18 वर्ष से कम है?</p>","options":["हाँ","नहीं"]}]}];
-  const languageDropdown = document.getElementById("languageDropdown");
+let createConsentRequestList = [];
+let dataPrincipalIdList = [];
+let clickEvent = function () {};
 
-  function updateTranslations(lang) {
-    // Update branding
-    const brandTrans = brandingTranslation.find(bt => bt.language.toLowerCase() === lang);
-    if (brandTrans) {
-      document.querySelector('[data-translate="companyName"]').textContent = brandTrans.companyName || branding.companyName;
-      document.querySelector('[data-translate="submitBtn"]').textContent = brandTrans.primaryButtonLabel || branding.primaryButtonLabel;
-      document.querySelector('[data-translate="cancelBtn"]').textContent = brandTrans.secondaryButtonLabel || branding.secondaryButtonLabel;
+async function fetchConsentData() {
+  try {
+    const res = await fetch(apiUrl, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ consentFormId })
+    });
+    const result = await res.json();
+    const data = result?.[0] || result?.response?.[0];
+
+    if (!data) {
+      document.getElementById("consent-root").innerText = "Consent data not found.";
+      return;
     }
 
-    // Clear and re-render permissions
-    const container = document.getElementById("permissions");
-    container.innerHTML = "";
-
-    permissions.forEach(permission => {
-  const translation = permission.permissionTranslation.find(pt => pt.language.toLowerCase() === lang);
-  const rawText = translation?.text || permission.text;
-  const text = rawText.trim(); 
-
-  const options = translation?.options || permission.options || [];
-
-  const block = document.createElement('div');
-  block.className = 'permission-block';
-
-  const question = document.createElement('p');
-  question.setAttribute('data-translate-text', permission.id);
-
-     if (permission.mandatory) {
-        // question.innerHTML = `${text} <span class="mandatory">*</span>`;
-        question.innerHTML = `${decodeHtmlEntities(text)} <span class="mandatory">*</span>`;
-
-      }  else {
-        // question.innerHTML = text;
-        question.innerHTML = decodeHtmlEntities(text);
+    renderConsent(data, data.languages?.[0]?.toLowerCase() || "en");
+  } catch (e) {
+    document.getElementById("consent-root").innerText = "Error loading consent.";
   }
+}
 
-  block.appendChild(question);
-
-      if (permission.elementType === 'CHECKBOX') {
-        options.forEach(option => {
-          const label = document.createElement('label');
-          label.className = 'checkbox-label';
-          label.innerHTML = `<input type="checkbox" name="${permission.id}" value="${option}" data-translate-option="${permission.id}"> ${option}`;
-          block.appendChild(label);
-        });
-      } else if (permission.elementType === 'RADIOBUTTON') {
-        options.forEach(option => {
-          const label = document.createElement('label');
-          label.className = 'radio-label';
-          label.innerHTML = `<input type="radio" name="${permission.id}" value="${option}" data-translate-option="${permission.id}"> ${option}`;
-          block.appendChild(label);
-        });
-      } else if (permission.elementType === 'DROPDOWN') {
-
-        if (permission.allowMultipleSelection) {
-          const wrapper = document.createElement('div');
-          wrapper.className = 'custom-multiselect-wrapper';
-        
-          const displayBox = document.createElement('div');
-          displayBox.className = 'custom-multiselect-display';
-        
-          // Create span to hold the selected text
-          const displayText = document.createElement('span');
-          displayText.className = 'custom-multiselect-text';
-          displayText.textContent = 'Select options';
-        
-          displayBox.appendChild(displayText);
-          wrapper.appendChild(displayBox);
-        
-          const optionsBox = document.createElement('div');
-          optionsBox.className = 'custom-options-box';
-        
-          options.forEach(opt => {
-            const label = document.createElement('label');
-            label.className = 'custom-option';
-        
-            const checkbox = document.createElement('input');
-            checkbox.type = 'checkbox';
-            checkbox.value = opt;
-            checkbox.name = permission.id;
-        
-            checkbox.addEventListener('change', () => {
-              const selected = Array.from(wrapper.querySelectorAll('input[type="checkbox"]:checked'))
-                .map(cb => cb.value);
-              const selectedText = selected.join(', ');
-              displayText.textContent = selected.length ? selectedText : 'Select options';
-              displayBox.title = selected.length ? selectedText : '';
-            });
-        
-            label.appendChild(checkbox);
-            label.append(opt);
-            optionsBox.appendChild(label);
-          });
-        
-          wrapper.appendChild(optionsBox);
-        
-          displayBox.addEventListener('click', () => {
-            optionsBox.classList.toggle('show');
-            displayBox.classList.toggle('open');
-          });
-        
-          document.addEventListener('click', (e) => {
-            if (!wrapper.contains(e.target)) {
-              optionsBox.classList.remove('show');
-              displayBox.classList.remove('open');
-            }
-          });
-        
-          block.appendChild(wrapper);
-        }else{
-           const select = document.createElement('select');
-        select.className = 'dropdown';
-        select.name = permission.id;
-        select.setAttribute('data-translate-dropdown', permission.id);
-        options.forEach(opt => {
-          const optEl = document.createElement('option');
-          optEl.value = opt;
-          optEl.textContent = opt;
-          select.appendChild(optEl);
-        });
-        block.appendChild(select);
-        }
-       
-      }
-
-      container.appendChild(block);
+function setDataPrincipalIdList() {
+  const { dataPrincipalId } = window.consentWidgetConfig || {};
+  if (dataPrincipalId && dataPrincipalId.key && dataPrincipalId.value) {
+    dataPrincipalIdList.push({
+      key: dataPrincipalId.key,
+      value: dataPrincipalId.value,
     });
   }
-
-  languageDropdown.addEventListener("change", function () {
-    updateTranslations(this.value.toLowerCase());
-  });
-
-  updateTranslations("english");
-
-  let createConsentRequestList = [];
-  let dataPrincipleIdList = [];
-
-  // function setDataPrincipleIdList() {
-  //   dataPrincipleIdList.push({ key: 'email', value: 'abc@c@emai.com' });
-  // }
-
-  function setDataPrincipleIdList() {
-  // const email =  document.getElementById('inputEmail').value;
-  const email =  'sprint1@yopmail.com';
-  let obj = {
-    key: 'email',
-    value: email
-  };
-  dataPrincipleIdList.push(obj);
 }
 
-function decodeHtmlEntities(html) {
-  const txt = document.createElement("textarea");
-  txt.innerHTML = html;
-  return txt.value;
-}
+function showToast(message, type) {
+  const toast = document.getElementById("toast");
+  if (!toast) return;
 
-  function sendConsent() {
-  const errorDiv = document.getElementById('error-message');
- 
-  fetch('https://sdpqa-hs.qhtpl.com/cpm-api/consent/v1/createOrUpdateConsent', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ createConsentRequestDtoWrapper: createConsentRequestList })
-  }).then(res => res.json())
-    .then(data => {
-      if (data.response) {
-        // Success case (optional: you can redirect or show success message here)
-        console.log('API Response:', data);
-    if (data.statusCode === 200) {
-      showToast('Consent saved successfully!', 'success');
-    } else {
-      showToast(data.statusMessage || 'Something went wrong.', 'error');
-    }
-      } else {
-        // API returned error
-        // errorDiv.textContent = data.message || "Something went wrong. Please try again.";
-      }
-    })
-    .catch(err => {
-      // Network error or other failure
-         console.error(err);
-    showToast('Failed to submit. Please check your network connection.', 'error');
-    });
-}
-
-    function showToast(message, type) {
-  const toast = document.getElementById('toast');
   toast.textContent = message;
-  toast.style.backgroundColor = type === 'success' ? '#4CAF50' : '#f44336'; // green for success, red for error
-  toast.style.visibility = 'visible';
-  toast.style.opacity = '1';
+  toast.style.backgroundColor =
+    type === "success" ? "#4CAF50" : "#f44336";
+
+  toast.style.visibility = "visible";
+  toast.classList.remove("show"); 
+  void toast.offsetHeight;        
+  toast.classList.add("show");
+
   setTimeout(() => {
-    toast.style.visibility = 'hidden';
-    toast.style.opacity = '0';
-  }, 3000); // hide after 3 seconds
+    toast.classList.remove("show");
+    toast.style.visibility = "hidden";
+  }, 3000);
 }
 
+function getFormValues(selectedLang) {
+  setDataPrincipalIdList();
+  createConsentRequestList = [];
 
-  // function getFormValues() {
-  //   setDataPrincipleIdList();
-  //   createConsentRequestList = [];
-  //   const container = document.querySelector(".consent");
-  //   const elements = container.querySelectorAll('[name]');
-  //   elements.forEach(el => {
-  //     const name = el.name;
-  //     const value = el.type === "checkbox" || el.type === "radio"
-  //       ? el.checked ? el.value : null
-  //       : el.value;
+  const consentDiv = document.getElementById("consent-root");
+  const checkboxes = consentDiv.querySelectorAll('input[type="checkbox"]:checked');
+  const radioButtons = consentDiv.querySelectorAll('input[type="radio"]:checked');
+  const dropdowns = consentDiv.querySelectorAll("select");
 
-  //     if (value !== null && value !== undefined) {
-  //       let request = createConsentRequestList.find(req => req.permissionId === name);
-  //       if (!request) {
-  //         request = {
-  //           dataPrincipalIdList: dataPrincipleIdList,
-  //           permissionId: name,
-  //           consentReceivedType: "FORMS",
-  //           optedFor: []
-  //         };
-  //         createConsentRequestList.push(request);
-  //       }
-  //       if (!request.optedFor.includes(value)) {
-  //         request.optedFor.push(value);
-  //       }
-  //     }
-  //   });
-  //   console.log('Collected Form Data:', createConsentRequestList);
-  //   sendConsent();
-  // }
+  const pushConsent = (permissionId, label) => {
+    let existing = createConsentRequestList.find(req => req.permissionId === permissionId);
+    if (existing) {
+      existing.optedFor.push(label);
+    } else {
+      createConsentRequestList.push({
+        dataPrincipalIdList,
+        permissionId,
+        consentReceivedType: "FORMS",
+        optedFor: [label],
+        consentLanguage: selectedLang
+      });
+    }
+  };
 
-  function getFormValues() {
-  setDataPrincipleIdList();
- 
-  let consentDiv = document.querySelector('#permissions');
-  let checkboxes = consentDiv.querySelectorAll('input[type="checkbox"]:checked');
-  let radioButtons = consentDiv.querySelectorAll('input[type="radio"]:checked');
-  let dropdowns = consentDiv.querySelectorAll('select');
- 
   checkboxes.forEach(checkbox => {
-    let label = checkbox.closest('label') ? checkbox.closest('label').innerText : checkbox.value;
-    let permissionId = checkbox.name;
-    let permissionFound = false;
-    let obj = createConsentRequestList.find((o, i) => {
-      if (o.permissionId === permissionId) {
-        createConsentRequestList[i].optedFor.push(label);
-        permissionFound = true;
-        return true;
-      }
-    });
- 
-    if (!permissionFound) {
-      let request = {
-        dataPrincipalIdList: dataPrincipleIdList,
-        permissionId: permissionId,
-        consentReceivedType: 'FORMS',
-        optedFor: [label],
-        consentLanguage : languageDropdown.value.toLowerCase()
-      };
-      createConsentRequestList.push(request);
-    }
+    if (!enableCheckboxes) return;
+    const label = checkbox.closest("label") ? checkbox.closest("label").textContent.trim() : checkbox.value;
+    pushConsent(checkbox.name, label);
   });
- 
-  radioButtons.forEach(radioButton => {
-    let label = radioButton.closest('label') ? radioButton.closest('label').innerText : radioButton.value;
-    let permissionId = radioButton.name;
-    let permissionFound = false;
-    let obj = createConsentRequestList.find((o, i) => {
-      if (o.permissionId === permissionId) {
-        createConsentRequestList[i].optedFor.push(label);
-        permissionFound = true;
-        return true;
-      }
-    });
- 
-    if (!permissionFound) {
-      let request = {
-        dataPrincipalIdList: dataPrincipleIdList,
-        permissionId: permissionId,
-        consentReceivedType: 'FORMS',
-        optedFor: [label],
-        consentLanguage : languageDropdown.value.toLowerCase()
-      };
-      createConsentRequestList.push(request);
-    }
+
+  radioButtons.forEach(radio => {
+    if (!enableRadioButtons) return;
+    const label = radio.closest("label") ? radio.closest("label").textContent.trim() : radio.value;
+    pushConsent(radio.name, label);
   });
- 
-  dropdowns.forEach(dropdown => {
-    let selectedOption = dropdown.options[dropdown.selectedIndex];
-    let permissionId = dropdown.name;
-    let permissionFound = false;
-    let obj = createConsentRequestList.find((o, i) => {
-      if (o.permissionId === permissionId) {
-        createConsentRequestList[i].optedFor.push(selectedOption.innerText);
-        permissionFound = true;
-        return true;
-      }
-    });
- 
-    if (!permissionFound) {
-      let request = {
-        dataPrincipalIdList: dataPrincipleIdList,
-        permissionId: permissionId,
-        consentReceivedType: 'FORMS',
-        optedFor: [selectedOption.innerText],
-        consentLanguage : languageDropdown.value.toLowerCase()
-      };
-      createConsentRequestList.push(request);
-    }
+
+  dropdowns.forEach(drop => {
+    if (!enableDropdowns) return;
+    const selected = drop.options[drop.selectedIndex];
+    pushConsent(drop.name, selected.textContent);
   });
- 
-  const consentElements = document.querySelectorAll('.consent [name]');
- 
-  consentElements.forEach(element => {
-    const name = element.getAttribute('name');
-    let permissionFound = false;
-    let obj = createConsentRequestList.find((o, i) => {
-      if (o.permissionId === name) {
-        permissionFound = true;
-        return true;
-      }
-    });
- 
-    if (!permissionFound) {
-      let request = {
-        dataPrincipalIdList: dataPrincipleIdList,
-        permissionId: name,
-        consentReceivedType: 'FORMS',
+
+  document.querySelectorAll("#consent-root [name]").forEach(el => {
+    if (!createConsentRequestList.some(req => req.permissionId === el.name)) {
+      createConsentRequestList.push({
+        dataPrincipalIdList,
+        permissionId: el.name,
+        consentReceivedType: "FORMS",
         optedFor: [],
-        consentLanguage : languageDropdown.value.toLowerCase()
-      };
-      createConsentRequestList.push(request);
+        consentLanguage: selectedLang
+      });
     }
   });
- 
+
   console.log("Final Consent Payload:", createConsentRequestList);
   sendConsent();
 }
 
- document.querySelector(".submit").addEventListener("click", function (e) {
-  e.preventDefault();
-  
-  // Clear previous errors
-  document.querySelectorAll('.error-message').forEach(el => el.remove());
-  document.querySelectorAll('.error-border').forEach(el => el.classList.remove('error-border'));
+async function sendConsent() {
+  setFormDisabled(true);
+  try {
+    const res = await fetch(submitApiUrl, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ createConsentRequestDtoWrapper: createConsentRequestList })
+    });
+    const data = await res.json();
 
-  const container = document.querySelector(".consent");
-  const elements = container.querySelectorAll('[name]');
-  
-  let hasError = false;
-  let permissionTracker = {};
-
-  elements.forEach(el => {
-    const name = el.name;
-    const value = (el.type === "checkbox" || el.type === "radio")
-      ? el.checked ? el.value : null
-      : el.value.trim();
-
-    if (!permissionTracker[name]) {
-      permissionTracker[name] = [];
+    if (data.response && data.statusCode === 200) {
+      showToast("Consent saved successfully!", "success");
+    } else {
+      showToast(data.statusMessage || "Something went wrong.", "error");
+    	setFormDisabled(false);
     }
-    if (value !== null && value !== undefined) {
-      permissionTracker[name].push(value);
+    setTimeout(() => window.location.reload(), 1500);
+  } catch (err) {
+    console.error(err);
+    showToast("Failed to submit. Please check your network connection.", "error");
+    setTimeout(() => window.location.reload(), 1500);
+    setFormDisabled(false);
+  }
+}
+
+function setFormDisabled(disabled = true) {
+  const root = document.getElementById("consent-root");
+  const inputs = root.querySelectorAll("input, select, textarea, button");
+  inputs.forEach(input => input.disabled = disabled);
+
+  const submitBtn = document.getElementById("submitBtn");
+  const cancelBtn = document.getElementById("cancelBtn");
+  
+  if (disabled) {
+    submitBtn.classList.add("loading");
+  } else {
+    submitBtn.classList.remove("loading");
+  }
+}
+
+function renderConsent(data, selectedLang) {
+  const root = document.getElementById("consent-root");
+  root.innerHTML = "";
+  const branding = data.branding || {};
+
+  let permissions = [];
+  if (Array.isArray(data.consentForm)) {
+    permissions = data.consentForm.flatMap(cf => cf.permissions || []);
+  } else if (Array.isArray(data.permissions)) {
+    permissions = data.permissions;
+  }
+
+  const logoArea = document.getElementById("logo-area");
+  logoArea.innerHTML = "";
+  logoArea.classList.remove("left", "center", "right");
+
+  const align = (branding.logoAlignment || "left").toLowerCase();
+  logoArea.classList.add(["left", "center", "right"].includes(align) ? align : "left");
+
+  const wrapper = document.createElement("div");
+  wrapper.style.display = "flex";
+
+  if (align === "center") {
+    wrapper.style.flexDirection = "column";
+  } else if (align === "right") {
+    wrapper.style.flexDirection = "row-reverse"; 
+  } else {
+    wrapper.style.flexDirection = "row";
+  }
+
+  wrapper.style.alignItems = "center";
+  wrapper.style.gap = "5px";
+
+
+  if (branding.logo) {
+    const img = document.createElement("img");
+    img.src = branding.logo;
+    img.alt = branding.companyName || "Logo";
+    img.className = "branding-logo";
+    img.onerror = () => img.classList.add("hidden");
+    wrapper.appendChild(img);
+  }
+
+  if (branding.companyName) {
+    const nameDiv = document.createElement("div");
+    nameDiv.innerText = branding.companyName;
+    nameDiv.classList.add("company-name");
+
+    if (branding.headerFontColor) nameDiv.style.color = branding.headerFontColor;
+    if (branding.headerFontFamily) nameDiv.style.fontFamily = branding.headerFontFamily;
+    if (branding.headerFontSize) {
+      const sizeMap = { small: "14px", medium: "16px", large: "20px" };
+      const sz = String(branding.headerFontSize).toLowerCase();
+      nameDiv.style.fontSize = sizeMap[sz] || branding.headerFontSize;
     }
-  });
+    if (branding.headerFontStyle) {
+      const styleLower = String(branding.headerFontStyle).toLowerCase();
+      if (styleLower.includes("italic")) nameDiv.style.fontStyle = "italic";
+      if (styleLower.includes("bold")) nameDiv.style.fontWeight = "bold";
+      if (styleLower.includes("normal")) {
+        nameDiv.style.fontStyle = "normal";
+        nameDiv.style.fontWeight = "400";
+      }
+    }
 
-  // Validate mandatory permissions
-  permissions.forEach(permission => {
-    if (permission.mandatory) {
-      const selectedValues = permissionTracker[permission.id] || [];
-      if (selectedValues.length === 0) {
-        hasError = true;
+    if (branding.companySubtitle) {
+      const subEl = document.createElement("div");
+      subEl.className = "company-subtitle";
+      subEl.innerText = branding.companySubtitle;
+      if (branding.subtitleFontSize) subEl.style.fontSize = branding.subtitleFontSize;
+      if (branding.subtitleFontColor) subEl.style.color = branding.subtitleFontColor;
+      nameDiv.appendChild(subEl);
+    }
 
-        // Find the related permission block
-        const block = Array.from(document.querySelectorAll(".permission-block"))
-          .find(div => {
-            const p = div.querySelector('p[data-translate-text]');
-            return p && p.getAttribute('data-translate-text') === permission.id;
-          });
+    wrapper.appendChild(nameDiv);
+  }
 
-        if (block) {
-          // Add error message
-          const error = document.createElement('div');
-          error.className = 'error-message';
-          error.textContent = 'This field is required.';
-          block.appendChild(error);
+  logoArea.appendChild(wrapper);
 
-          // Highlight options
-          const inputs = block.querySelectorAll('input, select');
-          inputs.forEach(input => input.classList.add('error-border'));
+  const langWrapper = document.getElementById("language-wrapper");
+  const langSelect = document.getElementById("langSelect");
+  if (showLanguageDropdown && data.languages?.length >= 1) {
+    langWrapper.style.display = "block";
+    langSelect.innerHTML = "";
+    data.languages.forEach(lang => {
+      const opt = document.createElement("option");
+      opt.value = lang.toLowerCase();
+      opt.text = lang;
+      if (opt.value === selectedLang) opt.selected = true;
+      langSelect.appendChild(opt);
+    });
+    langSelect.onchange = () => renderConsent(data, langSelect.value);
+  } else {
+    langWrapper.style.display = "none";
+  }
+
+  if (!permissions.length) {
+    root.innerHTML = "<p>No consent items found.</p>";
+    return;
+  }
+  permissions.forEach(perm => {
+    const block = document.createElement("div");
+    block.className = "permission-block";
+
+    const tr = perm.permissionTranslation?.find(pt => pt.language.toLowerCase() === selectedLang);
+    const htmlString = (tr?.text || perm.text || "").trim();
+
+    const tempDiv = document.createElement("div");
+    tempDiv.innerHTML = htmlString;
+
+    const children = Array.from(tempDiv.children);
+
+      if (children.length > 0) {
+        children.forEach((child, index) => {
+          const el = document.createElement(child.tagName.toLowerCase());
+          el.innerHTML = child.innerHTML;
+
+          if (child.getAttribute("style")) {
+            el.setAttribute("style", child.getAttribute("style"));
+          }
+
+          if (
+            /^h[1-6]$/i.test(child.tagName) &&
+            !/font-weight/i.test(child.getAttribute("style") || "")
+          ) {
+            el.style.fontWeight = "normal";
+          }
+
+          el.style.display = "block";
+          el.style.margin = "2px 0";
+          el.style.lineHeight = "1.4";
+          el.setAttribute("data-translate-text", perm.id);
+
+          if (perm.mandatory && index === children.length - 1) {
+            el.innerHTML += ' <span class="mandatory">*</span>';
+          }
+
+          block.appendChild(el);
+        });
+      } else {
+        const p = document.createElement("p");
+        p.textContent = htmlString.replace(/<[^>]*>/g, "").trim();
+        p.setAttribute("data-translate-text", perm.id);
+
+        if (perm.mandatory) {
+          p.innerHTML += ' <span class="mandatory">*</span>';
         }
+
+        block.appendChild(p);
+      }
+
+      const options = tr?.options || perm.options || [];
+
+      if (perm.elementType === 'CHECKBOX' && enableCheckboxes) {
+        options.forEach(opt => {
+          const label = document.createElement("label");
+          const input = document.createElement("input");
+          input.type = "checkbox";
+          input.name = perm.id;
+          input.value = opt;
+          label.appendChild(input);
+          label.append(" " + opt);
+          block.appendChild(label);
+        });
+      }
+
+      if (perm.elementType === 'RADIOBUTTON' && enableRadioButtons) {
+        options.forEach(opt => {
+          const label = document.createElement("label");
+          const input = document.createElement("input");
+          input.type = "radio";
+          input.name = perm.id;
+          input.value = opt;
+          label.appendChild(input);
+          label.append(" " + opt);
+          block.appendChild(label);
+        });
+      }
+
+      if (perm.elementType === 'DROPDOWN' && enableDropdowns) {
+        const select = document.createElement("select");
+        select.name = perm.id;
+        options.forEach(opt => {
+          const option = document.createElement("option");
+          option.value = opt;
+          option.text = opt;
+          select.appendChild(option);
+        });
+        block.appendChild(select);
+      }
+
+      root.appendChild(block);
+    });
+
+
+
+  const cancelBtn = document.getElementById("cancelBtn");
+  const submitBtn = document.getElementById("submitBtn");
+  const selectedLanguage = selectedLang?.toLowerCase();
+
+  const translatedBranding = branding.brandingTranslation?.find(
+    b => b.language?.toLowerCase() === selectedLanguage
+  );
+
+  const submitLabel =
+    translatedBranding?.primaryButtonLabel || branding.primaryButtonLabel || "Submit";
+  const cancelLabel =
+    translatedBranding?.secondaryButtonLabel || branding.secondaryButtonLabel || "Cancel";
+
+  if (showButtons) {
+    cancelBtn.style.display = "block";
+    cancelBtn.innerText = cancelLabel;
+
+    submitBtn.style.display = "block";
+    submitBtn.innerText = submitLabel;
+
+    if (branding.primaryButtonbgColor) submitBtn.style.backgroundColor = branding.primaryButtonbgColor;
+    if (branding.primaryFontColor) submitBtn.style.color = branding.primaryFontColor;
+    if (branding.primaryButtonborderColor) submitBtn.style.borderColor = branding.primaryButtonborderColor;
+    if (branding.primaryFontSize) submitBtn.style.fontSize = branding.primaryFontSize;
+
+    if (branding.secondaryButtonBgColor) cancelBtn.style.backgroundColor = branding.secondaryButtonBgColor;
+    if (branding.secondaryFontColor) cancelBtn.style.color = branding.secondaryFontColor;
+    if (branding.secondaryButtonBorderColor) cancelBtn.style.borderColor = branding.secondaryButtonBorderColor;
+    if (branding.secondaryFontSize) cancelBtn.style.fontSize = branding.secondaryFontSize;
+
+    const buttonGroup = document.getElementById("button-group");
+    buttonGroup.classList.remove("left", "center", "right");
+    const footerAlign = branding.footerAlignment || "left";
+    buttonGroup.classList.add(footerAlign.toLowerCase());
+  } else {
+    cancelBtn.style.display = "none";
+    submitBtn.style.display = "none";
+  }
+
+  submitBtn.removeEventListener("click", clickEvent);
+
+clickEvent = e => {
+  e.preventDefault();
+
+  document.querySelectorAll(".error-message").forEach(el => el.remove());
+  document.querySelectorAll(".error-border").forEach(el => el.classList.remove("error-border"));
+
+  let isValid = true;
+
+  permissions.forEach(perm => {
+    if (!perm.mandatory) return;
+
+    const name = perm.id;
+    let hasValue = false;
+
+    if (perm.elementType === "CHECKBOX" || perm.elementType === "RADIOBUTTON") {
+      const inputs = document.querySelectorAll(`input[name="${name}"]:checked`);
+      if (inputs.length > 0) hasValue = true;
+    }
+
+    if (perm.elementType === "DROPDOWN") {
+      const select = document.querySelector(`select[name="${name}"]`);
+      if (select && select.value) hasValue = true;
+    }
+
+    if (!hasValue) {
+      isValid = false;
+
+      const block = Array.from(document.querySelectorAll(".permission-block"))
+        .find(div => div.querySelector(`[data-translate-text="${name}"]`));
+
+      if (block) {
+        const error = document.createElement("div");
+        error.className = "error-message";
+        error.textContent = "This field is required.";
+        block.appendChild(error);
+
+        block.querySelectorAll("input, select").forEach(el =>
+          el.classList.add("error-border")
+        );
       }
     }
   });
 
-  if (!hasError) {
-    getFormValues();  // Only submit if no error
+  if (!isValid) {
+    showToast("Please fill all mandatory fields", "error");
+    return;
   }
-});
 
-});
+  getFormValues(selectedLang);
+};
+
+submitBtn.addEventListener("click", clickEvent);
+
+}
+
+fetchConsentData();
