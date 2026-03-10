@@ -3,7 +3,7 @@ let userLang = (navigator.language || (navigator).userLanguage || 'en');
 console.log("Browser Language Code: ", userLang);
 window.klaroConfig = {
   "consentManagerId": "69b0332ee29d9c0015c08cf8",
-  "uuid": "65372224-ce29-417f-803d-91d50840b59e",
+  "uuid": "664d5e99-0acc-4661-a7c7-7b48b28d0678",
   "domain": "https://auto-hs.qhtpl.com/cmapi",
   "version": 1,
   "elementID": "SEQRITE",
@@ -1342,7 +1342,7 @@ window.klaroConfig = {
         "Marketing"
       ],
       "required": false,
-      "default": true,
+      "default": false,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
@@ -1356,7 +1356,7 @@ window.klaroConfig = {
         "Others"
       ],
       "required": false,
-      "default": true,
+      "default": false,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
@@ -1370,7 +1370,7 @@ window.klaroConfig = {
         "Others"
       ],
       "required": false,
-      "default": true,
+      "default": false,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
@@ -1384,7 +1384,7 @@ window.klaroConfig = {
         "Marketing"
       ],
       "required": false,
-      "default": true,
+      "default": false,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
@@ -1398,7 +1398,7 @@ window.klaroConfig = {
         "Marketing"
       ],
       "required": false,
-      "default": true,
+      "default": false,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
@@ -1412,7 +1412,7 @@ window.klaroConfig = {
         "Analytics"
       ],
       "required": false,
-      "default": true,
+      "default": false,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
@@ -1426,7 +1426,7 @@ window.klaroConfig = {
         "Marketing"
       ],
       "required": false,
-      "default": true,
+      "default": false,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
@@ -1440,7 +1440,7 @@ window.klaroConfig = {
         "Marketing"
       ],
       "required": false,
-      "default": true,
+      "default": false,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
@@ -1454,7 +1454,7 @@ window.klaroConfig = {
         "Marketing"
       ],
       "required": false,
-      "default": true,
+      "default": false,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
@@ -1468,7 +1468,7 @@ window.klaroConfig = {
         "Functional"
       ],
       "required": false,
-      "default": true,
+      "default": false,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
@@ -1482,7 +1482,7 @@ window.klaroConfig = {
         "Marketing"
       ],
       "required": false,
-      "default": true,
+      "default": false,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
