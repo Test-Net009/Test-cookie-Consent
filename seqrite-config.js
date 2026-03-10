@@ -3,7 +3,7 @@ let userLang = (navigator.language || (navigator).userLanguage || 'en');
 console.log("Browser Language Code: ", userLang);
 window.klaroConfig = {
   "consentManagerId": "69b0332ee29d9c0015c08cf8",
-  "uuid": "374011fc-c98b-40c1-8bc8-fa61dc4cee09",
+  "uuid": "0440ef8e-9038-4e54-820d-4ae8c620a4a9",
   "domain": "https://auto-hs.qhtpl.com/cmapi",
   "version": 1,
   "elementID": "SEQRITE",
@@ -12,10 +12,10 @@ window.klaroConfig = {
   "storageName": "https://cookieconsenttestqa.netlify.app",
   "cookieExpiresAfterDays": 365,
   "default": false,
-  "mustConsent": false,
+  "mustConsent": true,
   "acceptAll": true,
   "hideDeclineAll": false,
-  "hideLearnMore": true,
+  "hideLearnMore": false,
   "disablePoweredBy": false,
   "translations": {
     "english": {
