@@ -3,7 +3,7 @@ let userLang = (navigator.language || (navigator).userLanguage || 'en');
 console.log("Browser Language Code: ", userLang);
 window.klaroConfig = {
   "consentManagerId": "69b0332ee29d9c0015c08cf8",
-  "uuid": "b9fc9196-2c26-47b1-b282-02789fbab7bd",
+  "uuid": "1eb8c7a2-24bb-4edf-9ab7-6a27659e8d85",
   "domain": "https://auto-hs.qhtpl.com/cmapi",
   "version": 1,
   "elementID": "SEQRITE",
@@ -12,7 +12,7 @@ window.klaroConfig = {
   "storageName": "https://cookieconsenttestqa.netlify.app",
   "cookieExpiresAfterDays": 365,
   "default": false,
-  "mustConsent": true,
+  "mustConsent": false,
   "acceptAll": true,
   "hideDeclineAll": false,
   "hideLearnMore": false,
@@ -649,14 +649,14 @@ window.klaroConfig = {
       "acceptSelected": "নিৰ্বাচিত গ্ৰহণ কৰক",
       "ok": "সকলো গ্ৰহণ কৰক",
       "consentNotice": {
-        "description": "<p>আমি আপোনাৰ গোপনীয়তাক সন্মান কৰোঁ-এছ. ইউ. ডি. আমি অত্যাৱশ্যকীয় ছাইট কাৰ্য্যকৰীতা, লগতে বিপণন, ব্যক্তিগতকৰণ আৰু বিশ্লেষণ সক্ষম কৰিবলৈ কুকিজ সংৰক্ষণ কৰোঁ। \"সকলো গ্ৰহণ কৰক\" ক্লিক কৰি, আপুনি আমাৰ কুকিজৰ ব্যৱহাৰত সন্মতি প্ৰদান কৰে। আপুনি যিকোনো সময়তে আপোনাৰ ছেটিংছ সলনি কৰিব পাৰে। কুকি নীতি।</p>",
+        "description": "আমি আপোনাৰ গোপনীয়তাক সন্মান কৰোঁ-এছ. ইউ. ডি. আমি অত্যাৱশ্যকীয় ছাইট কাৰ্য্যকৰীতা, লগতে বিপণন, ব্যক্তিগতকৰণ আৰু বিশ্লেষণ সক্ষম কৰিবলৈ কুকিজ সংৰক্ষণ কৰোঁ। \"সকলো গ্ৰহণ কৰক\" ক্লিক কৰি, আপুনি আমাৰ কুকিজৰ ব্যৱহাৰত সন্মতি প্ৰদান কৰে। আপুনি যিকোনো সময়তে আপোনাৰ ছেটিংছ সলনি কৰিব পাৰে। কুকি নীতি।",
         "learnMore": "স্বনিৰ্বাচিত কৰক",
         "changeDescription": " "
       },
       "save": "গ্ৰহণ কৰক",
       "consentModal": {
-        "title": "<p>সন্মতি পছন্দসমূহ স্বনিৰ্ধাৰণ কৰক-এছইউডি</p>",
-        "description": "<p>আমি আপোনাক পৃষ্ঠাসমূহৰ মাজত কাৰ্য্যকৰীভাৱে নেভিগেট কৰাত সহায় কৰিবলৈ, আপোনাৰ পছন্দসমূহ সংৰক্ষণ কৰিবলৈ আৰু সাধাৰণতে ৱেবছাইট এটাৰ আপোনাৰ অভিজ্ঞতা উন্নত কৰিবলৈ কুকিজ ব্যৱহাৰ কৰোঁ। অৱশ্যে, আমি আপোনাৰ গোপনীয়তাৰ অধিকাৰক স্বীকাৰ কৰো আৰু সেয়েহে আপুনি কিছুমান প্ৰকাৰৰ কুকিজৰ অনুমতি নিদিব বিচাৰিব পাৰে। অধিক জানিবলৈ আৰু আমাৰ ডিফল্ট ছেটিংছ সলনি কৰিবলৈ বিভিন্ন শ্ৰেণীৰ শীৰ্ষকত ক্লিক কৰক। অনুগ্ৰহ কৰি মন কৰিব যে কিছুমান নিৰ্দিষ্ট ধৰণৰ কুকিজ ব্লক কৰিলে আপোনাৰ ছাইটৰ অভিজ্ঞতাত প্ৰভাৱ পৰিব পাৰে।</p>",
+        "title": "সন্মতি পছন্দসমূহ স্বনিৰ্ধাৰণ কৰক-এছইউডি",
+        "description": "আমি আপোনাক পৃষ্ঠাসমূহৰ মাজত কাৰ্য্যকৰীভাৱে নেভিগেট কৰাত সহায় কৰিবলৈ, আপোনাৰ পছন্দসমূহ সংৰক্ষণ কৰিবলৈ আৰু সাধাৰণতে ৱেবছাইট এটাৰ আপোনাৰ অভিজ্ঞতা উন্নত কৰিবলৈ কুকিজ ব্যৱহাৰ কৰোঁ। অৱশ্যে, আমি আপোনাৰ গোপনীয়তাৰ অধিকাৰক স্বীকাৰ কৰো আৰু সেয়েহে আপুনি কিছুমান প্ৰকাৰৰ কুকিজৰ অনুমতি নিদিব বিচাৰিব পাৰে। অধিক জানিবলৈ আৰু আমাৰ ডিফল্ট ছেটিংছ সলনি কৰিবলৈ বিভিন্ন শ্ৰেণীৰ শীৰ্ষকত ক্লিক কৰক। অনুগ্ৰহ কৰি মন কৰিব যে কিছুমান নিৰ্দিষ্ট ধৰণৰ কুকিজ ব্লক কৰিলে আপোনাৰ ছাইটৰ অভিজ্ঞতাত প্ৰভাৱ পৰিব পাৰে।",
         "buttons": {
           "save": "গ্ৰহণ কৰক",
           "acceptAll": "সকলো গ্ৰহণ কৰক",
@@ -1058,6 +1058,58 @@ window.klaroConfig = {
         "services": "સેવાઓ"
       }
     },
+    "ne": {
+      "acceptAll": "सबै स्वीकार गर्नुहोस्",
+      "accept": "स्वीकार गर्नुहोस्",
+      "decline": "सबै अस्वीकार गर्नुहोस्",
+      "acceptSelected": "चुनिएको स्वीकार गर्नुहोस्",
+      "ok": "सबै स्वीकार गर्नुहोस्",
+      "consentNotice": {
+        "description": "हामी तपाईंको गोपनीयतालाई सम्मान गर्दछौं-एसयुडी हामी आवश्यक साइट कार्यक्षमता, साथै मार्केटिङ, निजीकरण र विश्लेषण सक्षम गर्न कुकीहरू भण्डार गर्दछौं। \"सबै स्वीकार गर्नुहोस्\" मा क्लिक गरेर, तपाईं हाम्रो कुकीजको प्रयोगमा सहमत हुनुहुन्छ। तपाईँले कुनै पनि समयमा आफ्नो सेटिङहरू परिवर्तन गर्न सक्नुहुन्छ। कुकी नीति।",
+        "learnMore": "अनुकूलित गर्नुहोस्",
+        "changeDescription": " "
+      },
+      "save": "स्वीकार गर्नुहोस्",
+      "consentModal": {
+        "title": "सहमति प्राथमिकताहरू अनुकूलित गर्नुहोस्-एसयुडी",
+        "description": "हामी तपाईंलाई पृष्ठहरू बिच कुशलतापूर्वक नेभिगेट गर्न, तपाईंको प्राथमिकताहरू भण्डारण गर्न, र सामान्यतया वेबसाइटको तपाईंको अनुभव सुधार गर्न मद्दत गर्न कुकीहरू प्रयोग गर्दछौं। यद्यपि, हामी तपाईँको गोपनीयताको अधिकारलाई स्वीकार गर्दछौँ र त्यसैले तपाईँले केही प्रकारका कुकीजहरूलाई अनुमति नदिन छनौट गर्न सक्नुहुन्छ। थप पत्ता लगाउन र हाम्रो पूर्वनिर्धारित सेटिङहरू परिवर्तन गर्न विभिन्न श्रेणी शीर्षकहरूमा क्लिक गर्नुहोस्। कृपया ध्यान दिनुहोस् कि केही प्रकारका कुकीहरू अवरुद्ध गर्नाले साइटको तपाईंको अनुभवलाई असर गर्न सक्छ।",
+        "buttons": {
+          "save": "स्वीकार गर्नुहोस्",
+          "acceptAll": "सबै स्वीकार गर्नुहोस्",
+          "decline": "सबै अस्वीकार गर्नुहोस्"
+        }
+      },
+      "poweredBy": "Powered by Seqrite",
+      "purposes": {
+        "Marketing": {
+          "description": "यी कुकीहरू हाम्रा विज्ञापन साझेदारहरूद्वारा व्यक्तिगत विज्ञापनहरू वितरण गर्न र मार्केटिङ अभियानहरूको प्रभावकारिता मापन गर्न प्रयोग गरिन्छ। तिनीहरूले प्रयोगकर्ता रुचि र ब्राउजिङ व्यवहारको आधारमा सान्दर्भिक पदोन्नतिहरू प्रदान गर्न मद्दत गर्छन्।"
+        },
+        "Others": {
+          "description": "यस श्रेणीले कुकीहरू समावेश गर्दछ जुन पूर्वनिर्धारित कोटीहरूमा फिट हुँदैन तर निश्चित वेबसाइट प्रकार्यहरू वा सुधारहरूका लागि आवश्यक हुन सक्छ।"
+        },
+        "Functional": {
+          "description": "हामी यी कुकीहरू वेबसाइट कार्यक्षमता बढाउन र प्रयोगकर्ता अनुभव सुधार गर्न प्रयोग गर्दछौं। जानकारीले लगइन डेटा, क्षेत्र, भाषा, र उन्नत सामग्री समावेश गर्न सक्छ।"
+        },
+        "Analytics": {
+          "description": "यी कुकीहरूले हामीलाई वेबसाइट ट्राफिक, प्रयोगकर्ता व्यवहार, र संलग्नता ढाँचाहरू विश्लेषण गर्न मद्दत गर्दछ। एकत्रित अन्तर्दृष्टिले हामीलाई सामग्री अनुकूलन गर्न, उपयोगिता बढाउन, र समग्र साइट प्रदर्शन सुधार गर्न अनुमति दिन्छ।"
+        }
+      },
+      "service": {
+        "disableAll": {
+          "description": "DisableAll",
+          "title": "Disable"
+        },
+        "optOut": {
+          "description": "Opt Out",
+          "title": "Opt Out"
+        },
+        "purpose": "उद्देश्य"
+      },
+      "purposeItem": {
+        "service": "सेवा",
+        "services": "सेवाहरू"
+      }
+    },
     "hi": {
       "acceptAll": "सभी को स्वीकार करें",
       "accept": "स्वीकार करें",
@@ -1266,40 +1318,40 @@ window.klaroConfig = {
         "services": "सेवाः"
       }
     },
-    "ne": {
-      "acceptAll": "सबै स्वीकार गर्नुहोस्",
-      "accept": "स्वीकार गर्नुहोस्",
-      "decline": "सबै अस्वीकार गर्नुहोस्",
-      "acceptSelected": "चयन गरिएको स्वीकार गर्नुहोस्",
-      "ok": "सबै स्वीकार गर्नुहोस्",
+    "it": {
+      "acceptAll": "Accetta tutto",
+      "accept": "Accettare",
+      "decline": "Rifiuta tutto",
+      "acceptSelected": "Accetta selezionati",
+      "ok": "Accetta tutto",
       "consentNotice": {
-        "description": "हामी तपाईंको गोपनीयताको सम्मान गर्छौं -SUD हामी आवश्यक साइट कार्यक्षमता, साथै मार्केटिंग, निजीकरण र विश्लेषण सक्षम गर्न कुकीहरू भण्डारण गर्छौं। &quot;सबै स्वीकार गर्नुहोस्&quot; मा क्लिक गरेर, तपाईं कुकीहरूको हाम्रो प्रयोगमा सहमत हुनुहुन्छ। तपाईं कुनै पनि समयमा आफ्नो सेटिङहरू परिवर्तन गर्न सक्नुहुन्छ। कुकी नीति।",
-        "learnMore": "अनुकूलित गर्नुहोस्",
+        "description": "Rispettiamo la tua privacy -SUD Memorizziamo i cookie per abilitare le funzionalità essenziali del sito, nonché marketing, personalizzazione e analisi. Cliccando su &quot;Accetta tutti&quot;, acconsenti all&#39;utilizzo dei cookie. Puoi modificare le tue impostazioni in qualsiasi momento. Informativa sui cookie.",
+        "learnMore": "Personalizza",
         "changeDescription": " "
       },
-      "save": "स्वीकार गर्नुहोस्",
+      "save": "Accettare",
       "consentModal": {
-        "title": "सहमति प्राथमिकताहरू अनुकूलित गर्नुहोस् - SUD",
-        "description": "हामी तपाईंलाई पृष्ठहरू बीच कुशलतापूर्वक नेभिगेट गर्न, तपाईंको प्राथमिकताहरू भण्डारण गर्न र सामान्यतया वेबसाइटको तपाईंको अनुभव सुधार गर्न मद्दत गर्न कुकीहरू प्रयोग गर्छौं। यद्यपि, हामी तपाईंको गोपनीयताको अधिकारलाई स्वीकार गर्छौं र त्यसैले तपाईं केही प्रकारका कुकीहरूलाई अनुमति नदिने छनौट गर्न सक्नुहुन्छ। थप जान्न र हाम्रो पूर्वनिर्धारित सेटिङहरू परिवर्तन गर्न विभिन्न कोटी शीर्षकहरूमा क्लिक गर्नुहोस्। कृपया ध्यान दिनुहोस् कि निश्चित प्रकारका कुकीहरू ब्लक गर्नाले साइटको तपाईंको अनुभवलाई असर गर्न सक्छ।",
+        "title": "Personalizza le preferenze di consenso - SUD",
+        "description": "Utilizziamo i cookie per aiutarti a navigare tra le pagine in modo efficiente, memorizzare le tue preferenze e, in generale, migliorare la tua esperienza di navigazione sul sito web. Tuttavia, riconosciamo il tuo diritto alla privacy e pertanto puoi scegliere di non consentire alcuni tipi di cookie. Clicca sulle diverse intestazioni delle categorie per saperne di più e modificare le nostre impostazioni predefinite. Tieni presente che il blocco di alcuni tipi di cookie potrebbe influire sulla tua esperienza di navigazione sul sito.",
         "buttons": {
-          "save": "स्वीकार गर्नुहोस्",
-          "acceptAll": "सबै स्वीकार गर्नुहोस्",
-          "decline": "सबै अस्वीकार गर्नुहोस्"
+          "save": "Accettare",
+          "acceptAll": "Accetta tutto",
+          "decline": "Rifiuta tutto"
         }
       },
       "poweredBy": "Powered by Seqrite",
       "purposes": {
         "Marketing": {
-          "description": "यी कुकीहरू हाम्रा विज्ञापन साझेदारहरूले व्यक्तिगत विज्ञापनहरू प्रदान गर्न र मार्केटिङ अभियानहरूको प्रभावकारिता मापन गर्न प्रयोग गर्छन्। तिनीहरूले प्रयोगकर्ताको रुचि र ब्राउजिङ व्यवहारमा आधारित सान्दर्भिक प्रचारहरू प्रदान गर्न मद्दत गर्छन्।"
+          "description": "Questi cookie vengono utilizzati dai nostri partner pubblicitari per fornire annunci personalizzati e misurare l&#39;efficacia delle campagne di marketing. Contribuiscono a fornire promozioni pertinenti in base agli interessi degli utenti e al comportamento di navigazione."
         },
         "Others": {
-          "description": "यस श्रेणीमा त्यस्ता कुकीहरू समावेश छन् जुन पूर्वनिर्धारित कोटीहरूमा फिट हुँदैनन् तर वेबसाइटको केही कार्यक्षमता वा सुधारहरूको लागि आवश्यक हुन सक्छन्।"
+          "description": "Questa categoria include i cookie che non rientrano nelle categorie predefinite ma che potrebbero essere necessari per alcune funzionalità o miglioramenti del sito web."
         },
         "Functional": {
-          "description": "हामी वेबसाइटको कार्यक्षमता बढाउन र प्रयोगकर्ता अनुभव सुधार गर्न यी कुकीहरू प्रयोग गर्छौं। जानकारीमा लगइन डेटा, क्षेत्र, भाषा, र परिष्कृत सामग्री समावेश हुन सक्छ।"
+          "description": "Utilizziamo questi cookie per migliorare la funzionalità del sito web e l&#39;esperienza dell&#39;utente. Le informazioni possono includere dati di accesso, regione, lingua e contenuti avanzati."
         },
         "Analytics": {
-          "description": "यी कुकीहरूले हामीलाई वेबसाइट ट्राफिक, प्रयोगकर्ता व्यवहार, र संलग्नता ढाँचाहरूको विश्लेषण गर्न मद्दत गर्छन्। सङ्कलन गरिएका अन्तर्दृष्टिहरूले हामीलाई सामग्री अनुकूलन गर्न, उपयोगिता बढाउन र समग्र साइट कार्यसम्पादन सुधार गर्न अनुमति दिन्छ।"
+          "description": "Questi cookie ci aiutano ad analizzare il traffico del sito web, il comportamento degli utenti e i modelli di coinvolgimento. Le informazioni raccolte ci consentono di ottimizzare i contenuti, migliorare l&#39;usabilità e migliorare le prestazioni generali del sito."
         }
       },
       "service": {
@@ -1311,11 +1363,115 @@ window.klaroConfig = {
           "description": "Opt Out",
           "title": "Opt Out"
         },
-        "purpose": "उद्देश्य"
+        "purpose": "scopo"
       },
       "purposeItem": {
-        "service": "सेवा",
-        "services": "सेवाहरू"
+        "service": "servizio",
+        "services": "servizi"
+      }
+    },
+    "es": {
+      "acceptAll": "Aceptar todo",
+      "accept": "Aceptar",
+      "decline": "Rechazar todo",
+      "acceptSelected": "Aceptar Seleccionados",
+      "ok": "Aceptar todo",
+      "consentNotice": {
+        "description": "<p>Respetamos tu privacidad -SUD. Almacenamos cookies para habilitar la funcionalidad esencial del sitio, así como para marketing, personalización y análisis. Al hacer clic en \"Aceptar todo\", aceptas nuestro uso de cookies. Puedes cambiar tu configuración en cualquier momento. Política de cookies.</p>",
+        "learnMore": "Personalizar",
+        "changeDescription": " "
+      },
+      "save": "Aceptar",
+      "consentModal": {
+        "title": "<p>Personalizar las preferencias de consentimiento - SUD</p>",
+        "description": "<p>Utilizamos cookies para ayudarte a navegar entre páginas de forma eficiente, almacenar tus preferencias y, en general, mejorar tu experiencia en el sitio web. Sin embargo, reconocemos tu derecho a la privacidad y, por lo tanto, puedes optar por no permitir algunos tipos de cookies. Haz clic en los encabezados de las diferentes categorías para obtener más información y cambiar nuestra configuración predeterminada. Ten en cuenta que bloquear ciertos tipos de cookies podría afectar tu experiencia en el sitio.</p>",
+        "buttons": {
+          "save": "Aceptar",
+          "acceptAll": "Aceptar todo",
+          "decline": "Rechazar todo"
+        }
+      },
+      "poweredBy": "Powered by Seqrite",
+      "purposes": {
+        "Marketing": {
+          "description": "Nuestros socios publicitarios utilizan estas cookies para mostrar anuncios personalizados y medir la eficacia de las campañas de marketing. Ayudan a ofrecer promociones relevantes según los intereses y el comportamiento de navegación del usuario."
+        },
+        "Others": {
+          "description": "Esta categoría incluye cookies que no encajan en las categorías predefinidas pero que pueden ser necesarias para determinadas funcionalidades o mejoras del sitio web."
+        },
+        "Functional": {
+          "description": "Utilizamos estas cookies para mejorar la funcionalidad del sitio web y la experiencia del usuario. La información puede incluir datos de inicio de sesión, región, idioma y contenido mejorado."
+        },
+        "Analytics": {
+          "description": "Estas cookies nos ayudan a analizar el tráfico del sitio web, el comportamiento del usuario y los patrones de interacción. La información recopilada nos permite optimizar el contenido, mejorar la usabilidad y optimizar el rendimiento general del sitio."
+        }
+      },
+      "service": {
+        "disableAll": {
+          "description": "DisableAll",
+          "title": "Disable"
+        },
+        "optOut": {
+          "description": "Opt Out",
+          "title": "Opt Out"
+        },
+        "purpose": "objetivo"
+      },
+      "purposeItem": {
+        "service": "servicio",
+        "services": "servicios"
+      }
+    },
+    "de": {
+      "acceptAll": "Alle akzeptieren",
+      "accept": "Akzeptieren",
+      "decline": "Alle ablehnen",
+      "acceptSelected": "Ausgewählte akzeptieren",
+      "ok": "Alle akzeptieren",
+      "consentNotice": {
+        "description": "Wir respektieren Ihre Privatsphäre. – SUD. Wir verwenden Cookies, um grundlegende Website-Funktionen sowie Marketing-, Personalisierungs- und Analysezwecke zu ermöglichen. Mit einem Klick auf „Alle akzeptieren“ stimmen Sie der Verwendung von Cookies zu. Sie können Ihre Einstellungen jederzeit ändern. Cookie-Richtlinie.",
+        "learnMore": "Anpassen",
+        "changeDescription": " "
+      },
+      "save": "Akzeptieren",
+      "consentModal": {
+        "title": "Einwilligungseinstellungen anpassen – SUD",
+        "description": "Wir verwenden Cookies, um Ihnen die Navigation zwischen den Seiten zu erleichtern, Ihre Präferenzen zu speichern und Ihr Website-Erlebnis allgemein zu verbessern. Wir respektieren jedoch Ihr Recht auf Datenschutz und Sie können daher bestimmte Arten von Cookies ablehnen. Klicken Sie auf die verschiedenen Kategorien, um mehr zu erfahren und unsere Standardeinstellungen zu ändern. Bitte beachten Sie, dass das Blockieren bestimmter Cookies Ihre Nutzung der Website beeinträchtigen kann.",
+        "buttons": {
+          "save": "Akzeptieren",
+          "acceptAll": "Alle akzeptieren",
+          "decline": "Alle ablehnen"
+        }
+      },
+      "poweredBy": "Powered by Seqrite",
+      "purposes": {
+        "Marketing": {
+          "description": "Diese Cookies werden von unseren Werbepartnern verwendet, um personalisierte Werbung auszuliefern und die Effektivität von Marketingkampagnen zu messen. Sie helfen dabei, relevante Werbeaktionen basierend auf den Interessen und dem Surfverhalten der Nutzer bereitzustellen."
+        },
+        "Others": {
+          "description": "Diese Kategorie umfasst Cookies, die nicht in die vordefinierten Kategorien passen, aber für bestimmte Website-Funktionalitäten oder -Verbesserungen erforderlich sein können."
+        },
+        "Functional": {
+          "description": "Wir verwenden diese Cookies, um die Funktionalität der Website zu verbessern und das Nutzererlebnis zu optimieren. Zu den Informationen können Anmeldedaten, Region, Sprache und erweiterte Inhalte gehören."
+        },
+        "Analytics": {
+          "description": "Diese Cookies helfen uns, den Website-Traffic, das Nutzerverhalten und die Interaktionsmuster zu analysieren. Die gewonnenen Erkenntnisse ermöglichen es uns, Inhalte zu optimieren, die Benutzerfreundlichkeit zu verbessern und die Gesamtleistung der Website zu steigern."
+        }
+      },
+      "service": {
+        "disableAll": {
+          "description": "DisableAll",
+          "title": "Disable"
+        },
+        "optOut": {
+          "description": "Opt Out",
+          "title": "Opt Out"
+        },
+        "purpose": "Zweck"
+      },
+      "purposeItem": {
+        "service": "Service",
+        "services": "Dienstleistungen"
       }
     }
   },
@@ -1342,7 +1498,7 @@ window.klaroConfig = {
         "Marketing"
       ],
       "required": false,
-      "default": false,
+      "default": true,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
@@ -1356,7 +1512,7 @@ window.klaroConfig = {
         "Others"
       ],
       "required": false,
-      "default": false,
+      "default": true,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
@@ -1370,7 +1526,7 @@ window.klaroConfig = {
         "Others"
       ],
       "required": false,
-      "default": false,
+      "default": true,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
@@ -1384,7 +1540,7 @@ window.klaroConfig = {
         "Marketing"
       ],
       "required": false,
-      "default": false,
+      "default": true,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
@@ -1398,7 +1554,7 @@ window.klaroConfig = {
         "Marketing"
       ],
       "required": false,
-      "default": false,
+      "default": true,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
@@ -1412,7 +1568,7 @@ window.klaroConfig = {
         "Analytics"
       ],
       "required": false,
-      "default": false,
+      "default": true,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
@@ -1426,7 +1582,7 @@ window.klaroConfig = {
         "Marketing"
       ],
       "required": false,
-      "default": false,
+      "default": true,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
@@ -1440,7 +1596,7 @@ window.klaroConfig = {
         "Marketing"
       ],
       "required": false,
-      "default": false,
+      "default": true,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
@@ -1454,7 +1610,7 @@ window.klaroConfig = {
         "Marketing"
       ],
       "required": false,
-      "default": false,
+      "default": true,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
@@ -1468,7 +1624,7 @@ window.klaroConfig = {
         "Functional"
       ],
       "required": false,
-      "default": false,
+      "default": true,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
@@ -1482,7 +1638,7 @@ window.klaroConfig = {
         "Marketing"
       ],
       "required": false,
-      "default": false,
+      "default": true,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
