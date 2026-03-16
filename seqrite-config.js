@@ -2,20 +2,20 @@
 let userLang = (navigator.language || (navigator).userLanguage || 'en');
 console.log("Browser Language Code: ", userLang);
 window.klaroConfig = {
-  "consentManagerId": "69b7ecdadf7cba177c008c8b",
-  "uuid": "c275b415-8848-4a31-a1d5-e0b166a9737e",
+  "consentManagerId": "69b7ee2bdf7cba177c008cb2",
+  "uuid": "f8fb95d2-d574-47c7-ae2a-fd5d422cee40",
   "domain": "https://preprod.pre-dataprivacy.com/cmapi",
   "version": 1,
   "elementID": "SEQRITE",
   lang: userLang,
   "storageMethod": "cookie",
-  "storageName": "https://www.starhealth.in/lp/mediclaim-insurance-policy/",
+  "storageName": "https://www.starhealth.in/lp/critical-illness-insurance-policy/",
   "cookieExpiresAfterDays": 365,
   "default": false,
-  "mustConsent": false,
+  "mustConsent": true,
   "acceptAll": true,
   "hideDeclineAll": false,
-  "hideLearnMore": true,
+  "hideLearnMore": false,
   "disablePoweredBy": false,
   "translations": {
     "english": {
@@ -25,13 +25,13 @@ window.klaroConfig = {
       "acceptSelected": "Accept Selected",
       "ok": "Accept All",
       "consentNotice": {
-        "description": "<p><strong>We respect your privacy - SUD</strong></p><p>We store cookies to enable essential site functionality, as well as marketing, personalization and analytics. By clicking “Accept All”, you consent to our use of cookies. You can change your settings at any time. <a href=\"https://www.google.com/\" title=\"https://www.google.com/\" target=\"_blank\"><u>Cookie Policy.</u></a></p>",
+        "description": "<p><strong>We respect your privacy</strong></p><p>We store cookies to enable essential site functionality, as well as marketing, personalization and analytics. By clicking “Accept All”, you consent to our use of cookies. You can change your settings at any time. <a href=\"https://www.google.com/\" title=\"https://www.google.com/\" target=\"_blank\"><u>Cookie Policy.</u></a></p>",
         "learnMore": "Customize",
         "changeDescription": " "
       },
       "save": "Accept",
       "consentModal": {
-        "title": "Customize Consent Preferences",
+        "title": "<p>Customize Consent Preferences - SUD</p>",
         "description": "We use cookies to help you navigate between pages efficiently, storing your preferences, and generally improving your experience of a website.  However, we acknowledge  your right to privacy and hence you can choose not to allow some types of cookies. Click on the different category headings to find out more and change our default settings. Please note that blocking certain types of cookies might affect your experience of the site. ",
         "buttons": {
           "save": "Accept",
@@ -45,13 +45,13 @@ window.klaroConfig = {
           "description": "<p>This category includes cookies that do not fit into the predefined categories but may be necessary for certain website functionalities or improvements.</p>"
         },
         "Functional": {
-          "description": "<p>We use these cookies to enhance website functionality and improve user experience. Information can include login data, region, language, and enhanced content. </p>"
+          "description": "<p>We use these cookies to enhance website functionality and improve user experience. Information can include login data, region, language, and enhanced content.</p>"
         },
         "Marketing": {
-          "description": "<p>These cookies are used by our advertising partners to deliver personalized ads and measure the effectiveness of marketing campaigns. They help provide relevant promotions based on user interests and browsing behavior. </p>"
+          "description": "<p>These cookies are used by our advertising partners to deliver personalized ads and measure the effectiveness of marketing campaigns. They help provide relevant promotions based on user interests and browsing behavior.</p>"
         },
         "Analytics": {
-          "description": "<p>These cookies help us analyze website traffic, user behavior, and engagement patterns. The insights gathered allow us to optimize content, enhance usability, and improve overall site performance. </p>"
+          "description": "<p>These cookies help us analyze website traffic, user behavior, and engagement patterns. The insights gathered allow us to optimize content, enhance usability, and improve overall site performance.</p>"
         }
       },
       "service": {
@@ -77,13 +77,13 @@ window.klaroConfig = {
       "acceptSelected": "Accept Selected",
       "ok": "Accept All",
       "consentNotice": {
-        "description": "<p><strong>We respect your privacy - SUD</strong></p><p>We store cookies to enable essential site functionality, as well as marketing, personalization and analytics. By clicking “Accept All”, you consent to our use of cookies. You can change your settings at any time. <a href=\"https://www.google.com/\" title=\"https://www.google.com/\" target=\"_blank\"><u>Cookie Policy.</u></a></p>",
+        "description": "<p><strong>We respect your privacy</strong></p><p>We store cookies to enable essential site functionality, as well as marketing, personalization and analytics. By clicking “Accept All”, you consent to our use of cookies. You can change your settings at any time. <a href=\"https://www.google.com/\" title=\"https://www.google.com/\" target=\"_blank\"><u>Cookie Policy.</u></a></p>",
         "learnMore": "Customize",
         "changeDescription": " "
       },
       "save": "Accept",
       "consentModal": {
-        "title": "Customize Consent Preferences",
+        "title": "<p>Customize Consent Preferences - SUD</p>",
         "description": "We use cookies to help you navigate between pages efficiently, storing your preferences, and generally improving your experience of a website.  However, we acknowledge  your right to privacy and hence you can choose not to allow some types of cookies. Click on the different category headings to find out more and change our default settings. Please note that blocking certain types of cookies might affect your experience of the site. ",
         "buttons": {
           "save": "Accept",
@@ -97,13 +97,13 @@ window.klaroConfig = {
           "description": "<p>This category includes cookies that do not fit into the predefined categories but may be necessary for certain website functionalities or improvements.</p>"
         },
         "Functional": {
-          "description": "<p>We use these cookies to enhance website functionality and improve user experience. Information can include login data, region, language, and enhanced content. </p>"
+          "description": "<p>We use these cookies to enhance website functionality and improve user experience. Information can include login data, region, language, and enhanced content.</p>"
         },
         "Marketing": {
-          "description": "<p>These cookies are used by our advertising partners to deliver personalized ads and measure the effectiveness of marketing campaigns. They help provide relevant promotions based on user interests and browsing behavior. </p>"
+          "description": "<p>These cookies are used by our advertising partners to deliver personalized ads and measure the effectiveness of marketing campaigns. They help provide relevant promotions based on user interests and browsing behavior.</p>"
         },
         "Analytics": {
-          "description": "<p>These cookies help us analyze website traffic, user behavior, and engagement patterns. The insights gathered allow us to optimize content, enhance usability, and improve overall site performance. </p>"
+          "description": "<p>These cookies help us analyze website traffic, user behavior, and engagement patterns. The insights gathered allow us to optimize content, enhance usability, and improve overall site performance.</p>"
         }
       },
       "service": {
@@ -129,13 +129,13 @@ window.klaroConfig = {
       "acceptSelected": "Accept Selected",
       "ok": "Accept All",
       "consentNotice": {
-        "description": "<p><strong>We respect your privacy - SUD</strong></p><p>We store cookies to enable essential site functionality, as well as marketing, personalization and analytics. By clicking “Accept All”, you consent to our use of cookies. You can change your settings at any time. <a href=\"https://www.google.com/\" title=\"https://www.google.com/\" target=\"_blank\"><u>Cookie Policy.</u></a></p>",
+        "description": "<p><strong>We respect your privacy</strong></p><p>We store cookies to enable essential site functionality, as well as marketing, personalization and analytics. By clicking “Accept All”, you consent to our use of cookies. You can change your settings at any time. <a href=\"https://www.google.com/\" title=\"https://www.google.com/\" target=\"_blank\"><u>Cookie Policy.</u></a></p>",
         "learnMore": "Customize",
         "changeDescription": " "
       },
       "save": "Accept",
       "consentModal": {
-        "title": "Customize Consent Preferences",
+        "title": "<p>Customize Consent Preferences - SUD</p>",
         "description": "We use cookies to help you navigate between pages efficiently, storing your preferences, and generally improving your experience of a website.  However, we acknowledge  your right to privacy and hence you can choose not to allow some types of cookies. Click on the different category headings to find out more and change our default settings. Please note that blocking certain types of cookies might affect your experience of the site. ",
         "buttons": {
           "save": "Accept",
@@ -149,13 +149,13 @@ window.klaroConfig = {
           "description": "<p>This category includes cookies that do not fit into the predefined categories but may be necessary for certain website functionalities or improvements.</p>"
         },
         "Functional": {
-          "description": "<p>We use these cookies to enhance website functionality and improve user experience. Information can include login data, region, language, and enhanced content. </p>"
+          "description": "<p>We use these cookies to enhance website functionality and improve user experience. Information can include login data, region, language, and enhanced content.</p>"
         },
         "Marketing": {
-          "description": "<p>These cookies are used by our advertising partners to deliver personalized ads and measure the effectiveness of marketing campaigns. They help provide relevant promotions based on user interests and browsing behavior. </p>"
+          "description": "<p>These cookies are used by our advertising partners to deliver personalized ads and measure the effectiveness of marketing campaigns. They help provide relevant promotions based on user interests and browsing behavior.</p>"
         },
         "Analytics": {
-          "description": "<p>These cookies help us analyze website traffic, user behavior, and engagement patterns. The insights gathered allow us to optimize content, enhance usability, and improve overall site performance. </p>"
+          "description": "<p>These cookies help us analyze website traffic, user behavior, and engagement patterns. The insights gathered allow us to optimize content, enhance usability, and improve overall site performance.</p>"
         }
       },
       "service": {
@@ -181,13 +181,13 @@ window.klaroConfig = {
       "acceptSelected": "چنیں پرستار",
       "ok": "سٲری قبول کر۔",
       "consentNotice": {
-        "description": "أس چھ تہنٛزٕ پرائیویسی ہنٛد احترام کران-ایس یو ڈی أس چھ ضروری سائٹس فعال کرنس سۭتۍ مارکیٹنگ، پرسنلائزیشن تہٕ تجزیاتس فعال کرنہٕ خاطرٕ کوکیز محفوظ کران۔ \"تمام قبول کرو\" پؠٹھ کلک کٔرتھ کٔرو تہۍ سانہ کوکیز استعمال کرنہٕ خٲطرٕ رضامند۔ تہۍ ہیٚکو کنہ تہ وقتہٕ پنٕنۍ سیٹنگ تبدیل کٔرتھ۔ کوکی پالیسی۔",
+        "description": "أس چھ تہنٛزٕ پرائیویسی ہنٛد احترام کران تہٕ ضروری سائٹچ فعالیتس سۭتۍ مارکیٹنگ، پرسنلائزیشن تہٕ تجزیاتس فعال کرنہٕ خاطرٕ چھ ہم کوکیز محفوظ کران۔ \"تمام قبول کرو\" پؠٹھ کلک کٔرتھ کٔرو تہۍ سانہ کوکیز استعمال کرنہٕ خٲطرٕ رضامند۔ تہۍ ہیٚکو کنہ تہ وقتہٕ پنٕنۍ سیٹنگ تبدیل کٔرتھ۔ کوکی پالیسی۔",
         "learnMore": "حسب ضرورت بناو۔",
         "changeDescription": " "
       },
       "save": "قبوٗل۔",
       "consentModal": {
-        "title": "رضامندی ہنٛز ترجیحہٕ بناو حسب ضرورت۔",
+        "title": "رضامندی ہنٛز ترجیحات بناو حسب ضرورت-ایس یو ڈی",
         "description": "أس چھ کوکیزن ہنٛد استعمال تہنٛزٕ پیجن درمیان مؤثر طریقہٕ سۭتۍ نیویگیٹ کرنس، تہنٛز ترجیحات محفوظ کرنس، تہٕ عام طور پأنٹھ ویب سائٹک پنن تجربہٕ بہتر بناونس منٛز مدد خأطرٕ کران۔ وونہ گو٘، چھ اسہ تہندین راز دٲری ہند حق تسلیم کران تہٕ تو٘ہہ ہیکیو توہہ کیانٛہہ قٕسمٕک کوکیزن ہنز اجازت دنٗک انتخاب کرتھ۔ مزید زانٛنہٕ تہٕ سانہ ڈیفالٹ سیٹنگ تبدیل کرنہٕ خٲطرٕ کٔرو مختٔلف زمرٕ کین عنوانن پؠٹھ کلک۔ مہربٲنی کٔرتھ کٔرو نوٹ ز کیٚنٛہہ قٕسمٕک کوکیز بنٛد کرن ہؠکہ تہنٛد سایٹہ ہنٛد تجربہٕ متٲثر کٔرتھ۔",
         "buttons": {
           "save": "قبوٗل۔",
@@ -233,13 +233,13 @@ window.klaroConfig = {
       "acceptSelected": "चुने गेदे गी मंजूर करो",
       "ok": "सभनें गी मंजूर करो",
       "consentNotice": {
-        "description": "असीं तुंʼदी गोपनीयता दा सम्मान करदे आं-ऐस्स. यू. डी. असीं साइट दी लाजमी कार्यक्षमता दे कन्नै-कन्नै मार्केटिंग, निजीकरण ते विश्लेषण गी सक्षम करने आस्तै कुकीज़ संग्रहीत करदे न। \"सभनें गी मंजूर करो\" पर क्लिक करियै, तुस कुकीज़ दे साडे इस्तेमाल आस्तै सहमति दिंदे ओ। तुस कुसै बी समें अपनी सेटिंग बदली सकदे ओ। कुकी नीति।",
+        "description": "हम तुंʼदी निजता दा सम्मान करदे न असीं साइट दी लाजमी कार्यक्षमता दे कन्नै-कन्नै मार्केटिंग, निजीकरण ते विश्लेषण गी सक्षम करने आस्तै कुकीज़ संग्रहीत करदे न। \"सभनें गी मंजूर करो\" पर क्लिक करियै, तुस कुकीज़ दे साडे इस्तेमाल आस्तै सहमति दिंदे ओ। तुस कुसै बी समें अपनी सेटिंग बदली सकदे ओ। कुकी नीति।",
         "learnMore": "अनुकूलित करो",
         "changeDescription": " "
       },
       "save": "मंजूर करो",
       "consentModal": {
-        "title": "सहमति वरीयताएं गी अनुकूलित करो",
+        "title": "सहमति प्राथमिकताएं गी अनुकूलित करो-एसयूडी",
         "description": "असीं कूकीज़ दा उपयोग पृष्ठें दे बिच्च कुशलता कन्नै नैवीगेट करने, तुंʼदी प्राथमिकताएं गी संग्रहीत करने ते आम तौर पर कुसै वैबसाइट दे तुंʼदे अनुभव च सधार करने च तुंʼदी मदद आस्तै करदे न। हालां-के, असीं तुंʼदे निजता दे अधिकार गी मंजूर करदे न ते इस करियै तुस किश किसमें दियें कुकीज़ दी इजाज़त नेईं देई सकदे ओ। मती जानकारी हासल करने ते हमारी पूर्वनिर्धारित सेटिंग्स गी बदलने आस्तै बक्ख-बक्ख वर्ग शीर्षकें पर क्लिक करो। कृपा करियै ध्यान देओ जे किश किस्में दियें कुकीज़ गी अवरुद्ध करना साइट दे तुंʼदे अनुभव गी प्रभावत करी सकदा ऐ।",
         "buttons": {
           "save": "मंजूर करो",
@@ -285,13 +285,13 @@ window.klaroConfig = {
       "acceptSelected": "തിരഞ്ഞെടുത്തവ സ്വീകരിക്കുക",
       "ok": "എല്ലാം സ്വീകരിക്കുക",
       "consentNotice": {
-        "description": "നിങ്ങളുടെ സ്വകാര്യതയെ ഞങ്ങൾ മാനിക്കുന്നു-അവശ്യ സൈറ്റ് പ്രവർത്തനവും മാർക്കറ്റിംഗ്, വ്യക്തിഗതമാക്കൽ, വിശകലനം എന്നിവ പ്രാപ്തമാക്കുന്നതിന് ഞങ്ങൾ കുക്കികൾ സംഭരിക്കുന്നു. \"എല്ലാവരെയും അംഗീകരിക്കുക\" ക്ലിക്കുചെയ്യുന്നതിലൂടെ, ഞങ്ങളുടെ കുക്കികളുടെ ഉപയോഗത്തിന് നിങ്ങൾ സമ്മതിക്കുന്നു. നിങ്ങൾക്ക് എപ്പോൾ വേണമെങ്കിലും നിങ്ങളുടെ ക്രമീകരണങ്ങൾ മാറ്റാം. കുക്കി നയം.",
+        "description": "നിങ്ങളുടെ സ്വകാര്യതയെ ഞങ്ങൾ മാനിക്കുന്നു, അവശ്യ സൈറ്റ് പ്രവർത്തനവും മാർക്കറ്റിംഗ്, വ്യക്തിഗതമാക്കൽ, വിശകലനം എന്നിവ പ്രാപ്തമാക്കുന്നതിന് ഞങ്ങൾ കുക്കികൾ സംഭരിക്കുന്നു. \"എല്ലാവരെയും അംഗീകരിക്കുക\" ക്ലിക്കുചെയ്യുന്നതിലൂടെ, ഞങ്ങളുടെ കുക്കികളുടെ ഉപയോഗത്തിന് നിങ്ങൾ സമ്മതിക്കുന്നു. നിങ്ങൾക്ക് എപ്പോൾ വേണമെങ്കിലും നിങ്ങളുടെ ക്രമീകരണങ്ങൾ മാറ്റാം. കുക്കി നയം.",
         "learnMore": "ഇഷ്ടാനുസൃതമാക്കുക",
         "changeDescription": " "
       },
       "save": "സ്വീകരിക്കുക",
       "consentModal": {
-        "title": "സമ്മത മുൻഗണനകൾ ഇഷ്ടാനുസൃതമാക്കുക",
+        "title": "സമ്മത മുൻഗണനകൾ ഇഷ്ടാനുസൃതമാക്കുക-എസ്യുഡി",
         "description": "പേജുകൾക്കിടയിൽ കാര്യക്ഷമമായി നാവിഗേറ്റ് ചെയ്യാനും നിങ്ങളുടെ മുൻഗണനകൾ സംഭരിക്കാനും ഒരു വെബ്സൈറ്റിനെക്കുറിച്ചുള്ള നിങ്ങളുടെ അനുഭവം മെച്ചപ്പെടുത്താനും ഞങ്ങൾ കുക്കികൾ ഉപയോഗിക്കുന്നു. എന്നിരുന്നാലും, നിങ്ങളുടെ സ്വകാര്യതയ്ക്കുള്ള അവകാശം ഞങ്ങൾ അംഗീകരിക്കുന്നു, അതിനാൽ ചില തരത്തിലുള്ള കുക്കികൾ അനുവദിക്കരുതെന്ന് നിങ്ങൾക്ക് തിരഞ്ഞെടുക്കാം. കൂടുതൽ കണ്ടെത്തുന്നതിനും ഞങ്ങളുടെ സ്ഥിരസ്ഥിതി ക്രമീകരണങ്ങൾ മാറ്റുന്നതിനും വ്യത്യസ്ത വിഭാഗ തലക്കെട്ടുകളിൽ ക്ലിക്കുചെയ്യുക. ചില തരത്തിലുള്ള കുക്കികൾ തടയുന്നത് സൈറ്റിനെക്കുറിച്ചുള്ള നിങ്ങളുടെ അനുഭവത്തെ ബാധിച്ചേക്കാമെന്ന് ദയവായി ശ്രദ്ധിക്കുക.",
         "buttons": {
           "save": "സ്വീകരിക്കുക",
@@ -337,13 +337,13 @@ window.klaroConfig = {
       "acceptSelected": "ꯈꯟꯒꯠꯂꯕ ꯑꯗꯨ ꯂꯧꯕꯤꯌꯨ",
       "ok": "ꯄꯨꯝꯅꯃꯛ ꯂꯧꯕꯤꯌꯨ",
       "consentNotice": {
-        "description": "ꯑꯩꯈꯣꯏꯅ ꯅꯍꯥꯛꯀꯤ ꯄ ꯭ ꯔꯥꯏꯚꯁꯤ-ꯑꯦꯁ. ꯌꯨ. ꯗꯤ. ꯑꯗꯨ ꯏꯀꯥꯏ ꯈꯨꯝꯅꯩ-ꯑꯩꯈꯣꯏꯅ ꯇꯉꯥꯏꯐꯗꯕ ꯁꯥꯏꯠꯀꯤ ꯃꯊꯧ ꯇꯥꯕ, ꯃꯁꯤꯒ ꯂꯣꯏꯅꯅ ꯃꯥꯔꯀꯦꯇꯤꯡ, ꯄꯔꯁꯅꯦꯜꯥꯏꯖꯦꯁꯟ ꯑꯃꯁꯨꯡ ꯑꯦꯅꯂꯥꯏꯇꯤꯛꯁ ꯇꯧꯕ ꯉꯝꯅꯕ ꯀꯨꯀꯤꯁꯤꯡ ꯊꯝꯃꯤ ꯫ \"ꯄꯨꯝꯅꯃꯛ ꯂꯧꯕꯤꯌꯨ\" ꯗ ꯅꯝꯗꯨꯅ, ꯅꯍꯥꯛꯅ ꯑꯩꯈꯣꯏꯅ ꯀꯨꯀꯤꯁꯤꯡ ꯁꯤꯖꯤꯟꯅꯕ ꯌꯥꯔꯦ ꯫ ꯅꯍꯥꯛꯅ ꯃꯇꯝ ꯑꯃꯍꯦꯛꯇꯗ ꯅꯍꯥꯛꯀꯤ ꯁꯦꯇꯤꯡꯁꯤꯡ ꯑꯗꯨ ꯍꯣꯡꯗꯣꯛꯄ ꯌꯥꯏ ꯫ ꯀꯨꯀꯤꯒꯤ ꯊꯧꯁꯤꯜ ꯫",
+        "description": "ꯑꯩꯈꯣꯏꯅ ꯅꯍꯥꯛꯀꯤ ꯄ ꯭ ꯔꯥꯏꯚꯁꯤꯕꯨ ꯏꯀꯥꯏ ꯈꯨꯝꯅꯩ, ꯑꯩꯈꯣꯏꯅ ꯇꯉꯥꯏꯐꯗꯕ ꯁꯥꯏꯠꯀꯤ ꯃꯊꯧ ꯇꯥꯕ, ꯃꯁꯤꯒ ꯂꯣꯏꯅꯅ ꯃꯥꯔꯀꯦꯇꯤꯡ, ꯄꯔꯁꯅꯦꯜꯥꯏꯖꯦꯁꯟ ꯑꯃꯁꯨꯡ ꯑꯦꯟꯂꯥꯏꯇꯤꯛꯁ ꯇꯧꯕ ꯉꯝꯅꯕ ꯀꯨꯀꯤꯁꯤꯡ ꯊꯝꯃꯤ ꯫ \"ꯄꯨꯝꯅꯃꯛ ꯂꯧꯕꯤꯌꯨ\" ꯗ ꯅꯝꯗꯨꯅ, ꯅꯍꯥꯛꯅ ꯑꯩꯈꯣꯏꯅ ꯀꯨꯀꯤꯁꯤꯡ ꯁꯤꯖꯤꯟꯅꯕ ꯌꯥꯔꯦ ꯫ ꯅꯍꯥꯛꯅ ꯃꯇꯝ ꯑꯃꯍꯦꯛꯇꯗ ꯅꯍꯥꯛꯀꯤ ꯁꯦꯇꯤꯡꯁꯤꯡ ꯑꯗꯨ ꯍꯣꯡꯗꯣꯛꯄ ꯌꯥꯏ ꯫ ꯀꯨꯀꯤꯒꯤ ꯊꯧꯁꯤꯜ ꯫",
         "learnMore": "ꯁꯦꯝꯗꯣꯛ-ꯁꯦꯝꯖꯤꯟ ꯇꯧ ꯫",
         "changeDescription": " "
       },
       "save": "ꯂꯧꯕꯤꯌꯨ",
       "consentModal": {
-        "title": "ꯀꯟꯁꯦꯟ ꯭ ꯇ ꯄ ꯭ ꯔꯐꯔꯦꯟ ꯭ ꯁꯁꯤꯡ ꯁꯦꯝꯗꯣꯛ-ꯁꯦꯝꯖꯤꯟ ꯇꯧ",
+        "title": "ꯀꯟꯁꯦꯟ ꯭ ꯇ ꯄ ꯭ ꯔꯐꯔꯦꯟꯁꯁꯤꯡ-ꯑꯦꯁ. ꯌꯨ. ꯗꯤ. ꯑꯗꯨ ꯁꯦꯝꯗꯣꯛ-ꯁꯦꯝꯖꯤꯟ ꯇꯧ ꯫",
         "description": "ꯑꯩꯈꯣꯏꯅ ꯀꯨꯀꯤꯁꯤꯡ ꯑꯁꯤ ꯅꯍꯥꯛꯅ ꯄꯦꯖꯁꯤꯡꯒꯤ ꯃꯔꯛꯇ ꯐꯖꯅ ꯆꯠꯄꯗ ꯃꯇꯦꯡ ꯄꯥꯡꯅꯕ, ꯅꯍꯥꯛꯀꯤ ꯄꯥꯝꯖꯕꯁꯤꯡ ꯊꯝꯅꯕ, ꯑꯃꯁꯨꯡ ꯃꯍꯧꯁꯥꯅ ꯅꯍꯥꯛꯀꯤ ꯋꯦꯕꯁꯥꯏꯠ ꯑꯃꯒꯤ ꯍꯩ-ꯁꯤꯡꯕ ꯑꯗꯨ ꯐꯒꯠꯍꯟꯅꯕ ꯁꯤꯖꯤꯟꯅꯩ ꯫ ꯑꯗꯨꯝ ꯑꯣꯏꯅꯃꯛ, ꯑꯩꯈꯣꯏꯅ ꯅꯍꯥꯛꯀꯤ ꯄ ꯭ ꯔꯥꯏꯚꯁꯤꯒꯤ ꯍꯛ ꯑꯗꯨ ꯌꯥꯈꯤ ꯑꯃꯁꯨꯡ ꯃꯔꯝ ꯑꯁꯤꯅ ꯅꯍꯥꯛꯅ ꯃꯈꯜ ꯈꯔꯒꯤ ꯀꯨꯀꯤꯁꯤꯡ ꯌꯥꯗꯅꯕ ꯈꯟꯕꯤꯕ ꯌꯥꯏ ꯫ ꯍꯦꯟꯅ ꯈꯪꯗꯣꯛꯅꯕ ꯑꯃꯁꯨꯡ ꯑꯩꯈꯣꯏꯒꯤ ꯗꯤꯐꯣꯜꯠ ꯁꯦꯇꯤꯡꯁꯤꯡ ꯍꯣꯡꯗꯣꯛꯅꯕ ꯇꯣꯉꯥꯟ-ꯇꯣꯉꯥꯟꯕ ꯀꯦꯇꯦꯒꯔꯤ ꯍꯦꯗꯤꯡꯁꯤꯡꯗ ꯅꯝꯃꯨ ꯫ ꯆꯥꯟꯕꯤꯗꯨꯅ ꯈꯪꯕꯤꯌꯨ ꯃꯗꯨꯗꯤ ꯑꯀꯛꯅꯕ ꯃꯈꯜꯒꯤ ꯀꯨꯀꯤꯁꯤꯡ ꯊꯤꯡꯕ ꯑꯁꯤꯅ ꯅꯍꯥꯛꯀꯤ ꯁꯥꯏꯠ ꯑꯁꯤꯒꯤ ꯈꯪꯍꯧꯕꯗ ꯑꯀꯥꯏꯕ ꯄꯤꯕ ꯌꯥꯏ ꯫",
         "buttons": {
           "save": "ꯂꯧꯕꯤꯌꯨ",
@@ -389,7 +389,7 @@ window.klaroConfig = {
       "acceptSelected": "ᱵᱟᱪᱷᱱᱟᱣ ᱠᱚ ᱦᱟᱛᱟᱣ ᱢᱮ ᱾",
       "ok": "ᱥᱟᱱᱟᱢ ᱜᱮ ᱦᱟᱛᱟᱣ ᱢᱮ ᱾",
       "consentNotice": {
-        "description": "ᱟᱢ ᱟᱢᱟᱜ ᱵᱮᱼᱵᱟᱹᱛᱟᱹᱨᱤ ᱫᱚ ᱢᱟᱹᱱ ᱮᱢᱼᱟ-ᱮᱥ ᱤᱭᱩ ᱰᱤ ᱟᱢ ᱟᱹᱰᱤ ضروری ᱥᱟᱭᱤᱴ ᱠᱟᱹᱢᱤ ᱫᱟᱲᱮ ᱞᱟᱹᱜᱤᱫ ᱠᱩᱠᱤ ᱠᱚ ᱫᱚᱦᱚ ᱮᱫᱟ, ᱚᱱᱟ ᱥᱟᱶᱛᱮ ᱵᱤᱪᱷᱚᱱᱟ, ᱵᱮᱼᱵᱟᱹᱛᱤᱞ ᱟᱨ ᱵᱤᱪᱷᱚᱱᱟ ᱾ \"ᱥᱟᱱᱟᱢ ᱠᱚ ᱦᱟᱛᱟᱣ ᱢᱮ\" ᱨᱮ ᱠᱞᱤᱠ ᱠᱟᱛᱮ ᱟᱢ ᱟᱢᱨᱮᱱ ᱠᱩᱠᱤ ᱠᱚ ᱵᱮᱣᱦᱟᱨ ᱞᱟᱹᱜᱤᱫ ᱮ ᱥᱤᱜᱤᱞᱚᱜᱼᱟ ᱾ ᱟᱢ ᱡᱟᱦᱟᱸ ᱚᱠᱛᱚ ᱨᱮᱦᱚᱸ ᱟᱢᱟᱜ ᱥᱮᱴᱤᱝ ᱠᱚ ᱵᱚᱱᱚᱫᱚᱞ ᱫᱟᱲᱮᱭᱟᱜᱼᱟ ᱾ ᱠᱩᱠᱤ ᱟᱹᱨᱤ ᱾",
+        "description": "ᱟᱢ ᱟᱢᱟᱜ ᱵᱮᱼᱥᱟᱹᱨᱤᱛᱤ ᱪᱮᱛᱟᱱ ᱢᱟᱹᱱ ᱮᱢ ᱮᱫᱟ, ᱟᱢ ᱥᱟᱭᱤᱴ ᱨᱮᱭᱟᱜ ᱞᱟᱹᱠᱛᱤᱭᱟᱱ ᱠᱟᱹᱢᱤ ᱦᱚᱨᱟ ᱥᱟᱶ ᱥᱟᱶᱛᱮ ᱵᱟᱡᱟᱨ, ᱵᱮᱼᱥᱟᱹᱨᱤᱣᱟᱱ ᱟᱨ ᱵᱤᱪᱷᱚᱱᱟᱣᱟᱱ ᱠᱟᱹᱢᱤ ᱫᱟᱲᱮ ᱞᱟᱹᱜᱤᱫ ᱠᱩᱠᱤ ᱠᱚ ᱫᱚᱦᱚ ᱮᱫᱟ ᱾ \"ᱥᱟᱱᱟᱢ ᱠᱚ ᱦᱟᱛᱟᱣ ᱢᱮ\" ᱨᱮ ᱠᱞᱤᱠ ᱠᱟᱛᱮ ᱟᱢ ᱟᱢᱨᱮᱱ ᱠᱩᱠᱤ ᱠᱚ ᱵᱮᱣᱦᱟᱨ ᱞᱟᱹᱜᱤᱫ ᱮ ᱥᱤᱜᱤᱞᱚᱜᱼᱟ ᱾ ᱟᱢ ᱡᱟᱦᱟᱸ ᱚᱠᱛᱚ ᱨᱮᱦᱚᱸ ᱟᱢᱟᱜ ᱥᱮᱴᱤᱝ ᱠᱚ ᱵᱚᱱᱚᱫᱚᱞ ᱫᱟᱲᱮᱭᱟᱜᱼᱟ ᱾ ᱠᱩᱠᱤ ᱟᱹᱨᱤ ᱾",
         "learnMore": "ᱵᱚᱱᱫᱮᱡ ᱢᱮ ᱾",
         "changeDescription": " "
       },
@@ -441,13 +441,13 @@ window.klaroConfig = {
       "acceptSelected": "منتخب کردہ کو قبول کریں",
       "ok": "سب کو قبول کریں",
       "consentNotice": {
-        "description": "ہم آپ کی پرائیویسی کا احترام کرتے ہیں-ایس یو ڈی ہم سائٹ کی ضروری فعالیت کے ساتھ مارکیٹنگ، ذاتی کاری اور تجزیات کو فعال کرنے کے لیے کوکیز کو اسٹور کرتے ہیں۔ \"سب کو قبول کریں\" پر کلک کرکے، آپ ہمارے کوکیز کے استعمال سے اتفاق کرتے ہیں۔ آپ کسی بھی وقت اپنی ترتیبات تبدیل کر سکتے ہیں۔ کوکی پالیسی۔",
+        "description": "ہم آپ کی پرائیویسی کا احترام کرتے ہیں۔ ہم کوکیز کو ضروری سائٹ کی فعالیت کے ساتھ مارکیٹنگ، پرسنلائزیشن اور تجزیات کو فعال کرنے کے لیے اسٹور کرتے ہیں۔ \"سب کو قبول کریں\" پر کلک کرکے، آپ ہمارے کوکیز کے استعمال سے اتفاق کرتے ہیں۔ آپ کسی بھی وقت اپنی ترتیبات تبدیل کر سکتے ہیں۔ کوکی پالیسی۔",
         "learnMore": "اپنی مرضی کے مطابق بنائیں",
         "changeDescription": " "
       },
       "save": "قبول کریں",
       "consentModal": {
-        "title": "رضامندی کی ترجیحات کو حسب ضرورت بنائیں",
+        "title": "رضامندی کی ترجیحات کو حسب ضرورت بنائیں-ایس یو ڈی",
         "description": "ہم کوکیز کا استعمال آپ کو صفحات کے درمیان مؤثر طریقے سے نیویگیٹ کرنے، آپ کی ترجیحات کو محفوظ کرنے، اور عام طور پر کسی ویب سائٹ کے اپنے تجربے کو بہتر بنانے میں مدد کرنے کے لیے کرتے ہیں۔ تاہم، ہم آپ کے پرائیویسی کے حق کو تسلیم کرتے ہیں اور اس لیے آپ کچھ قسم کی کوکیز کی اجازت نہ دینے کا انتخاب کر سکتے ہیں۔ مزید جاننے اور ہماری ڈیفالٹ سیٹنگز کو تبدیل کرنے کے لیے مختلف زمرہ کے عنوانات پر کلک کریں۔ براہ کرم نوٹ کریں کہ بعض قسم کی کوکیز کو بلاک کرنا سائٹ کے آپ کے تجربے کو متاثر کر سکتا ہے۔",
         "buttons": {
           "save": "قبول کریں",
@@ -493,13 +493,13 @@ window.klaroConfig = {
       "acceptSelected": "सायख 'जानायफोरखौ आजाव",
       "ok": "गासिबोखौ आजाव",
       "consentNotice": {
-        "description": "जों नोंथांनि प्राइभेसिखौ मान होयो-एस. यु. डि. जों साइटनि गोनांथार आखुथाइजों लोगोसे मार्केटिं, गावारि खालामनाय आरो एनालिटिक्स खालामनो थाखाय कुकिजखौ दोनथुमो। \"गासिबो आजाव\" आव क्लिक खालामनानै, नोंथाङा जोंनि कुकिज बाहायनायनि थाखाय गनायथि होयो। नोंथाङा जायखिजाया समावनो गावनि सेटिंसखौ सोलायनो हायो। कुकि पलिसि।",
+        "description": "जों नोंथांनि प्राइभेसिखौ मान होयो, जों गोनांथार साइटनि खामानि, लोगोसे मार्केटिं, गावारि खालामनाय आरो एनालिटिक्सखौ गोहो होनो थाखाय कुकिजखौ दोनथुमो। \"गासिबो आजाव\" आव क्लिक खालामनानै, नोंथाङा जोंनि कुकिज बाहायनायनि थाखाय गनायथि होयो। नोंथाङा जायखिजाया समावनो गावनि सेटिंसखौ सोलायनो हायो। कुकि पलिसि।",
         "learnMore": "कास्टमाइज खालाम",
         "changeDescription": " "
       },
       "save": "आजाव",
       "consentModal": {
-        "title": "गनायथि सायख 'नायफोरखौ गावबागाव खालाम",
+        "title": "गनायथि सायख 'नायफोरखौ सायख' नाय-एस. यू. डी",
         "description": "जों नोंथांखौ पेजफोरनि गेजेराव मोजाङै नेभिगेट खालामनायाव मदद होनो, नोंथांनि गोसो जानायफोरखौ दोनथुमनो आरो सरासनस्रायै मोनसे वेबसाइटनि नोंथांनि रोंमोनदांथिखौ साबसिन खालामनो थाखाय कुकिफोरखौ बाहायो। जिखिजायामानो, जों नोंनि गावारिथिनि मोन्थाइखौ गनायो आरो बेनिखायनो नोंथाङा माखासे रोखोमनि कुकिजखौ गनायथि होनो नाङा सायख 'नो हायो। गोबां मिथिनो आरो जोंनि दिफल्ट सेटिंसखौ सोलायनो थाखाय गुबुन थाखोनि हेडिंफोराव क्लिक खालाम। अन्नानै नोजोर हो दि माखासे रोखोमनि कुकिजखौ ब्लक खालामनाया साइटनि नोंनि मोन्दांथिखौ गोहोम खोख्लैनो हागौ।",
         "buttons": {
           "save": "आजाव",
@@ -545,13 +545,13 @@ window.klaroConfig = {
       "acceptSelected": "निवडलेले स्वीकारा",
       "ok": "सर्व स्वीकारा",
       "consentNotice": {
-        "description": "आम्ही तुमच्या गोपनीयतेचा आदर करतो-एस. यू. डी. आम्ही आवश्यक साइट कार्यक्षमता, तसेच विपणन, वैयक्तिकरण आणि विश्लेषण सक्षम करण्यासाठी कुकीज संचयित करतो. \"सर्व स्वीकारा\" वर क्लिक करून, तुम्ही आमच्या कुकीजच्या वापरास संमती देता. तुम्ही कधीही तुमच्या सेटिंग्ज बदलू शकता. कुकी धोरण.",
+        "description": "आम्ही तुमच्या गोपनीयतेचा आदर करतो आम्ही आवश्यक साइट कार्यक्षमता, तसेच विपणन, वैयक्तिकरण आणि विश्लेषण सक्षम करण्यासाठी कुकीज संचयित करतो. \"सर्व स्वीकारा\" वर क्लिक करून, तुम्ही आमच्या कुकीजच्या वापरास संमती देता. तुम्ही कधीही तुमच्या सेटिंग्ज बदलू शकता. कुकी धोरण.",
         "learnMore": "सानुकूलित करा",
         "changeDescription": " "
       },
       "save": "स्वीकारा",
       "consentModal": {
-        "title": "संमती प्राधान्ये सानुकूलित करा",
+        "title": "संमती प्राधान्ये सानुकूलित करा-एस. यू. डी",
         "description": "पृष्ठांदरम्यान कार्यक्षमतेने नेव्हिगेट करण्यासाठी, तुमची प्राधान्ये संचयित करण्यासाठी आणि सामान्यतः वेबसाइटचा तुमचा अनुभव सुधारण्यासाठी आम्ही कुकीज वापरतो. तथापि, आम्ही तुमचा गोपनीयतेचा अधिकार मान्य करतो आणि म्हणून तुम्ही काही प्रकारच्या कुकीजला परवानगी न देणे निवडू शकता. अधिक जाणून घेण्यासाठी आणि आपली पूर्वनिर्धारित सेटिंग्ज बदलण्यासाठी वेगवेगळ्या श्रेणीच्या शीर्षकांवर क्लिक करा. कृपया लक्षात घ्या की विशिष्ट प्रकारच्या कुकीज अवरोधित केल्याने तुमच्या संकेतस्थळावरील अनुभवावर परिणाम होऊ शकतो.",
         "buttons": {
           "save": "स्वीकारा",
@@ -597,13 +597,13 @@ window.klaroConfig = {
       "acceptSelected": "ମନୋନୀତମାନଙ୍କୁ ଗ୍ରହଣ କରନ୍ତୁ",
       "ok": "ସମସ୍ତଙ୍କୁ ଗ୍ରହଣ କରନ୍ତୁ",
       "consentNotice": {
-        "description": "ଆମେ ଆପଣଙ୍କ ଗୋପନୀୟତାକୁ ସମ୍ମାନ ଜଣାଉଛୁ-ଏସ୍. ୟୁ. ଡି. ଆମେ ଅତ୍ୟାବଶ୍ୟକ ସାଇଟ୍ କାର୍ଯ୍ୟକାରିତା ସହିତ ମାର୍କେଟିଂ, ବ୍ୟକ୍ତିଗତକରଣ ଏବଂ ବିଶ୍ଳେଷଣକୁ ସକ୍ଷମ କରିବା ପାଇଁ କୁକିଜ ଷ୍ଟୋର୍ କରୁ। \"ସମସ୍ତଙ୍କୁ ଗ୍ରହଣ କରନ୍ତୁ\" ଉପରେ କ୍ଲିକ୍ କରି, ଆପଣ ଆମର କୁକିଜ୍ ବ୍ୟବହାର ପାଇଁ ସମ୍ମତି ଦିଅନ୍ତି। ଆପଣ ଯେକୌଣସି ସମୟରେ ନିଜର ସେଟିଂ ବଦଳାଇ ପାରିବେ। କୁକି ନୀତି।",
+        "description": "ଆମେ ଆପଣଙ୍କ ଗୋପନୀୟତାକୁ ସମ୍ମାନ ଜଣାଉଛୁ ଏବଂ ଅତ୍ୟାବଶ୍ୟକ ସାଇଟ୍ କାର୍ଯ୍ୟକାରିତା ସହିତ ବିପଣନ, ବ୍ୟକ୍ତିଗତକରଣ ଏବଂ ବିଶ୍ଳେଷଣକୁ ସକ୍ଷମ କରିବା ପାଇଁ ଆମେ କୁକିଜ ଷ୍ଟୋର୍ କରୁ। \"ସମସ୍ତଙ୍କୁ ଗ୍ରହଣ କରନ୍ତୁ\" ଉପରେ କ୍ଲିକ୍ କରି, ଆପଣ ଆମର କୁକିଜ୍ ବ୍ୟବହାର ପାଇଁ ସମ୍ମତି ଦିଅନ୍ତି। ଆପଣ ଯେକୌଣସି ସମୟରେ ନିଜର ସେଟିଂ ବଦଳାଇ ପାରିବେ। କୁକି ନୀତି।",
         "learnMore": "ସ୍ୱତନ୍ତ୍ର କରନ୍ତୁ",
         "changeDescription": " "
       },
       "save": "ଗ୍ରହଣ କରନ୍ତୁ",
       "consentModal": {
-        "title": "ସମ୍ମତି ପସନ୍ଦଗୁଡ଼ିକୁ ସ୍ୱତନ୍ତ୍ର କରନ୍ତୁ",
+        "title": "ସମ୍ମତି ପସନ୍ଦଗୁଡ଼ିକୁ ସ୍ୱତନ୍ତ୍ର କରନ୍ତୁ-ଏସ. ୟୁ. ଡି",
         "description": "ଆମେ ଆପଣଙ୍କୁ ପୃଷ୍ଠାଗୁଡ଼ିକ ମଧ୍ୟରେ ଦକ୍ଷତାର ସହ ନେଭିଗେଟ୍ କରିବାରେ, ଆପଣଙ୍କ ପସନ୍ଦଗୁଡ଼ିକୁ ସଂରକ୍ଷଣ କରିବାରେ ଏବଂ ସାଧାରଣତଃ ଏକ ୱେବସାଇଟ୍ ବିଷୟରେ ଆପଣଙ୍କ ଅଭିଜ୍ଞତାକୁ ଉନ୍ନତ କରିବାରେ ସାହାଯ୍ୟ କରିବାକୁ କୁକିଜ୍ ବ୍ୟବହାର କରୁ। ତଥାପି, ଆମେ ଆପଣଙ୍କ ଗୋପନୀୟତାର ଅଧିକାରକୁ ସ୍ୱୀକାର କରୁ ଏବଂ ତେଣୁ ଆପଣ କିଛି ପ୍ରକାରର କୁକିଜକୁ ଅନୁମତି ନଦେବାକୁ ଚୟନ କରିପାରିବେ | ଅଧିକ ଜାଣିବା ପାଇଁ ଏବଂ ଆମର ପୂର୍ବନିର୍ଦ୍ଧାରିତ ସେଟିଂ ବଦଳାଇବା ପାଇଁ ବିଭିନ୍ନ ବର୍ଗ ଶୀର୍ଷକ ଉପରେ କ୍ଲିକ୍ କରନ୍ତୁ। ଦୟାକରି ଧ୍ୟାନ ଦିଅନ୍ତୁ ଯେ ନିର୍ଦ୍ଦିଷ୍ଟ ପ୍ରକାରର କୁକିଜ୍କୁ ଅବରୋଧ କରିବା ଆପଣଙ୍କ ସାଇଟର ଅଭିଜ୍ଞତାକୁ ପ୍ରଭାବିତ କରିପାରେ।",
         "buttons": {
           "save": "ଗ୍ରହଣ କରନ୍ତୁ",
@@ -649,13 +649,13 @@ window.klaroConfig = {
       "acceptSelected": "নিৰ্বাচিতক গ্ৰহণ কৰক",
       "ok": "সকলো গ্ৰহণ কৰক",
       "consentNotice": {
-        "description": "আমি আপোনাৰ গোপনীয়তাক সন্মান কৰোঁ-এছ. ইউ. ডি. আমি প্ৰয়োজনীয় ছাইটৰ কাৰ্য্যকলাপ, লগতে বিপণন, ব্যক্তিগতকৰণ আৰু বিশ্লেষণ সক্ষম কৰিবলৈ কুকিজ সংৰক্ষণ কৰোঁ। \"সকলো গ্ৰহণ কৰক\" ত ক্লিক কৰি, আপুনি আমাৰ কুকিজ ব্যৱহাৰ কৰিবলৈ সন্মত হয়। আপুনি যিকোনো সময়তে আপোনাৰ ছেটিংছ সলনি কৰিব পাৰে। কুকি নীতি।",
+        "description": "আমি আপোনাৰ গোপনীয়তাক সন্মান কৰোঁ আমি প্ৰয়োজনীয় ছাইটৰ কাৰ্য্যকলাপ, লগতে বিপণন, ব্যক্তিগতকৰণ আৰু বিশ্লেষণ সক্ষম কৰিবলৈ কুকিজ সংৰক্ষণ কৰোঁ। \"সকলো গ্ৰহণ কৰক\" ত ক্লিক কৰি, আপুনি আমাৰ কুকিজ ব্যৱহাৰ কৰিবলৈ সন্মত হয়। আপুনি যিকোনো সময়তে আপোনাৰ ছেটিংছ সলনি কৰিব পাৰে। কুকি নীতি।",
         "learnMore": "কাস্টমাইজ কৰক",
         "changeDescription": " "
       },
       "save": "গ্ৰহণ কৰক",
       "consentModal": {
-        "title": "সন্মতি পছন্দসমূহ স্বনিৰ্ধাৰণ কৰক",
+        "title": "সন্মতি পছন্দসমূহ অনুকূলিত কৰক-এছ. ইউ. ডি",
         "description": "আমি আপোনাক পৃষ্ঠাবোৰৰ মাজত দক্ষতাত নেভিগেট কৰাত, আপোনাৰ পছন্দবোৰ সংৰক্ষণ কৰাত আৰু সাধাৰণতে এটা ৱেবছাইটৰ আপোনাৰ অভিজ্ঞতা উন্নত কৰাত সহায় কৰিবলৈ কুকিজ ব্যৱহাৰ কৰোঁ। অৱশ্যে, আমি আপোনাৰ গোপনীয়তাৰ অধিকাৰ স্বীকাৰ কৰোঁ আৰু সেয়েহে আপুনি কিছুমান প্ৰকাৰৰ কুকিজৰ অনুমতি নিদিবলৈ বাছনি কৰিব পাৰে। অধিক জানিবলৈ আৰু আমাৰ ডিফল্ট ছেটিংছ সলনি কৰিবলৈ বিভিন্ন শ্ৰেণীৰ শীৰ্ষকত ক্লিক কৰক। অনুগ্ৰহ কৰি মন কৰিব যে কিছুমান প্ৰকাৰৰ কুকি ব্লক কৰিলে আপোনাৰ ছাইটৰ অভিজ্ঞতাত প্ৰভাৱ পৰিব পাৰে।",
         "buttons": {
           "save": "গ্ৰহণ কৰক",
@@ -701,13 +701,13 @@ window.klaroConfig = {
       "acceptSelected": "चयनितकेँ स्वीकार करू",
       "ok": "सभ स्वीकार करू",
       "consentNotice": {
-        "description": "हम अहाँक गोपनीयताक सम्मान करैत छी-एस. यू. डी. हम आवश्यक साइट कार्यक्षमता, सङ्गहि विपणन, वैयक्तिकरण आ विश्लेषणकेँ सक्षम करबाक लेल कुकीज संग्रहित करैत छी। \"सभकेँ स्वीकार करू\" पर क्लिक कऽ अहाँ हमर कुकीजक उपयोगक लेल सहमति दैत छी। अहाँ कोनो समय अपन सेटिंग बदल सकैत छी। कुकी नीति।",
+        "description": "हम अहाँक गोपनीयताक सम्मान करैत छी जे हम आवश्यक साइट कार्यात्मकताक सङ्ग-सङ्ग विपणन, वैयक्तिकरण आ विश्लेषणकेँ सक्षम करबाक लेल कुकीजकेँ संग्रहित करैत छी। \"सभकेँ स्वीकार करू\" पर क्लिक कऽ अहाँ हमर कुकीजक उपयोगक लेल सहमति दैत छी। अहाँ कोनो समय अपन सेटिंग बदल सकैत छी। कुकी नीति।",
         "learnMore": "अनुकूलित करू",
         "changeDescription": " "
       },
       "save": "स्वीकार करू",
       "consentModal": {
-        "title": "सहमति प्राथमिकता सभकेँ अनुकूलित करू",
+        "title": "सहमति वरीयता-एस. यू. डी. केँ अनुकूलित करू",
         "description": "हम कुकीजक उपयोग पृष्ठक बीच कुशलतापूर्वक नेविगेट करबामे, अहाँक प्राथमिकताकेँ संग्रहित करबामे, आ सामान्यतः कोनो वेबसाइटक अपन अनुभवमे सुधार करबामे अहाँक सहायता करबाक लेल करैत छी। यद्यपि, हम अहाँक गोपनीयताक अधिकारकेँ स्वीकार करैत छी आ तेँ अहाँ किछु प्रकारक कुकीजकेँ अनुमति नहि देबाक विकल्प चुन सकैत छी। बेसी जानकारी प्राप्त करबाक लेल आ अपन पूर्वनिर्धारित सेटिंग्सकेँ बदलबाक लेल विभिन्न श्रेणी शीर्षकों पर क्लिक करू। कृपया ध्यान दियौक जे किछु प्रकारक कुकीजकेँ अवरुद्ध करबासँ साइट पर अहाँक अनुभव प्रभावित भऽ सकैत अछि।",
         "buttons": {
           "save": "स्वीकार करू",
@@ -753,13 +753,13 @@ window.klaroConfig = {
       "acceptSelected": "தேர்ந்தெடுக்கப்பட்டவர்களை ஏற்றுக்கொள்ளுங்கள்",
       "ok": "அனைத்தையும் ஏற்றுக்கொள்ளுங்கள்",
       "consentNotice": {
-        "description": "உங்கள் தனியுரிமையை நாங்கள் மதிக்கிறோம்-அத்தியாவசிய தள செயல்பாட்டை செயல்படுத்த குக்கீகளை நாங்கள் சேமிக்கிறோம், அதே போல் சந்தைப்படுத்தல், தனிப்பயனாக்கம் மற்றும் பகுப்பாய்வு. \"அனைத்தையும் ஏற்றுக்கொள்ளுங்கள்\" என்பதைக் கிளிக் செய்வதன் மூலம், எங்கள் குக்கீகளைப் பயன்படுத்த நீங்கள் ஒப்புக்கொள்கிறீர்கள். நீங்கள் எந்த நேரத்திலும் உங்கள் அமைப்புகளை மாற்றலாம். குக்கீ கொள்கை.",
+        "description": "உங்கள் தனியுரிமையை நாங்கள் மதிக்கிறோம், அத்தியாவசிய தள செயல்பாட்டை செயல்படுத்த குக்கீகளை நாங்கள் சேமிக்கிறோம், அதே போல் சந்தைப்படுத்தல், தனிப்பயனாக்கம் மற்றும் பகுப்பாய்வு. \"அனைத்தையும் ஏற்றுக்கொள்ளுங்கள்\" என்பதைக் கிளிக் செய்வதன் மூலம், எங்கள் குக்கீகளைப் பயன்படுத்த நீங்கள் ஒப்புக்கொள்கிறீர்கள். நீங்கள் எந்த நேரத்திலும் உங்கள் அமைப்புகளை மாற்றலாம். குக்கீ கொள்கை.",
         "learnMore": "தனிப்பயனாக்குங்கள்",
         "changeDescription": " "
       },
       "save": "ஏற்றுக்கொள்ளுங்கள்",
       "consentModal": {
-        "title": "சம்மத முன்னுரிமைகளைத் தனிப்பயனாக்குங்கள்",
+        "title": "சம்மத விருப்பங்களைத் தனிப்பயனாக்குங்கள்-எஸ். யு. டி",
         "description": "பக்கங்களுக்கு இடையில் திறம்பட செல்லவும், உங்கள் விருப்பங்களை சேமிக்கவும், பொதுவாக ஒரு வலைத்தளத்தின் உங்கள் அனுபவத்தை மேம்படுத்தவும் குக்கீகளைப் பயன்படுத்துகிறோம். இருப்பினும், உங்கள் தனியுரிமைக்கான உரிமையை நாங்கள் ஒப்புக்கொள்கிறோம், எனவே சில வகையான குக்கீகளை அனுமதிக்க வேண்டாம் என்று நீங்கள் தேர்வு செய்யலாம். மேலும் தெரிந்துகொள்ளவும், நமது இயல்புநிலை அமைப்புகளை மாற்றவும் வெவ்வேறு வகை தலைப்புகளைக் கிளிக் செய்க. சில வகையான குக்கீகளைத் தடுப்பது தளத்தின் உங்கள் அனுபவத்தை பாதிக்கக்கூடும் என்பதை நினைவில் கொள்க.",
         "buttons": {
           "save": "ஏற்றுக்கொள்ளுங்கள்",
@@ -805,13 +805,13 @@ window.klaroConfig = {
       "acceptSelected": "چونڊیل قبول ڪریو",
       "ok": "سڀنی کی قبول ڪریو",
       "consentNotice": {
-        "description": "اسان توہان جی رازداری جو احترام ڪریون ٿا-اسان ضروری سائیٽ جی ڪارڪردگی کی فعال ڪرڻ لاء ڪوڪیز اسٽور ڪریون ٿا، گڏوگڏ مارڪیٽنگ، ذاتی ڪرڻ ۽ تجزیا ڪلڪ ڪندی \"سڀنی کی قبول ڪریو، توہان اسان جی ڪوڪیز جی استعمال لاء رضامند آہیو توھان ڪنھن بہ وقت پنھنجی ترتیبن کی تبدیل ڪری سگھو ٿا ڪوڪی پالیسی",
+        "description": "اسان توہان جی رازداری جو احترام ڪریون ٿا اسان ضروری سائیٽ جی ڪارڪردگی کی فعال ڪرڻ لاء ڪوڪیز اسٽور ڪریون ٿا، گڏوگڏ مارڪیٽنگ، ذاتی ۽ تجزیا ڪلڪ ڪندی \"سڀنی کی قبول ڪریو، توہان اسان جی ڪوڪیز جی استعمال لاء رضامند آہیو توھان ڪنھن بہ وقت پنھنجی ترتیبن کی تبدیل ڪری سگھو ٿا ڪوڪی پالیسی",
         "learnMore": "ترتیب ڏیو",
         "changeDescription": " "
       },
       "save": "قبول ڪریو",
       "consentModal": {
-        "title": "رضامندی جی ترجیحن کی ترتیب ڏیو",
+        "title": "رضامندی جی ترجیحن کی ترتیب ڏیو-SUV",
         "description": "اسان استعمال ڪریون ٿا ڪوڪیز توہان جی مدد ڪرڻ لاء پیجز جی وچ ۾ موثر طریقی سان نیویگیشن ڪرڻ، توہان جی ترجیحات کی محفوظ ڪرڻ، ۽ عام طئور تی توہان جی ویب سائیٽ جی تجربی کی بہتر ڪرڻ بہرحال، اسان توہان جی رازداری جی حق کی تسلیم ڪریون ٿا ۽ ان ڪری توہان چونڊ ڪری سگہو ٿا تہ ڪجھ قسمن جی ڪوڪیز جی اجازت نہ ڏیو وڌیڪ معلوم ڪرڻ ۽ اسان جی ڊیفالٽ سیٽنگن کی تبدیل ڪرڻ لاء مختلف درجی جی عنوان تی ڪلڪ ڪریو مہربانی ڪری نوٽ ڪریو تہ ڪجھ قسمن جی ڪوڪیز کی بلاڪ ڪرڻ توہان جی سائیٽ جی تجربی کی متاثر ڪری سگہی ٿو",
         "buttons": {
           "save": "قبول ڪریو",
@@ -857,13 +857,13 @@ window.klaroConfig = {
       "acceptSelected": "নির্বাচিতদের গ্রহণ করুন",
       "ok": "সবাইকে গ্রহণ করুন",
       "consentNotice": {
-        "description": "আমরা আপনার গোপনীয়তাকে সম্মান করি-এস. ইউ. ডি আমরা প্রয়োজনীয় সাইটের কার্যকারিতা, পাশাপাশি বিপণন, ব্যক্তিগতকরণ এবং বিশ্লেষণ সক্ষম করতে কুকিজ সঞ্চয় করি। \"সকলকে গ্রহণ করুন\"-এ ক্লিক করে, আপনি আমাদের কুকিজ ব্যবহারে সম্মত হন। আপনি যে কোনও সময় আপনার সেটিংস পরিবর্তন করতে পারেন। কুকি নীতি।",
+        "description": "আমরা আপনার গোপনীয়তাকে সম্মান করি আমরা প্রয়োজনীয় সাইট কার্যকারিতা, পাশাপাশি বিপণন, ব্যক্তিগতকরণ এবং বিশ্লেষণ সক্ষম করতে কুকিজ সঞ্চয় করি। \"সকলকে গ্রহণ করুন\"-এ ক্লিক করে, আপনি আমাদের কুকিজ ব্যবহারে সম্মত হন। আপনি যে কোনও সময় আপনার সেটিংস পরিবর্তন করতে পারেন। কুকি নীতি।",
         "learnMore": "কাস্টমাইজ করুন",
         "changeDescription": " "
       },
       "save": "গ্রহণ করুন",
       "consentModal": {
-        "title": "সম্মতি পছন্দগুলি কাস্টমাইজ করুন",
+        "title": "সম্মতি পছন্দগুলি কাস্টমাইজ করুন-এস. ইউ. ডি",
         "description": "আমরা কুকিজ ব্যবহার করি আপনাকে পৃষ্ঠাগুলির মধ্যে দক্ষতার সাথে নেভিগেট করতে, আপনার পছন্দগুলি সংরক্ষণ করতে এবং সাধারণত একটি ওয়েবসাইটের আপনার অভিজ্ঞতা উন্নত করতে সহায়তা করার জন্য। যাইহোক, আমরা আপনার গোপনীয়তার অধিকারকে স্বীকার করি এবং তাই আপনি কিছু ধরনের কুকিজকে অনুমতি না দেওয়ার সিদ্ধান্ত নিতে পারেন। আরও জানতে এবং আমাদের ডিফল্ট সেটিংস পরিবর্তন করতে বিভিন্ন বিভাগের শিরোনামগুলিতে ক্লিক করুন। দয়া করে মনে রাখবেন যে নির্দিষ্ট ধরনের কুকিজ ব্লক করা আপনার সাইটের অভিজ্ঞতাকে প্রভাবিত করতে পারে।",
         "buttons": {
           "save": "গ্রহণ করুন",
@@ -909,13 +909,13 @@ window.klaroConfig = {
       "acceptSelected": "ఎంపిక చేసినవారిని అంగీకరించండి",
       "ok": "అందరినీ అంగీకరించండి",
       "consentNotice": {
-        "description": "మేము మీ గోప్యతను గౌరవిస్తాము-అవసరమైన సైట్ కార్యాచరణను, అలాగే మార్కెటింగ్, వ్యక్తిగతీకరణ మరియు విశ్లేషణలను ప్రారంభించడానికి మేము కుకీలను నిల్వ చేస్తాము. \"అందరినీ అంగీకరించండి\" క్లిక్ చేయడం ద్వారా, మీరు మా కుకీల వాడకానికి అంగీకరిస్తారు. మీరు ఎప్పుడైనా మీ సెట్టింగులను మార్చుకోవచ్చు. కుకీ విధానం.",
+        "description": "మేము మీ గోప్యతను గౌరవిస్తాము, అవసరమైన సైట్ కార్యాచరణను, అలాగే మార్కెటింగ్, వ్యక్తిగతీకరణ మరియు విశ్లేషణలను ప్రారంభించడానికి మేము కుకీలను నిల్వ చేస్తాము. \"అందరినీ అంగీకరించండి\" క్లిక్ చేయడం ద్వారా, మీరు మా కుకీల వాడకానికి అంగీకరిస్తారు. మీరు ఎప్పుడైనా మీ సెట్టింగులను మార్చుకోవచ్చు. కుకీ విధానం.",
         "learnMore": "అనుకూలీకరించండి",
         "changeDescription": " "
       },
       "save": "అంగీకరించండి",
       "consentModal": {
-        "title": "సమ్మతి ప్రాధాన్యతలను అనుకూలీకరించండి",
+        "title": "సమ్మతి ప్రాధాన్యతలను అనుకూలీకరించండి-ఎస్యుడి",
         "description": "పేజీల మధ్య సమర్థవంతంగా నావిగేట్ చేయడానికి, మీ ప్రాధాన్యతలను నిల్వ చేయడానికి మరియు సాధారణంగా వెబ్సైట్ గురించి మీ అనుభవాన్ని మెరుగుపరచడానికి మేము కుకీలను ఉపయోగిస్తాము. అయితే, మీ గోప్యత హక్కును మేము అంగీకరిస్తున్నాము, అందువల్ల మీరు కొన్ని రకాల కుకీలను అనుమతించకూడదని ఎంచుకోవచ్చు. మరింత తెలుసుకోవడానికి మరియు మా డిఫాల్ట్ సెట్టింగులను మార్చడానికి వివిధ వర్గ శీర్షికలపై క్లిక్ చేయండి. కొన్ని రకాల కుకీలను నిరోధించడం సైట్ యొక్క మీ అనుభవాన్ని ప్రభావితం చేయవచ్చని దయచేసి గమనించండి.",
         "buttons": {
           "save": "అంగీకరించండి",
@@ -961,13 +961,13 @@ window.klaroConfig = {
       "acceptSelected": "પસંદ કરેલ સ્વીકારો",
       "ok": "બધાને સ્વીકારો",
       "consentNotice": {
-        "description": "અમે તમારી ગોપનીયતાનો આદર કરીએ છીએ-એસ. યુ. ડી. અમે આવશ્યક સાઇટ કાર્યક્ષમતા, તેમજ માર્કેટિંગ, વ્યક્તિગતકરણ અને વિશ્લેષણને સક્ષમ કરવા માટે કૂકીઝ સંગ્રહિત કરીએ છીએ. \"બધાને સ્વીકારો\" પર ક્લિક કરીને, તમે અમારા કૂકીઝના ઉપયોગ માટે સંમતિ આપો છો. તમે કોઈપણ સમયે તમારી સેટિંગ્સ બદલી શકો છો. કૂકી નીતિ.",
+        "description": "અમે તમારી ગોપનીયતાનો આદર કરીએ છીએ અમે આવશ્યક સાઇટ કાર્યક્ષમતા, તેમજ માર્કેટિંગ, વ્યક્તિગતરણ અને વિશ્લેષણને સક્ષમ કરવા માટે કૂકીઝ સંગ્રહિત કરીએ છીએ. \"બધાને સ્વીકારો\" પર ક્લિક કરીને, તમે અમારા કૂકીઝના ઉપયોગ માટે સંમતિ આપો છો. તમે કોઈપણ સમયે તમારી સેટિંગ્સ બદલી શકો છો. કૂકી નીતિ.",
         "learnMore": "વૈવિધ્યપૂર્ણ બનાવો",
         "changeDescription": " "
       },
       "save": "સ્વીકારો",
       "consentModal": {
-        "title": "સંમતિ પસંદગીઓને કસ્ટમાઇઝ કરો",
+        "title": "સંમતિ પસંદગીઓને કસ્ટમાઇઝ કરો-એસયુડી",
         "description": "અમે તમને પૃષ્ઠો વચ્ચે અસરકારક રીતે નેવિગેટ કરવામાં, તમારી પસંદગીઓને સંગ્રહિત કરવામાં અને સામાન્ય રીતે વેબસાઇટના તમારા અનુભવને સુધારવામાં મદદ કરવા માટે કૂકીઝનો ઉપયોગ કરીએ છીએ. જો કે, અમે તમારા ગોપનીયતાના અધિકારને સ્વીકારીએ છીએ અને તેથી તમે અમુક પ્રકારની કૂકીઝને મંજૂરી ન આપવાનું પસંદ કરી શકો છો. વધુ જાણવા અને આપણી મૂળભૂત સેટિંગ્સ બદલવા માટે વિવિધ શ્રેણી શીર્ષકો પર ક્લિક કરો. મહેરબાની કરીને નોંધ કરો કે અમુક પ્રકારની કૂકીઝને અવરોધિત કરવાથી સાઇટના તમારા અનુભવને અસર થઈ શકે છે.",
         "buttons": {
           "save": "સ્વીકારો",
@@ -1013,13 +1013,13 @@ window.klaroConfig = {
       "acceptSelected": "ಆಯ್ಕೆಯಾದವರನ್ನು ಸ್ವೀಕರಿಸಿ",
       "ok": "ಎಲ್ಲರನ್ನೂ ಸ್ವೀಕರಿಸಿ",
       "consentNotice": {
-        "description": "ನಿಮ್ಮ ಗೌಪ್ಯತೆಯನ್ನು ನಾವು ಗೌರವಿಸುತ್ತೇವೆ-ಅಗತ್ಯ ಸೈಟ್ ಕಾರ್ಯವನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಲು ನಾವು ಕುಕೀಗಳನ್ನು ಸಂಗ್ರಹಿಸುತ್ತೇವೆ, ಜೊತೆಗೆ ಮಾರ್ಕೆಟಿಂಗ್, ವೈಯಕ್ತೀಕರಣ ಮತ್ತು ವಿಶ್ಲೇಷಣೆ. \"ಎಲ್ಲರನ್ನೂ ಸ್ವೀಕರಿಸಿ\" ಕ್ಲಿಕ್ ಮಾಡುವ ಮೂಲಕ, ನೀವು ನಮ್ಮ ಕುಕೀಗಳ ಬಳಕೆಯನ್ನು ಒಪ್ಪುತ್ತೀರಿ. ನೀವು ಯಾವುದೇ ಸಮಯದಲ್ಲಿ ನಿಮ್ಮ ಸೆಟ್ಟಿಂಗ್ಗಳನ್ನು ಬದಲಾಯಿಸಬಹುದು. ಕುಕೀ ನೀತಿ.",
+        "description": "ನಿಮ್ಮ ಗೌಪ್ಯತೆಯನ್ನು ನಾವು ಗೌರವಿಸುತ್ತೇವೆ, ಅಗತ್ಯ ಸೈಟ್ ಕಾರ್ಯವನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಲು ನಾವು ಕುಕೀಗಳನ್ನು ಸಂಗ್ರಹಿಸುತ್ತೇವೆ, ಜೊತೆಗೆ ಮಾರ್ಕೆಟಿಂಗ್, ವೈಯಕ್ತೀಕರಣ ಮತ್ತು ವಿಶ್ಲೇಷಣೆ. \"ಎಲ್ಲರನ್ನೂ ಸ್ವೀಕರಿಸಿ\" ಕ್ಲಿಕ್ ಮಾಡುವ ಮೂಲಕ, ನೀವು ನಮ್ಮ ಕುಕೀಗಳ ಬಳಕೆಯನ್ನು ಒಪ್ಪುತ್ತೀರಿ. ನೀವು ಯಾವುದೇ ಸಮಯದಲ್ಲಿ ನಿಮ್ಮ ಸೆಟ್ಟಿಂಗ್ಗಳನ್ನು ಬದಲಾಯಿಸಬಹುದು. ಕುಕೀ ನೀತಿ.",
         "learnMore": "ಕಸ್ಟಮೈಸ್ ಮಾಡಿ",
         "changeDescription": " "
       },
       "save": "ಸ್ವೀಕರಿಸಿ",
       "consentModal": {
-        "title": "ಒಪ್ಪಿಗೆಯ ಆದ್ಯತೆಗಳನ್ನು ಕಸ್ಟಮೈಸ್ ಮಾಡಿ",
+        "title": "ಒಪ್ಪಿಗೆಯ ಆದ್ಯತೆಗಳನ್ನು ಕಸ್ಟಮೈಸ್ ಮಾಡಿ-ಎಸ್. ಯು. ಡಿ",
         "description": "ಪುಟಗಳ ನಡುವೆ ಪರಿಣಾಮಕಾರಿಯಾಗಿ ನ್ಯಾವಿಗೇಟ್ ಮಾಡಲು, ನಿಮ್ಮ ಆದ್ಯತೆಗಳನ್ನು ಸಂಗ್ರಹಿಸಲು ಮತ್ತು ಸಾಮಾನ್ಯವಾಗಿ ವೆಬ್ಸೈಟ್ನ ನಿಮ್ಮ ಅನುಭವವನ್ನು ಸುಧಾರಿಸಲು ನಿಮಗೆ ಸಹಾಯ ಮಾಡಲು ನಾವು ಕುಕೀಗಳನ್ನು ಬಳಸುತ್ತೇವೆ. ಆದಾಗ್ಯೂ, ನಿಮ್ಮ ಗೌಪ್ಯತೆಯ ಹಕ್ಕನ್ನು ನಾವು ಒಪ್ಪಿಕೊಳ್ಳುತ್ತೇವೆ ಮತ್ತು ಆದ್ದರಿಂದ ನೀವು ಕೆಲವು ರೀತಿಯ ಕುಕೀಗಳನ್ನು ಅನುಮತಿಸದಿರಲು ಆಯ್ಕೆ ಮಾಡಬಹುದು. ಇನ್ನಷ್ಟು ತಿಳಿದುಕೊಳ್ಳಲು ಮತ್ತು ನಮ್ಮ ಪೂರ್ವನಿಯೋಜಿತ ಸೆಟ್ಟಿಂಗ್ಗಳನ್ನು ಬದಲಾಯಿಸಲು ವಿವಿಧ ವರ್ಗದ ಶೀರ್ಷಿಕೆಗಳ ಮೇಲೆ ಕ್ಲಿಕ್ ಮಾಡಿ. ಕೆಲವು ರೀತಿಯ ಕುಕೀಗಳನ್ನು ನಿರ್ಬಂಧಿಸುವುದರಿಂದ ಸೈಟ್ನ ನಿಮ್ಮ ಅನುಭವದ ಮೇಲೆ ಪರಿಣಾಮ ಬೀರಬಹುದು ಎಂಬುದನ್ನು ದಯವಿಟ್ಟು ಗಮನಿಸಿ.",
         "buttons": {
           "save": "ಸ್ವೀಕರಿಸಿ",
@@ -1065,13 +1065,13 @@ window.klaroConfig = {
       "acceptSelected": "चयन स्वीकार गर्नुहोस्",
       "ok": "सबै स्वीकार गर्नुहोस्",
       "consentNotice": {
-        "description": "हामी तपाईंको गोपनीयतालाई सम्मान गर्दछौं-एसयुडी हामी आवश्यक साइट कार्यक्षमता, साथै मार्केटिङ, निजीकरण र विश्लेषण सक्षम गर्न कुकीहरू भण्डारण गर्दछौं। \"सबै स्वीकार गर्नुहोस्\" मा क्लिक गरेर, तपाईं हाम्रो कुकीजको प्रयोग गर्न सहमत हुनुहुन्छ। तपाईँले कुनै पनि समयमा आफ्नो सेटिङहरू परिवर्तन गर्न सक्नुहुन्छ। कुकी नीति।",
+        "description": "हामी तपाईंको गोपनीयतालाई सम्मान गर्दछौं हामी आवश्यक साइट कार्यक्षमता, साथै मार्केटिङ, निजीकरण र विश्लेषणहरू सक्षम गर्न कुकीहरू भण्डारण गर्दछौं। \"सबै स्वीकार गर्नुहोस्\" मा क्लिक गरेर, तपाईं हाम्रो कुकीजको प्रयोग गर्न सहमत हुनुहुन्छ। तपाईँले कुनै पनि समयमा आफ्नो सेटिङहरू परिवर्तन गर्न सक्नुहुन्छ। कुकी नीति।",
         "learnMore": "अनुकूलित गर्नुहोस्",
         "changeDescription": " "
       },
       "save": "स्वीकार गर्नुहोस्",
       "consentModal": {
-        "title": "सहमति प्राथमिकताहरू अनुकूलित गर्नुहोस्",
+        "title": "सहमति प्राथमिकताहरू अनुकूलित गर्नुहोस्-एसयुडी",
         "description": "हामी कुकीहरू प्रयोग गर्दछौं तपाईंलाई पृष्ठहरू बीच कुशलतापूर्वक नेभिगेट गर्न, तपाईंको प्राथमिकताहरू भण्डारण गर्न, र सामान्यतया वेबसाइटको तपाईंको अनुभव सुधार गर्न मद्दत गर्न। यद्यपि, हामी तपाईँको गोपनीयताको अधिकारलाई स्वीकार गर्दछौं र त्यसैले तपाईँले केही प्रकारका कुकीहरूलाई अनुमति नदिन छनौट गर्न सक्नुहुन्छ। थप पत्ता लगाउन र हाम्रो पूर्वनिर्धारित सेटिङहरू परिवर्तन गर्न विभिन्न श्रेणी शीर्षकहरूमा क्लिक गर्नुहोस्। कृपया ध्यान दिनुहोस् कि निश्चित प्रकारका कुकीहरू अवरुद्ध गर्नाले तपाईंको साइटको अनुभवलाई असर गर्न सक्छ।",
         "buttons": {
           "save": "स्वीकार गर्नुहोस्",
@@ -1117,13 +1117,13 @@ window.klaroConfig = {
       "acceptSelected": "चयनित को स्वीकार करें",
       "ok": "सभी को स्वीकार करें",
       "consentNotice": {
-        "description": "हम आपकी गोपनीयता का सम्मान करते हैं-एस. यू. डी. हम आवश्यक साइट कार्यक्षमता के साथ-साथ विपणन, वैयक्तिकरण और विश्लेषण को सक्षम करने के लिए कुकीज़ संग्रहीत करते हैं। \"सभी को स्वीकार करें\" पर क्लिक करके, आप हमारे कुकीज़ के उपयोग के लिए सहमत हैं। आप किसी भी समय अपनी सेटिंग बदल सकते हैं। कुकी नीति।",
+        "description": "हम आपकी गोपनीयता का सम्मान करते हैं हम आवश्यक साइट कार्यक्षमता के साथ-साथ विपणन, वैयक्तिकरण और विश्लेषण को सक्षम करने के लिए कुकीज़ संग्रहीत करते हैं। \"सभी को स्वीकार करें\" पर क्लिक करके, आप हमारे कुकीज़ के उपयोग के लिए सहमत हैं। आप किसी भी समय अपनी सेटिंग बदल सकते हैं। कुकी नीति।",
         "learnMore": "अनुकूलित करें",
         "changeDescription": " "
       },
       "save": "स्वीकार करें",
       "consentModal": {
-        "title": "सहमति वरीयताओं को अनुकूलित करें",
+        "title": "सहमति वरीयताओं को अनुकूलित करें-एस. यू. डी",
         "description": "हम कुकीज़ का उपयोग पृष्ठों के बीच कुशलता से नेविगेट करने, आपकी प्राथमिकताओं को संग्रहीत करने और आम तौर पर किसी वेबसाइट के आपके अनुभव को बेहतर बनाने में आपकी मदद करने के लिए करते हैं। हालाँकि, हम आपकी गोपनीयता के अधिकार को स्वीकार करते हैं और इसलिए आप कुछ प्रकार की कुकीज़ की अनुमति नहीं दे सकते हैं। अधिक जानने और हमारी डिफ़ॉल्ट सेटिंग्स को बदलने के लिए विभिन्न श्रेणी शीर्षकों पर क्लिक करें। कृपया ध्यान दें कि कुछ प्रकार की कुकीज़ को अवरुद्ध करना साइट के आपके अनुभव को प्रभावित कर सकता है।",
         "buttons": {
           "save": "स्वीकार करें",
@@ -1169,13 +1169,13 @@ window.klaroConfig = {
       "acceptSelected": "वेंचून काडिल्लें मान्य कर",
       "ok": "सगळें मान्य कर",
       "consentNotice": {
-        "description": "आमी तुमच्या गोपनीयतायेचो आदर करतात-एस. यू. डी. आम्ही गरजेची साइट कार्यात्मकताय, तशेंच विपणन, वैयक्तीकरण आनी विश्लेशण सक्षम करपा खातीर कुकीज सांठोवन दवरता. \"सगळें मान्य कर\" क्लिक करून तूं आमचे कुकीज वापरपाक संमती दिता. तुमी खंयच्याय वेळार तुमची मांडणी बदलूंक शकतात. कुकी धोरण.",
+        "description": "आमी तुमच्या गोपनीयतायेचो आदर करतात आमी गरजेच्यो सायटी कार्यक्षमताय, तशेंच विपणन, वैयक्तीकरण आनी विश्लेशण सक्षम करपा खातीर कुकीज सांठोवन दवरतात. \"सगळें मान्य कर\" क्लिक करून तूं आमचे कुकीज वापरपाक संमती दिता. तुमी खंयच्याय वेळार तुमची मांडणी बदलूंक शकतात. कुकी धोरण.",
         "learnMore": "सानुकूलित करात",
         "changeDescription": " "
       },
       "save": "मान्य कर",
       "consentModal": {
-        "title": "संमती पसंती सानुकूलित करात",
+        "title": "संमती पसंती सानुकूलित करात-एस. यू. डी",
         "description": "पानां मदीं कार्यक्षमपणान नेव्हिगेट करपाक, तुमची पसंती सांठोवन दवरपाक आनी सादारणपणान संकेतथळाचो तुमचो अणभव सुदारपाक तुमकां मदत करपाक आमी कुकीज वापरतात. पूण, आमी तुजो गोपनीयतायेचो हक्क मान्य करतात आनी देखून तूं कांय प्रकारच्या कुकीजांक परवानगी दिवची न्हय अशें निवडूंक शकता. चड जाणून घेवपा खातीर आनी आमची पूर्वनियोजित मांडणी बदलपा खातीर वेगवेगळ्या वर्ग शीर्षकांचेर क्लिक करात. उपकार करून लक्षांत दवरात की कांय तरांच्यो कुकीज आडावप तुमच्या सायटाच्या अणभवाचेर परिणाम करूंक शकता.",
         "buttons": {
           "save": "मान्य कर",
@@ -1221,13 +1221,13 @@ window.klaroConfig = {
       "acceptSelected": "ਚੁਣੇ ਹੋਏ ਨੂੰ ਸਵੀਕਾਰ ਕਰੋ",
       "ok": "ਸਭ ਨੂੰ ਸਵੀਕਾਰ ਕਰੋ",
       "consentNotice": {
-        "description": "ਅਸੀਂ ਤੁਹਾਡੀ ਗੋਪਨੀਯਤਾ ਦਾ ਸਨਮਾਨ ਕਰਦੇ ਹਾਂ-ਅਸੀਂ ਜ਼ਰੂਰੀ ਸਾਈਟ ਕਾਰਜਕੁਸ਼ਲਤਾ ਦੇ ਨਾਲ-ਨਾਲ ਮਾਰਕੀਟਿੰਗ, ਵਿਅਕਤੀਗਤਕਰਨ ਅਤੇ ਵਿਸ਼ਲੇਸ਼ਣ ਨੂੰ ਸਮਰੱਥ ਬਣਾਉਣ ਲਈ ਕੂਕੀਜ਼ ਨੂੰ ਸਟੋਰ ਕਰਦੇ ਹਾਂ। \"ਸਭ ਨੂੰ ਸਵੀਕਾਰ ਕਰੋ\" ਉੱਤੇ ਕਲਿੱਕ ਕਰਕੇ, ਤੁਸੀਂ ਸਾਡੀਆਂ ਕੂਕੀਜ਼ ਦੀ ਵਰਤੋਂ ਲਈ ਸਹਿਮਤੀ ਦਿੰਦੇ ਹੋ। ਤੁਸੀਂ ਕਿਸੇ ਵੀ ਸਮੇਂ ਆਪਣੀਆਂ ਸੈਟਿੰਗਾਂ ਨੂੰ ਬਦਲ ਸਕਦੇ ਹੋ। ਕੂਕੀ ਨੀਤੀ",
+        "description": "ਅਸੀਂ ਤੁਹਾਡੀ ਗੋਪਨੀਯਤਾ ਦਾ ਸਨਮਾਨ ਕਰਦੇ ਹਾਂ ਅਸੀਂ ਜ਼ਰੂਰੀ ਸਾਈਟ ਕਾਰਜਕੁਸ਼ਲਤਾ ਦੇ ਨਾਲ-ਨਾਲ ਮਾਰਕੀਟਿੰਗ, ਵਿਅਕਤੀਗਤਕਰਨ ਅਤੇ ਵਿਸ਼ਲੇਸ਼ਣ ਨੂੰ ਸਮਰੱਥ ਕਰਨ ਲਈ ਕੂਕੀਜ਼ ਸਟੋਰ ਕਰਦੇ ਹਾਂ। \"ਸਭ ਨੂੰ ਸਵੀਕਾਰ ਕਰੋ\" ਉੱਤੇ ਕਲਿੱਕ ਕਰਕੇ, ਤੁਸੀਂ ਸਾਡੀਆਂ ਕੂਕੀਜ਼ ਦੀ ਵਰਤੋਂ ਲਈ ਸਹਿਮਤੀ ਦਿੰਦੇ ਹੋ। ਤੁਸੀਂ ਕਿਸੇ ਵੀ ਸਮੇਂ ਆਪਣੀਆਂ ਸੈਟਿੰਗਾਂ ਨੂੰ ਬਦਲ ਸਕਦੇ ਹੋ। ਕੂਕੀ ਨੀਤੀ",
         "learnMore": "ਅਨੁਕੂਲ ਬਣਾਓ",
         "changeDescription": " "
       },
       "save": "ਸਵੀਕਾਰ ਕਰੋ",
       "consentModal": {
-        "title": "ਸਹਿਮਤੀ ਤਰਜੀਹਾਂ ਨੂੰ ਅਨੁਕੂਲਿਤ ਕਰੋ",
+        "title": "ਸਹਿਮਤੀ ਤਰਜੀਹਾਂ ਨੂੰ ਅਨੁਕੂਲਿਤ ਕਰੋ-ਐੱਸ. ਯੂ. ਡੀ",
         "description": "ਅਸੀਂ ਕੂਕੀਜ਼ ਦੀ ਵਰਤੋਂ ਪੰਨਿਆਂ ਦੇ ਵਿਚਕਾਰ ਕੁਸ਼ਲਤਾ ਨਾਲ ਨੈਵੀਗੇਟ ਕਰਨ, ਤੁਹਾਡੀਆਂ ਤਰਜੀਹਾਂ ਨੂੰ ਸਟੋਰ ਕਰਨ ਅਤੇ ਆਮ ਤੌਰ 'ਤੇ ਕਿਸੇ ਵੈੱਬਸਾਈਟ ਦੇ ਤੁਹਾਡੇ ਤਜ਼ਰਬੇ ਨੂੰ ਬਿਹਤਰ ਬਣਾਉਣ ਵਿੱਚ ਤੁਹਾਡੀ ਮਦਦ ਕਰਨ ਲਈ ਕਰਦੇ ਹਾਂ। ਹਾਲਾਂਕਿ, ਅਸੀਂ ਤੁਹਾਡੇ ਗੋਪਨੀਯਤਾ ਦੇ ਅਧਿਕਾਰ ਨੂੰ ਸਵੀਕਾਰ ਕਰਦੇ ਹਾਂ ਅਤੇ ਇਸ ਲਈ ਤੁਸੀਂ ਕੁੱਝ ਕਿਸਮਾਂ ਦੀਆਂ ਕੂਕੀਜ਼ ਦੀ ਆਗਿਆ ਨਾ ਦੇਣ ਦੀ ਚੋਣ ਕਰ ਸਕਦੇ ਹੋ। ਹੋਰ ਜਾਣਨ ਅਤੇ ਸਾਡੀਆਂ ਡਿਫਾਲਟ ਸੈਟਿੰਗਾਂ ਨੂੰ ਬਦਲਣ ਲਈ ਵੱਖ-ਵੱਖ ਸ਼੍ਰੇਣੀ ਸਿਰਲੇਖਾਂ ਉੱਤੇ ਕਲਿੱਕ ਕਰੋ। ਕਿਰਪਾ ਕਰਕੇ ਨੋਟ ਕਰੋ ਕਿ ਕੁੱਝ ਕਿਸਮਾਂ ਦੀਆਂ ਕੂਕੀਜ਼ ਨੂੰ ਰੋਕਣਾ ਸਾਈਟ ਦੇ ਤੁਹਾਡੇ ਤਜ਼ਰਬੇ ਨੂੰ ਪ੍ਰਭਾਵਤ ਕਰ ਸਕਦਾ ਹੈ।",
         "buttons": {
           "save": "ਸਵੀਕਾਰ ਕਰੋ",
@@ -1273,13 +1273,13 @@ window.klaroConfig = {
       "acceptSelected": "निर्वाचितानां स्वीकरणं करोतु",
       "ok": "सर्वं स्वीकरोतु",
       "consentNotice": {
-        "description": "वयं भवतः गोपनीयतायाः सम्मानं कुर्वन्ति-एस्. यु. डि. वयं आवश्यक-जालपुट-कार्यक्षमतां, विपणनं, वैयक्तिकरणम्, विश्लेषणं च समर्थयितुं कुकीस् सञ्चालयामः। \"सर्वान् स्वीकरो\" इति क्लिक् कृत्वा, भवान् अस्माकं कुकीस् इत्यस्य उपयोगाय सम्मतं ददति। भवान् कस्यापि समये स्वस्य सेट्टिङ्ग्स् परिवर्तयितुं शक्नोति। कुकी नीतिः।",
+        "description": "वयं भवतः गोपनीयतायाः सम्मानं कुर्वन्ति, वयं आवश्यक-जालपुट-कार्यक्षमतां, विपणनं, वैयक्तिकरणम्, विश्लेषणं च समर्थयितुं कुकीस् सञ्चयन्ति। \"सर्वान् स्वीकरो\" इति क्लिक् कृत्वा, भवान् अस्माकं कुकीस् इत्यस्य उपयोगाय सम्मतं ददति। भवान् कस्यापि समये स्वस्य सेट्टिङ्ग्स् परिवर्तयितुं शक्नोति। कुकी नीतिः।",
         "learnMore": "अनुकूलं करोतु",
         "changeDescription": " "
       },
       "save": "स्वीकरोतु",
       "consentModal": {
-        "title": "सहमति-प्राधान्यानि अनुकूलीकरोतु",
+        "title": "सहमति-प्राधान्यानि अनुकूलीकरोतु-एस. यू. डी",
         "description": "पृष्ठानां मध्ये दक्षतया न्याविगेट् कर्तुं, भवतः प्राथमिकतां सञ्चयितुं, सामान्यतया वेबसाइटस्य अनुभवस्य उन्नतेः च कृते वयं कुकीस् इत्येतान् उपयुञ्जामः। तथापि, वयं भवतः गोप्यताधिकारं स्वीकरोमि, अतः भवान् केषुचित् कुकीस् इत्येतान् न अनुमन्युम् इच्छति। अधिकान् ज्ञातुं, अस्माकं पूर्वनिर्धारित-विन्यासान् परिवर्तयितुं च भिन्न-श्रेणी-शीर्षकेषु नुदतु। कृपया द्रष्टव्यम् यत् कतिपयप्रकाराणां कुकीस् इत्येतान् अवरुद्धं चेत् भवतः जालपुटस्य अनुभवः प्रभावितः भवितुम् अर्हति।",
         "buttons": {
           "save": "स्वीकरोतु",
@@ -1330,9 +1330,9 @@ window.klaroConfig = {
   "declarative": false,
   "groupByPurpose": true,
   "hideToggleAll": false,
-  "appName": "Test_4",
+  "appName": "Test_5",
   "description": "We respects your privacy and is committed to protecting your personal data.",
-  "companyName": "Test_4",
+  "companyName": "Test_5",
   "companyAddress": " ",
   "services": [
     {
@@ -1342,7 +1342,7 @@ window.klaroConfig = {
         "Functional"
       ],
       "required": false,
-      "default": true,
+      "default": false,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
@@ -1356,7 +1356,7 @@ window.klaroConfig = {
         "Functional"
       ],
       "required": false,
-      "default": true,
+      "default": false,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
@@ -1370,7 +1370,7 @@ window.klaroConfig = {
         "Others"
       ],
       "required": false,
-      "default": true,
+      "default": false,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
@@ -1384,7 +1384,7 @@ window.klaroConfig = {
         "Others"
       ],
       "required": false,
-      "default": true,
+      "default": false,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
@@ -1398,7 +1398,7 @@ window.klaroConfig = {
         "Others"
       ],
       "required": false,
-      "default": true,
+      "default": false,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
@@ -1412,7 +1412,7 @@ window.klaroConfig = {
         "Others"
       ],
       "required": false,
-      "default": true,
+      "default": false,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
@@ -1426,7 +1426,7 @@ window.klaroConfig = {
         "Analytics"
       ],
       "required": false,
-      "default": true,
+      "default": false,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
@@ -1440,7 +1440,7 @@ window.klaroConfig = {
         "Marketing"
       ],
       "required": false,
-      "default": true,
+      "default": false,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
@@ -1454,7 +1454,7 @@ window.klaroConfig = {
         "Others"
       ],
       "required": false,
-      "default": true,
+      "default": false,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
@@ -1468,7 +1468,7 @@ window.klaroConfig = {
         "Others"
       ],
       "required": false,
-      "default": true,
+      "default": false,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
@@ -1482,7 +1482,7 @@ window.klaroConfig = {
         "Marketing"
       ],
       "required": false,
-      "default": true,
+      "default": false,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
@@ -1496,7 +1496,7 @@ window.klaroConfig = {
         "Functional"
       ],
       "required": false,
-      "default": true,
+      "default": false,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
@@ -1510,25 +1510,11 @@ window.klaroConfig = {
         "Functional"
       ],
       "required": false,
-      "default": true,
+      "default": false,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
         "_dyjsession"
-      ]
-    },
-    {
-      "name": "nt_page_init_referrer",
-      "title": "nt_page_init_referrer",
-      "purposes": [
-        "Others"
-      ],
-      "required": false,
-      "default": true,
-      "optOut": false,
-      "onlyOnce": true,
-      "cookies": [
-        "nt_page_init_referrer"
       ]
     },
     {
@@ -1538,7 +1524,7 @@ window.klaroConfig = {
         "Marketing"
       ],
       "required": false,
-      "default": true,
+      "default": false,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
@@ -1546,17 +1532,17 @@ window.klaroConfig = {
       ]
     },
     {
-      "name": "_fbp",
-      "title": "_fbp",
+      "name": "nt_page_init_referrer",
+      "title": "nt_page_init_referrer",
       "purposes": [
-        "Marketing"
+        "Others"
       ],
       "required": false,
-      "default": true,
+      "default": false,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
-        "_fbp"
+        "nt_page_init_referrer"
       ]
     },
     {
@@ -1566,11 +1552,25 @@ window.klaroConfig = {
         "Analytics"
       ],
       "required": false,
-      "default": true,
+      "default": false,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
         "_clck"
+      ]
+    },
+    {
+      "name": "_fbp",
+      "title": "_fbp",
+      "purposes": [
+        "Marketing"
+      ],
+      "required": false,
+      "default": false,
+      "optOut": false,
+      "onlyOnce": true,
+      "cookies": [
+        "_fbp"
       ]
     },
     {
@@ -1580,7 +1580,7 @@ window.klaroConfig = {
         "Analytics"
       ],
       "required": false,
-      "default": true,
+      "default": false,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
@@ -1594,7 +1594,7 @@ window.klaroConfig = {
         "Analytics"
       ],
       "required": false,
-      "default": true,
+      "default": false,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
@@ -1608,7 +1608,7 @@ window.klaroConfig = {
         "Others"
       ],
       "required": false,
-      "default": true,
+      "default": false,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
@@ -1622,7 +1622,7 @@ window.klaroConfig = {
         "Others"
       ],
       "required": false,
-      "default": true,
+      "default": false,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
@@ -1636,7 +1636,7 @@ window.klaroConfig = {
         "Marketing"
       ],
       "required": false,
-      "default": true,
+      "default": false,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
@@ -1650,7 +1650,7 @@ window.klaroConfig = {
         "Marketing"
       ],
       "required": false,
-      "default": true,
+      "default": false,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
@@ -1664,7 +1664,7 @@ window.klaroConfig = {
         "Functional"
       ],
       "required": false,
-      "default": true,
+      "default": false,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
@@ -1678,7 +1678,7 @@ window.klaroConfig = {
         "Functional"
       ],
       "required": false,
-      "default": true,
+      "default": false,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
@@ -1692,7 +1692,7 @@ window.klaroConfig = {
         "Others"
       ],
       "required": false,
-      "default": true,
+      "default": false,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
@@ -1706,7 +1706,7 @@ window.klaroConfig = {
         "Functional"
       ],
       "required": false,
-      "default": true,
+      "default": false,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
@@ -1720,7 +1720,7 @@ window.klaroConfig = {
         "Functional"
       ],
       "required": false,
-      "default": true,
+      "default": false,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
@@ -1734,7 +1734,7 @@ window.klaroConfig = {
         "Others"
       ],
       "required": false,
-      "default": true,
+      "default": false,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
@@ -1748,7 +1748,7 @@ window.klaroConfig = {
         "Marketing"
       ],
       "required": false,
-      "default": true,
+      "default": false,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
@@ -1762,7 +1762,7 @@ window.klaroConfig = {
         "Analytics"
       ],
       "required": false,
-      "default": true,
+      "default": false,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
@@ -1776,7 +1776,7 @@ window.klaroConfig = {
         "Marketing"
       ],
       "required": false,
-      "default": true,
+      "default": false,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
