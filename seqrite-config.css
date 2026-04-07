@@ -325,11 +325,19 @@
   border-radius: 4px;
   border-radius: var(--border-radius, 4px);
   
-  margin-right: 0.5em;
+  margin: 0;
   border-style: none;
-  padding: 0.4em;
+  padding: 0.5em 0.8em;
   font-size: 1em;
   cursor: pointer;
+  white-space: nowrap;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 1.2;
+  min-height: 2.2em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 .klaro .cookie-modal .cm-btn:disabled,
 .klaro .context-notice .cm-btn:disabled,
@@ -418,10 +426,11 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
-  padding: 12px;
+  padding: 16px;
   height: 100%;
+  text-align: left;
 }
 .klaro .context-notice.cm-dark {
   background-color: #333;
@@ -764,8 +773,13 @@
   display: flex;
   flex-flow: row;
   flex-wrap: wrap;
-  justify-content: right;
-  align-items: baseline;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.5em;
+  line-height: 1.4;
+}
+  gap: 0.5em;
+  line-height: 1.4;
 }
 .klaro .cookie-notice:not(.cookie-modal-notice) .cn-body .cn-ok a,
 .klaro .cookie-notice:not(.cookie-modal-notice) .cn-body .cn-ok div {
@@ -801,11 +815,53 @@
 }
 .klaro .cookie-modal-notice .cn-ok {
   display: flex;
-  flex-flow: row;
-  justify-content: space-between;
+  flex-flow: row wrap;
+  justify-content: flex-end;
   align-items: center;
   margin-top: 1em;
+  gap: 0.5em;
+  line-height: 1.4;
+}
+  margin-top: 1em;
+  gap: 0.5em;
+  line-height: 1.4;
 }
 .klaro .cookie-notice-hidden {
   display: none !important;
+}
+
+/* Enhanced text rendering for complex scripts (Bengali, Tamil, etc.) */
+.klaro .context-notice,
+.klaro .cookie-notice,
+.klaro .context-notice .cm-btn,
+.klaro .cookie-notice .cm-btn {
+  font-feature-settings: "liga" 1, "kern" 1;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Prevent text overflow in non-English languages */
+.klaro .context-notice p,
+.klaro .cookie-notice p {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+}
+
+/* Responsive button layout for long translations */
+@media (max-width: 768px) {
+  .klaro .context-notice .cm-btn,
+  .klaro .cookie-notice .cm-btn {
+    min-width: 80px;
+    font-size: 0.9em;
+  }
+  
+  .klaro .cookie-notice:not(.cookie-modal-notice) .cn-body .cn-ok {
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.3em;
+  }
 }
