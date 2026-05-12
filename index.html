@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="english">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quick Heal - Consent Form</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap" rel="stylesheet">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0000000001"></script>
+<script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-0000000001');
+</script>
+  <link rel="stylesheet" href="seqrite-config.css"/>
+  <script data-config="seqriteConfig" type="application/javascript" src="seqrite.js"></script>
+  <script type="application/javascript" src="seqrite-config.js"></script>
+</head>
+<body>
+<div class="consent">
+  <div class="card">
+    <div class="logo-language-wrapper">
+      <div class="language-selector">
+        <select id="languageDropdown">
+          <option value="english">English</option><option value="marathi">Marathi</option><option value="hindi">Hindi</option>
+        </select>
+      </div>
+
+      <div class="logo-container center">
+        <img src="https://sdpqa-hs.qhtpl.com/cpm-api/upload/v1/fileDownloads?fileUrl=hdfs://sdp-hdfs-namenode.hdfs.svc.cluster.local:9820/jars/1753812728744_Logo.jpg" class="logo">
+        <span class="company-name" data-translate="companyName">Quick Heal</span>
+      </div>
+    </div>
+
+    <!-- Permissions -->
+    <div id="permissions">
+      
+          <div class="permission-block">
+            <p data-translate-text="68891013c1571b72b5ff00a1"><p>1) Gender:</p> <span class="mandatory">*</span></p>
+            
+            <label class="radio-label">
+              <input type="radio" name="68891013c1571b72b5ff00a1" value="Male" data-translate-option="68891013c1571b72b5ff00a1"> Male
+            </label>
+          
+            <label class="radio-label">
+              <input type="radio" name="68891013c1571b72b5ff00a1" value="Female" data-translate-option="68891013c1571b72b5ff00a1"> Female
+            </label>
+          
+            <label class="radio-label">
+              <input type="radio" name="68891013c1571b72b5ff00a1" value="Other" data-translate-option="68891013c1571b72b5ff00a1"> Other
+            </label>
+          
+          </div>
+        
+          <div class="permission-block">
+            <p data-translate-text="68891013c1571b72b5ff00a2"><p>2) Marital Status:</p></p>
+            
+            <label class="checkbox-label">
+              <input type="checkbox" name="68891013c1571b72b5ff00a2" value="Single" data-translate-option="68891013c1571b72b5ff00a2"> Single
+            </label>
+          
+            <label class="checkbox-label">
+              <input type="checkbox" name="68891013c1571b72b5ff00a2" value="Married" data-translate-option="68891013c1571b72b5ff00a2"> Married
+            </label>
+          
+            <label class="checkbox-label">
+              <input type="checkbox" name="68891013c1571b72b5ff00a2" value="Divorced" data-translate-option="68891013c1571b72b5ff00a2"> Divorced
+            </label>
+          
+            <label class="checkbox-label">
+              <input type="checkbox" name="68891013c1571b72b5ff00a2" value="Widowed" data-translate-option="68891013c1571b72b5ff00a2"> Widowed
+            </label>
+          
+            <label class="checkbox-label">
+              <input type="checkbox" name="68891013c1571b72b5ff00a2" value="Seperated" data-translate-option="68891013c1571b72b5ff00a2"> Seperated
+            </label>
+          
+            <label class="checkbox-label">
+              <input type="checkbox" name="68891013c1571b72b5ff00a2" value="Other" data-translate-option="68891013c1571b72b5ff00a2"> Other
+            </label>
+          
+          </div>
+        
+          <div class="permission-block">
+            <p data-translate-text="68891013c1571b72b5ff00a3"><p>3) Is the patient under 18 years old?</p></p>
+            
+            <select class="dropdown" name="68891013c1571b72b5ff00a3" data-translate-dropdown="68891013c1571b72b5ff00a3">
+              <option value="Yes">Yes</option><option value="No">No</option>
+            </select>
+          
+          </div>
+        
+    </div>
+
+    <div id="error-message" class="error-message"></div>
+
+     <div id="toast" style="
+      visibility: hidden;
+      min-width: 175px;
+      margin-left: -125px;
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      border-radius: 4px;
+      padding: 16px;
+      position: fixed;
+      z-index: 1000;
+      right:10px;
+      top:10px;
+      font-size: 12px;
+    "></div>
+
+
+    <!-- Buttons -->
+    <div class="button-group">
+<button type="button" class="cancel" data-translate="cancelBtn"
+  >
+  Cancel
+</button>
+ 
+<button type="submit" class="submit" id="submitButton" data-translate="submitBtn"
+  >
+  Submit
+</button>
+</div>
+
+  </div>
+</div>
+  <script src="script.js"></script>
+
+</body>
+</html>
