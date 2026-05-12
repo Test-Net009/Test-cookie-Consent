@@ -127,7 +127,64 @@
 
   </div>
 </div>
-  <script src="script.js"></script>
+  <script>
+    // ─────────────────────────────────────────────────────────────
+    // Cookie helper — sets cookies with explicit SameSite + path
+    // so they appear in DevTools → Application → Cookies
+    // and in DevTools → Network → Request Headers (Cookie:)
+    // ─────────────────────────────────────────────────────────────
+    function setCookie(name, value, days, sameSite = 'Lax') {
+      const expires = new Date(Date.now() + days * 864e5).toUTCString();
+      document.cookie =
+        `${name}=${value}; expires=${expires}; path=/; SameSite=${sameSite}`;
+    }
+
+    // ── Necessary ─────────────────────────────────────────────
+    setCookie('PHPSESSID',      'qh_sess_abc123xyz789',        1);
+    setCookie('csrf_token',     'qh_csrf_tok9f2a8b3c1d',       1);
+
+    // ── Functional ────────────────────────────────────────────
+    setCookie('lang_pref',      'en-IN',                     365);
+    setCookie('ui_theme',       'light',                     365);
+
+    // ── Analytics ─────────────────────────────────────────────
+    // Realistic GA4 values: GA1.<domains>.<clientId> format
+    setCookie('_ga',            'GA1.2.847392810.1720000000', 730);
+    setCookie('_ga_0000000001', 'GS1.1.1720000000.1.1.1720000060.0.0.0', 730);
+    setCookie('_hjid',          'a1b2c3d4-e5f6-7890-abcd-ef1234567890', 365);
+
+    // ── Marketing ─────────────────────────────────────────────
+    // Realistic fbp/gcl format
+    setCookie('_fbp',           'fb.1.1720000000000.847392810', 90);
+    setCookie('_gcl_au',        '1.1.1234567890.1720000000',    90);
+
+    // ── Others ────────────────────────────────────────────────
+    setCookie('sp_t',           'qh_unclassified_sp001',        30);
+
+    // ─────────────────────────────────────────────────────────────
+    // Ping a real endpoint with credentials: 'include' so all
+    // cookies above appear in the Network tab → Request Headers
+    // under the "Cookie:" header.
+    // httpbin.org/cookies echoes back the cookies it received —
+    // visible in Network → Response as JSON too.
+    // ─────────────────────────────────────────────────────────────
+    window.addEventListener('load', () => {
+      fetch('https://httpbin.org/cookies', {
+        method: 'GET',
+        credentials: 'include',   // sends Cookie: header → visible in Network tab
+        mode: 'cors'
+      })
+      .then(r => r.json())
+      .then(data => {
+        console.log('[Cookie ping] Cookies seen by server:', data.cookies);
+      })
+      .catch(() => {
+        // CORS may block the response body on some browsers —
+        // the outgoing Cookie: header is still visible in Network tab
+        console.log('[Cookie ping] Request sent — check Network tab → Cookie header');
+      });
+    });
+  </script>
 
 </body>
 </html>
