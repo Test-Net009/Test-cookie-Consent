@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="english">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quick Heal - Consent Form</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap" rel="stylesheet">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0000000001"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-0000000001');
+  </script>
+  <link rel="stylesheet" href="seqrite-config.css"/>
+  <script data-config="seqriteConfig" type="application/javascript" src="seqrite.js"></script>
+  <script type="application/javascript" src="seqrite-config.js"></script>
+
+  <script>
+    // ─────────────────────────────────────────────────────────────
+    //  COOKIE UTILITY
+    //  All cookie operations go through these three helpers so that
+    //  path, SameSite and expiry are always set consistently.
+    // ─────────────────────────────────────────────────────────────
+    const CookieManager = (() => {
+
+      /**
+       * Set a cookie.
+       * @param {string}  name
+       * @param {string}  value
+       * @param {number}  [days]   – omit for a session cookie (expires when browser closes)
+       * @param {string}  [path]   – default "/"
+       * @param {string}  [sameSite] – "Lax" | "Strict" | "None"  (default "Lax")
+       */
+      function set(name, value, days, path = '/', sameSite = 'Lax') {
+        let expires = '';
+        if (days !== undefined && days !== null) {
+          const d = new Date();
+          d.setTime(d.getTime() + days * 24 * 60 * 60 * 1000);
+          expires = `; expires=${d.toUTCString()}`;
+        }
+        document.cookie = `${encodeURIComponent(name)}=${encodeURIComponent(value)}${expires}; path=${path}; SameSite=${sameSite}`;
+      }
+
+      /** Read a cookie by name. Returns the value string or null. */
+      function get(name) {
+        const key = `${encodeURIComponent(name)}=`;
+        const parts = document.cookie.split('; ');
+        for (const part of parts) {
+          if (part.startsWith(key)) {
+            return decodeURIComponent(part.slice(key.length));
+          }
+        }
+        return null;
+      }
+
+      /** Delete a cookie (sets it expired). */
+      function remove(name, path = '/') {
+        document.cookie = `${encodeURIComponent(name)}=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=${path}; SameSite=Lax`;
+      }
+
+      /** Generate a lightweight random ID (no crypto dependency). */
+      function generateId() {
+        return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, c => {
+          const r = Math.random() * 16 | 0;
+          return (c === 'x' ? r : (r & 0x3 | 0x8)).toString(16);
+        });
+      }
+
+      return { set, get, remove, generateId };
+    })();
+
+    // ─────────────────────────────────────────────────────────────
+    //  COOKIE DEFINITIONS
+    //  One object describes every cookie this page uses.
+    //  Changing a property here propagates everywhere automatically.
+    // ─────────────────────────────────────────────────────────────
+    const COOKIES = {
+      // Ephemeral per-tab session identifier (session cookie – no `days`)
+      SESSION_ID:   { name: 'qh_session_id',        days: null, sameSite: 'Lax' },
+
+      // Visitor identifier that persists across sessions (365 days)
+      VISITOR_ID:   { name: 'qh_visitor_id',         days: 365, sameSite: 'Lax' },
+
+      // Selected UI language (30 days)
+      LANGUAGE:     { name: 'qh_language',            days: 30,  sameSite: 'Lax' },
+
+      // Partial form state saved as JSON (1 day)
+      FORM_STATE:   { name: 'qh_form_state',          days: 1,   sameSite: 'Lax' },
+
+      // ISO timestamp of the last successful submission (365 days)
+      LAST_SUBMIT:  { name: 'qh_last_submit',         days: 365, sameSite: 'Lax' },
+
+      // Page-visit count for basic analytics (30 days)
+      VISIT_COUNT:  { name: 'qh_visit_count',         days: 30,  sameSite: 'Lax' },
+
+      // Consent version accepted by the user (365 days)
+      CONSENT_VER:  { name: 'qh_consent_version',     days: 365, sameSite: 'Lax' },
+    };
+
+    // Current consent-form version – bump this string when the form changes.
+    const CONSENT_FORM_VERSION = '1.0.0';
+
+    // ─────────────────────────────────────────────────────────────
+    //  INITIALISE COOKIES  (runs before the DOM is ready)
+    // ─────────────────────────────────────────────────────────────
+    (function initCookies() {
+
+      // 1. Session ID – fresh every browser session
+      if (!CookieManager.get(COOKIES.SESSION_ID.name)) {
+        CookieManager.set(
+          COOKIES.SESSION_ID.name,
+          CookieManager.generateId(),
+          COOKIES.SESSION_ID.days     // null → session cookie
+        );
+      }
+
+      // 2. Visitor ID – long-lived, created once per browser
+      if (!CookieManager.get(COOKIES.VISITOR_ID.name)) {
+        CookieManager.set(
+          COOKIES.VISITOR_ID.name,
+          CookieManager.generateId(),
+          COOKIES.VISITOR_ID.days
+        );
+      }
+
+      // 3. Visit counter – increment on every page load
+      const currentCount = parseInt(CookieManager.get(COOKIES.VISIT_COUNT.name) || '0', 10);
+      CookieManager.set(
+        COOKIES.VISIT_COUNT.name,
+        String(currentCount + 1),
+        COOKIES.VISIT_COUNT.days
+      );
+
+      // 4. Language – set to default only if not already stored
+      if (!CookieManager.get(COOKIES.LANGUAGE.name)) {
+        CookieManager.set(
+          COOKIES.LANGUAGE.name,
+          'english',
+          COOKIES.LANGUAGE.days
+        );
+      }
+
+      // 5. Consent version – record which form version the user is seeing
+      CookieManager.set(
+        COOKIES.CONSENT_VER.name,
+        CONSENT_FORM_VERSION,
+        COOKIES.CONSENT_VER.days
+      );
+
+      // 6. Form state – initialise with empty JSON if absent
+      if (!CookieManager.get(COOKIES.FORM_STATE.name)) {
+        CookieManager.set(
+          COOKIES.FORM_STATE.name,
+          JSON.stringify({}),
+          COOKIES.FORM_STATE.days
+        );
+      }
+	  CookieManager.set("username", "John Doe", 30);
+	  CookieManager.set("abcd", "1234", 30);
+	  CookieManager.set("countID", "567", 30);
+	  CookieManager.set("number", "098", 30);
+
+    })();
+  </script>
+</head>
+<body>
+<div class="consent">
+  <div class="card">
+    <div class="logo-language-wrapper">
+      <div class="language-selector">
+        <select id="languageDropdown">
+          <option value="english">English</option>
+          <option value="marathi">Marathi</option>
+          <option value="hindi">Hindi</option>
+        </select>
+      </div>
+
+      <div class="logo-container center">
+        <img src="https://sdpqa-hs.qhtpl.com/cpm-api/upload/v1/fileDownloads?fileUrl=hdfs://sdp-hdfs-namenode.hdfs.svc.cluster.local:9820/jars/1753812728744_Logo.jpg" class="logo">
+        <span class="company-name" data-translate="companyName">Quick Heal</span>
+      </div>
+    </div>
+
+    <!-- Permissions -->
+    <div id="permissions">
+
+      <div class="permission-block">
+        <p data-translate-text="68891013c1571b72b5ff00a1">
+          <p>1) Gender:</p> <span class="mandatory">*</span>
+        </p>
+        <label class="radio-label">
+          <input type="radio" name="68891013c1571b72b5ff00a1" value="Male" data-translate-option="68891013c1571b72b5ff00a1"> Male
+        </label>
+        <label class="radio-label">
+          <input type="radio" name="68891013c1571b72b5ff00a1" value="Female" data-translate-option="68891013c1571b72b5ff00a1"> Female
+        </label>
+        <label class="radio-label">
+          <input type="radio" name="68891013c1571b72b5ff00a1" value="Other" data-translate-option="68891013c1571b72b5ff00a1"> Other
+        </label>
+      </div>
+
+      <div class="permission-block">
+        <p data-translate-text="68891013c1571b72b5ff00a2"><p>2) Marital Status:</p></p>
+        <label class="checkbox-label">
+          <input type="checkbox" name="68891013c1571b72b5ff00a2" value="Single" data-translate-option="68891013c1571b72b5ff00a2"> Single
+        </label>
+        <label class="checkbox-label">
+          <input type="checkbox" name="68891013c1571b72b5ff00a2" value="Married" data-translate-option="68891013c1571b72b5ff00a2"> Married
+        </label>
+        <label class="checkbox-label">
+          <input type="checkbox" name="68891013c1571b72b5ff00a2" value="Divorced" data-translate-option="68891013c1571b72b5ff00a2"> Divorced
+        </label>
+        <label class="checkbox-label">
+          <input type="checkbox" name="68891013c1571b72b5ff00a2" value="Widowed" data-translate-option="68891013c1571b72b5ff00a2"> Widowed
+        </label>
+        <label class="checkbox-label">
+          <input type="checkbox" name="68891013c1571b72b5ff00a2" value="Seperated" data-translate-option="68891013c1571b72b5ff00a2"> Seperated
+        </label>
+        <label class="checkbox-label">
+          <input type="checkbox" name="68891013c1571b72b5ff00a2" value="Other" data-translate-option="68891013c1571b72b5ff00a2"> Other
+        </label>
+      </div>
+
+      <div class="permission-block">
+        <p data-translate-text="68891013c1571b72b5ff00a3"><p>3) Is the patient under 18 years old?</p></p>
+        <select class="dropdown" name="68891013c1571b72b5ff00a3" data-translate-dropdown="68891013c1571b72b5ff00a3">
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+      </div>
+
+    </div>
+
+    <div id="error-message" class="error-message"></div>
+
+    <div id="toast" style="
+      visibility: hidden;
+      min-width: 175px;
+      margin-left: -125px;
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      border-radius: 4px;
+      padding: 16px;
+      position: fixed;
+      z-index: 1000;
+      right: 10px;
+      top: 10px;
+      font-size: 12px;
+    "></div>
+
+    <!-- Buttons -->
+    <div class="button-group">
+      <button type="button" class="cancel" data-translate="cancelBtn">Cancel</button>
+      <button type="submit" class="submit" id="submitButton" data-translate="submitBtn">Submit</button>
+    </div>
+
+  </div>
+</div>
+
+  <script src="script.js"></script>
+
+  <script>
+    // ─────────────────────────────────────────────────────────────
+    //  DOM-READY COOKIE WIRING
+    //  Connects cookie reads/writes to actual UI elements.
+    // ─────────────────────────────────────────────────────────────
+    (function wireCookiesToUI() {
+
+      // ── Restore language dropdown from cookie ──────────────────
+      const langDropdown = document.getElementById('languageDropdown');
+      if (langDropdown) {
+        const savedLang = CookieManager.get(COOKIES.LANGUAGE.name);
+        if (savedLang) {
+          langDropdown.value = savedLang;
+        }
+
+        langDropdown.addEventListener('change', function () {
+          CookieManager.set(
+            COOKIES.LANGUAGE.name,
+            this.value,
+            COOKIES.LANGUAGE.days
+          );
+        });
+      }
+
+      // ── Restore form state from cookie ────────────────────────
+      function restoreFormState() {
+        try {
+          const raw = CookieManager.get(COOKIES.FORM_STATE.name);
+          if (!raw) return;
+          const state = JSON.parse(raw);
+
+          // Gender (radio)
+          if (state.gender) {
+            const radio = document.querySelector(
+              `input[name="68891013c1571b72b5ff00a1"][value="${state.gender}"]`
+            );
+            if (radio) radio.checked = true;
+          }
+
+          // Marital status (checkboxes)
+          if (Array.isArray(state.maritalStatus)) {
+            state.maritalStatus.forEach(val => {
+              const cb = document.querySelector(
+                `input[name="68891013c1571b72b5ff00a2"][value="${val}"]`
+              );
+              if (cb) cb.checked = true;
+            });
+          }
+
+          // Under-18 dropdown
+          if (state.under18) {
+            const sel = document.querySelector(
+              `select[name="68891013c1571b72b5ff00a3"]`
+            );
+            if (sel) sel.value = state.under18;
+          }
+        } catch (e) {
+          // Corrupt cookie – reset it
+          CookieManager.set(
+            COOKIES.FORM_STATE.name,
+            JSON.stringify({}),
+            COOKIES.FORM_STATE.days
+          );
+        }
+      }
+
+      // ── Save form state to cookie on any change ───────────────
+      function saveFormState() {
+        const genderEl = document.querySelector(
+          'input[name="68891013c1571b72b5ff00a1"]:checked'
+        );
+
+        const maritalEls = document.querySelectorAll(
+          'input[name="68891013c1571b72b5ff00a2"]:checked'
+        );
+
+        const under18El = document.querySelector(
+          'select[name="68891013c1571b72b5ff00a3"]'
+        );
+
+        const state = {
+          gender:        genderEl  ? genderEl.value : null,
+          maritalStatus: Array.from(maritalEls).map(el => el.value),
+          under18:       under18El ? under18El.value : null,
+          savedAt:       new Date().toISOString(),
+        };
+
+        CookieManager.set(
+          COOKIES.FORM_STATE.name,
+          JSON.stringify(state),
+          COOKIES.FORM_STATE.days
+        );
+      }
+
+      // Attach change listeners for live saving
+      document.querySelectorAll(
+        'input[name="68891013c1571b72b5ff00a1"], ' +
+        'input[name="68891013c1571b72b5ff00a2"], ' +
+        'select[name="68891013c1571b72b5ff00a3"]'
+      ).forEach(el => el.addEventListener('change', saveFormState));
+
+      // Restore on load
+      restoreFormState();
+
+      // ── On submit: write last-submit timestamp cookie ─────────
+      const submitBtn = document.getElementById('submitButton');
+      if (submitBtn) {
+        submitBtn.addEventListener('click', function () {
+          CookieManager.set(
+            COOKIES.LAST_SUBMIT.name,
+            new Date().toISOString(),
+            COOKIES.LAST_SUBMIT.days
+          );
+          // Clear saved form state after successful submission
+          CookieManager.set(
+            COOKIES.FORM_STATE.name,
+            JSON.stringify({}),
+            COOKIES.FORM_STATE.days
+          );
+        });
+      }
+
+      // ── On cancel: clear form-state cookie ────────────────────
+      const cancelBtn = document.querySelector('button.cancel');
+      if (cancelBtn) {
+        cancelBtn.addEventListener('click', function () {
+          CookieManager.set(
+            COOKIES.FORM_STATE.name,
+            JSON.stringify({}),
+            COOKIES.FORM_STATE.days
+          );
+        });
+      }
+
+    })();
+  </script>
+
+</body>
+</html>
