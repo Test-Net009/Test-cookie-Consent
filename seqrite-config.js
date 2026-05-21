@@ -2,8 +2,8 @@
 let userLang = (navigator.language || (navigator).userLanguage || 'en').split('-')[0];
 console.log("Browser Language Code: ", userLang);
 window.klaroConfig = {
-  "consentManagerId": "6a0eb4fc1717a21bf383de71",
-  "uuid": "d8d2dabd-6aac-4c05-a9e9-49b6ecd2df13",
+  "consentManagerId": "6a0ec65a1717a21bf383de8b",
+  "uuid": "70f8785b-eed4-4272-aa79-a5ef61eb7cfd",
   "domain": "https://perf.pre-dataprivacy.com/cmapi",
   "version": 1,
   "elementID": "SEQRITE",
@@ -15,7 +15,7 @@ window.klaroConfig = {
   "mustConsent": false,
   "acceptAll": true,
   "hideDeclineAll": false,
-  "hideLearnMore": false,
+  "hideLearnMore": true,
   "disablePoweredBy": false,
   "translations": {
     "english": {
@@ -370,6 +370,65 @@ window.klaroConfig = {
       "others": {
         "title": "Others",
         "description": "ഈ വിഭാഗത്തിൽ മുൻകൂട്ടി നിർവചിക്കപ്പെട്ട വിഭാഗങ്ങളുമായി പൊരുത്തപ്പെടാത്തതും എന്നാൽ ചില വെബ്സൈറ്റ് പ്രവർത്തനങ്ങൾക്കോ മെച്ചപ്പെടുത്തലുകൾക്കോ ആവശ്യമായി വന്നേക്കാവുന്ന കുക്കികൾ ഉൾപ്പെടുന്നു.<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">13 Cookies</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;bm_sz</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;SH-SID</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;bm_mi</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;neo_sc</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_user_id</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_trait</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_group_id</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_group_trait</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_anonymous_id</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_page_init_referrer</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_page_init_referring_domain</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;neo_session</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;getQuickQuoteModal</div><div><b>Host:</b>&nbsp;www.starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div></div></details>"
+      }
+    },
+    "mni": {
+      "acceptAll": "ꯄꯨꯝꯅꯃꯛ ꯂꯧꯕꯤꯌꯨ",
+      "accept": "ꯂꯧꯁꯤꯟꯕꯤꯌꯨ",
+      "decline": "ꯄꯨꯝꯅꯃꯛ ꯂꯧꯊꯣꯛꯎ",
+      "acceptSelected": "ꯈꯟꯒꯠꯂꯕ ꯑꯁꯤ ꯂꯧꯕꯤꯌꯨ",
+      "ok": "ꯄꯨꯝꯅꯃꯛ ꯂꯧꯕꯤꯌꯨ",
+      "consentNotice": {
+        "description": "ꯑꯩꯈꯣꯏꯅ ꯅꯍꯥꯛꯀꯤ ꯂꯅꯥꯏꯕꯨ ꯏꯀꯥꯏ ꯈꯨꯝꯅꯩ ꯑꯩꯈꯣꯏꯅ ꯇꯉꯥꯏꯐꯗꯕ ꯁꯥꯏꯠꯀꯤ ꯃꯊꯧ ꯇꯧꯕ ꯉꯝꯕ, ꯃꯥꯔꯀꯦꯇꯤꯡ, ꯄꯦꯁ ꯭ ꯅꯦꯜꯥꯏꯖꯦꯁꯟ ꯑꯃꯁꯨꯡ ꯑꯦꯅꯥꯂꯤꯇꯤꯛꯁ ꯇꯧꯕ ꯉꯝꯅꯕ ꯀꯨꯀꯤꯁꯤꯡ ꯊꯝꯃꯤ ꯫ \"ꯄꯨꯝꯅꯃꯛ ꯌꯥꯕꯤꯌꯨ\" ꯍꯥꯏꯕ ꯑꯗꯨꯗ ꯅꯝꯗꯨꯅ, ꯅꯍꯥꯛꯅ ꯑꯩꯈꯣꯏꯒꯤ ꯀꯨꯀꯤꯁꯤꯡ ꯁꯤꯖꯤꯟꯅꯕ ꯌꯥꯔꯦ ꯫ ꯅꯍꯥꯛꯅ ꯃꯇꯝ ꯑꯃꯍꯦꯛꯇꯗ ꯅꯍꯥꯛꯀꯤ ꯁꯦꯇꯤꯡꯁ ꯑꯗꯨ ꯍꯣꯡꯗꯣꯛꯄ ꯌꯥꯏ ꯫ ꯀꯨꯀꯤꯒꯤ ꯊꯧꯁꯤꯜ ꯫",
+        "learnMore": "ꯀꯁꯇꯃꯥꯏꯖ ꯇꯧ ꯫",
+        "changeDescription": " "
+      },
+      "save": "ꯂꯧꯁꯤꯟꯕꯤꯌꯨ",
+      "consentModal": {
+        "title": "ꯀꯣꯟꯁꯦꯟꯠ ꯄ ꯭ ꯔꯦꯐꯔꯦꯟꯁꯁꯤꯡ ꯀꯁ ꯭ ꯇꯥꯃꯥꯏꯖ ꯇꯧ",
+        "description": "ꯑꯩꯈꯣꯏꯅ ꯀꯨꯀꯤꯁꯤꯡ ꯑꯁꯤ ꯅꯍꯥꯛꯅ ꯆꯦꯐꯣꯡꯁꯤꯡꯒꯤ ꯃꯔꯛꯇ ꯐꯖꯅ ꯆꯠꯄꯗ ꯃꯇꯦꯡ ꯄꯥꯡꯅꯕ, ꯅꯍꯥꯛꯀꯤ ꯄꯥꯝꯖꯕꯁꯤꯡ ꯊꯝꯗꯨꯅ ꯊꯝꯕ, ꯑꯃꯁꯨꯡ ꯃꯍꯧꯁꯥꯅ ꯅꯍꯥꯛꯀꯤ ꯋꯦꯕꯁꯥꯏꯠ ꯑꯃꯒꯤ ꯈꯪ-ꯍꯩꯕ ꯑꯗꯨ ꯐꯒꯠꯍꯟꯕꯗ ꯁꯤꯖꯤꯟꯅꯩ ꯫ ꯑꯗꯨꯝ ꯑꯣꯏꯅꯃꯛ, ꯑꯩꯈꯣꯏꯅ ꯅꯍꯥꯛꯀꯤ ꯂꯅꯥꯏꯒꯤ ꯑꯣꯏꯕ ꯍꯛ ꯑꯗꯨ ꯌꯥꯔꯦ ꯑꯃꯁꯨꯡ ꯃꯔꯝ ꯑꯁꯤꯅ ꯅꯍꯥꯛꯅ ꯃꯈꯜ ꯈꯔꯒꯤ ꯀꯨꯀꯤꯁꯤꯡ ꯌꯥꯍꯟꯗꯅꯕ ꯈꯟꯕ ꯌꯥꯏ ꯫ ꯍꯦꯟꯅ ꯈꯪꯗꯣꯛꯅꯕ ꯑꯃꯁꯨꯡ ꯑꯩꯈꯣꯏꯒꯤ ꯗꯤꯐꯣꯜꯠ ꯁꯦꯇꯤꯡꯁ ꯑꯗꯨ ꯍꯣꯡꯗꯣꯛꯅꯕ ꯇꯣꯉꯥꯟ-ꯇꯣꯉꯥꯟꯕ ꯀꯦꯇꯦꯒꯣꯔꯤꯒꯤ ꯍꯦꯗꯤꯡꯁꯤꯡꯗ ꯅꯝꯃꯨ ꯫ ꯆꯥꯟꯕꯤꯗꯨꯅ ꯆꯦꯛꯁꯤꯟꯕꯤꯌꯨ ꯃꯗꯨꯗꯤ ꯑꯀꯛꯅꯕ ꯃꯈꯜꯒꯤ ꯀꯨꯀꯤꯁꯤꯡ ꯊꯤꯡꯕꯅ ꯅꯍꯥꯛꯀꯤ ꯁꯥꯏꯠ ꯑꯗꯨꯒꯤ ꯈꯪꯍꯧꯗ ꯭ ꯔꯕꯗ ꯑꯀꯥꯏꯕ ꯄꯤꯕ ꯌꯥꯏ ꯫",
+        "buttons": {
+          "save": "ꯂꯧꯁꯤꯟꯕꯤꯌꯨ",
+          "acceptAll": "ꯄꯨꯝꯅꯃꯛ ꯂꯧꯕꯤꯌꯨ",
+          "decline": "ꯄꯨꯝꯅꯃꯛ ꯂꯧꯊꯣꯛꯎ"
+        }
+      },
+      "poweredBy": "Powered by Seqrite",
+      "purposes": {},
+      "service": {
+        "disableAll": {
+          "description": "ꯄꯨꯝꯅꯃꯛ ꯂꯧꯊꯣꯛꯎ",
+          "title": "ꯄꯨꯝꯅꯃꯛ ꯂꯧꯊꯣꯛꯎ"
+        },
+        "optOut": {
+          "description": "Opt Out",
+          "title": "Opt Out"
+        }
+      },
+      "purposeItem": {
+        "service": "Cookie",
+        "services": "Cookies"
+      },
+      "contextualConsent": {
+        "description": "To show this content, we need your consent. Please accept the relevant cookies.",
+        "acceptOnce": "Accept once",
+        "acceptAlways": "Accept always"
+      },
+      "functional": {
+        "title": "Functional",
+        "description": "ꯑꯩꯈꯣꯏꯅ ꯃꯁꯤꯒꯤ ꯀꯨꯀꯤꯁꯤꯡ ꯑꯁꯤ ꯋꯦꯕꯁꯥꯏꯠꯀꯤ ꯃꯊꯧ ꯇꯧꯕ ꯉꯝꯕꯒꯤ ꯆꯥꯡ ꯍꯦꯟꯒꯠꯍꯟꯅꯕ ꯑꯃꯁꯨꯡ ꯌꯨꯖꯔꯒꯤ ꯈꯪ-ꯍꯩꯕꯒꯤ ꯐꯤꯕꯝ ꯐꯒꯠꯍꯟꯅꯕ ꯁꯤꯖꯤꯟꯅꯩ ꯫ ꯑꯀꯨꯞꯄ ꯃꯔꯣꯜꯗ ꯂꯣꯒꯏꯟ ꯗꯦꯇꯥ, ꯃꯐꯝ, ꯂꯣꯟ, ꯑꯃꯁꯨꯡ ꯐꯒꯠꯍꯜꯂꯕ ꯃꯆꯥꯛ ꯌꯥꯎꯕ ꯌꯥꯏ ꯫<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">3 Cookies</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;ak_bmsc</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Functional Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;bm_sv</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Functional Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_abck</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Functional Cookies</div></div></div></details>"
+      },
+      "analytics": {
+        "title": "Analytics",
+        "description": "ꯃꯁꯤꯒꯤ ꯀꯨꯀꯤꯁꯤꯡ ꯑꯁꯤꯅ ꯑꯩꯈꯣꯏꯗ ꯋꯦꯕꯁꯥꯏꯠꯀꯤ ꯇ ꯭ ꯔꯥꯐꯤꯛ, ꯌꯨꯖꯔꯒꯤ ꯃꯑꯣꯡ ꯃꯇꯧ, ꯑꯃꯁꯨꯡ ꯏꯡꯒꯦꯁꯟ ꯄꯦꯇꯔꯟꯁꯤꯡ ꯅꯩꯅꯕꯗ ꯃꯇꯦꯡ ꯄꯥꯡꯉꯤ ꯫ ꯈꯣꯝꯖꯤꯜꯂꯕ ꯋꯥꯈꯜꯂꯣꯟꯁꯤꯡ ꯑꯁꯤꯅ ꯑꯩꯈꯣꯏꯗ ꯀꯟꯇꯦꯟꯠ ꯑꯗꯨ ꯍꯦꯟꯅ ꯐꯕ ꯑꯣꯏꯍꯟꯕ, ꯁꯤꯖꯤꯟꯅꯕ ꯉꯝꯕꯒꯤ ꯆꯥꯡ ꯍꯦꯟꯒꯠꯍꯟꯕ, ꯑꯃꯁꯨꯡ ꯑꯄꯨꯟꯕ ꯁꯥꯏꯠꯀꯤ ꯊꯕꯛ ꯄꯥꯡꯊꯣꯛꯄ ꯑꯗꯨ ꯐꯒꯠꯍꯟꯕ ꯉꯝꯍꯜꯂꯤ ꯫<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">4 Cookies</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_ga</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Google Analytics</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_clck</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Analytics Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_clsk</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Analytics Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_ga_J59EYF8C12</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Google Analytics</div></div></div></details>"
+      },
+      "marketing": {
+        "title": "Marketing",
+        "description": "ꯃꯁꯤꯒꯤ ꯀꯨꯀꯤꯁꯤꯡ ꯑꯁꯤ ꯑꯩꯈꯣꯏꯒꯤ ꯑꯦꯗꯚꯔꯇꯥꯏꯖꯃꯦꯟ ꯭ ꯇꯒꯤ ꯁꯔꯨꯛ ꯌꯥꯔꯤꯕꯁꯤꯡꯅ ꯂꯅꯥꯏꯒꯤ ꯑꯣꯏꯕ ꯑꯦꯗꯁꯤꯡ ꯄꯤꯅꯕ ꯑꯃꯁꯨꯡ ꯃꯥꯔꯀꯦꯇꯤꯡꯒꯤ ꯈꯣꯡꯖꯪꯁꯤꯡꯒꯤ ꯀꯥꯟꯅꯕꯒꯤ ꯆꯥꯡ ꯂꯦꯞꯊꯣꯛꯅꯕ ꯁꯤꯖꯤꯟꯅꯩ ꯫ ꯃꯈꯣꯏꯅ ꯁꯤꯖꯤꯟꯅꯔꯤꯕ ꯃꯤꯑꯣꯏ ꯑꯗꯨꯒꯤ ꯅꯨꯡꯉꯥꯏꯕ ꯑꯃꯁꯨꯡ ꯌꯦꯡꯕꯒꯤ ꯃꯑꯣꯡ-ꯃꯇꯧꯗ ꯌꯨꯝꯐꯝ ꯑꯣꯏꯕ ꯃꯔꯤ ꯂꯩꯅꯕ ꯄ ꯭ ꯔꯣꯃꯣꯁꯟꯁꯤꯡ ꯄꯤꯕꯗ ꯃꯇꯦꯡ ꯄꯥꯡꯉꯤ ꯫<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">2 Cookies</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_gcl_au</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Google Ads</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_fbp</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Facebook/Meta Pixel</div></div></div></details>"
+      },
+      "others": {
+        "title": "Others",
+        "description": "ꯃꯁꯤꯒꯤ ꯀꯦꯇꯦꯒꯣꯔꯤ ꯑꯁꯤꯗ ꯃꯃꯥꯡꯗ ꯂꯦꯞꯊꯣꯛꯂꯕ ꯀꯦꯇꯦꯒꯣꯔꯤꯁꯤꯡꯗ ꯌꯥꯎꯗꯕ ꯑꯗꯨꯕꯨ ꯑꯀꯛꯅꯕ ꯋꯦꯕꯁꯥꯏꯠꯀꯤ ꯃꯊꯧꯁꯤꯡ ꯅꯠꯇ ꯭ ꯔꯒ ꯐꯒꯠꯍꯟꯅꯕꯒꯤꯗꯃꯛ ꯃꯊꯧ ꯇꯥꯕ ꯌꯥꯕ ꯀꯨꯀꯤꯁꯤꯡ ꯌꯥꯎꯔꯤ ꯫<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">13 Cookies</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;bm_sz</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;SH-SID</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;bm_mi</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;neo_sc</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_user_id</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_trait</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_group_id</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_group_trait</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_anonymous_id</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_page_init_referrer</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_page_init_referring_domain</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;neo_session</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;getQuickQuoteModal</div><div><b>Host:</b>&nbsp;www.starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div></div></details>"
       }
     },
     "sat": {
@@ -910,14 +969,14 @@ window.klaroConfig = {
       "acceptSelected": "নির্বাচিতদের গ্রহণ করুন",
       "ok": "সব গ্রহণ করুন",
       "consentNotice": {
-        "description": "<p>আমরা আপনার গোপনীয়তাকে সম্মান করি আমরা প্রয়োজনীয় সাইট কার্যকারিতা, পাশাপাশি বিপণন, ব্যক্তিগতকরণ এবং বিশ্লেষণ সক্ষম করতে কুকিজ সঞ্চয় করি। \"সবাইকে গ্রহণ করুন\"-এ ক্লিক করে, আপনি আমাদের কুকি ব্যবহারের জন্য সম্মত হন। আপনি যে কোনও সময় আপনার সেটিংস পরিবর্তন করতে পারেন। কুকি নীতি।</p>",
+        "description": "আমরা আপনার গোপনীয়তাকে সম্মান করি আমরা প্রয়োজনীয় সাইট কার্যকারিতা, পাশাপাশি বিপণন, ব্যক্তিগতকরণ এবং বিশ্লেষণ সক্ষম করতে কুকিজ সঞ্চয় করি। \"সবাইকে গ্রহণ করুন\"-এ ক্লিক করে, আপনি আমাদের কুকি ব্যবহারের জন্য সম্মত হন। আপনি যে কোনও সময় আপনার সেটিংস পরিবর্তন করতে পারেন। কুকি নীতি।",
         "learnMore": "কাস্টমাইজ করুন",
         "changeDescription": " "
       },
       "save": "গ্রহণ করুন",
       "consentModal": {
-        "title": "<p>সম্মতি পছন্দগুলি কাস্টমাইজ করুন</p>",
-        "description": "<p>আমরা আপনাকে দক্ষতার সাথে পৃষ্ঠাগুলির মধ্যে নেভিগেট করতে, আপনার পছন্দগুলি সংরক্ষণ করতে এবং সাধারণত কোনও ওয়েবসাইটের আপনার অভিজ্ঞতা উন্নত করতে সহায়তা করার জন্য কুকি ব্যবহার করি। যাইহোক, আমরা আপনার গোপনীয়তার অধিকারকে স্বীকার করি এবং তাই আপনি কিছু ধরনের কুকিজ অনুমোদন না করার সিদ্ধান্ত নিতে পারেন। আরও জানতে এবং আমাদের ডিফল্ট সেটিংস পরিবর্তন করতে বিভিন্ন বিভাগের শিরোনামে ক্লিক করুন। দয়া করে মনে রাখবেন যে নির্দিষ্ট ধরনের কুকিজ ব্লক করা আপনার সাইটের অভিজ্ঞতাকে প্রভাবিত করতে পারে।</p>",
+        "title": "সম্মতি পছন্দগুলি কাস্টমাইজ করুন",
+        "description": "আমরা আপনাকে দক্ষতার সাথে পৃষ্ঠাগুলির মধ্যে নেভিগেট করতে, আপনার পছন্দগুলি সংরক্ষণ করতে এবং সাধারণত কোনও ওয়েবসাইটের আপনার অভিজ্ঞতা উন্নত করতে সহায়তা করার জন্য কুকি ব্যবহার করি। যাইহোক, আমরা আপনার গোপনীয়তার অধিকারকে স্বীকার করি এবং তাই আপনি কিছু ধরনের কুকিজ অনুমোদন না করার সিদ্ধান্ত নিতে পারেন। আরও জানতে এবং আমাদের ডিফল্ট সেটিংস পরিবর্তন করতে বিভিন্ন বিভাগের শিরোনামে ক্লিক করুন। দয়া করে মনে রাখবেন যে নির্দিষ্ট ধরনের কুকিজ ব্লক করা আপনার সাইটের অভিজ্ঞতাকে প্রভাবিত করতে পারে।",
         "buttons": {
           "save": "গ্রহণ করুন",
           "acceptAll": "সব গ্রহণ করুন",
@@ -1019,65 +1078,6 @@ window.klaroConfig = {
       "others": {
         "title": "Others",
         "description": "ఈ వర్గం ముందుగా నిర్వచించిన వర్గాలకు సరిపోని కుకీలను కలిగి ఉంటుంది, కానీ కొన్ని వెబ్సైట్ కార్యాచరణలు లేదా మెరుగుదలలకు అవసరం కావచ్చు.<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">13 Cookies</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;bm_sz</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;SH-SID</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;bm_mi</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;neo_sc</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_user_id</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_trait</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_group_id</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_group_trait</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_anonymous_id</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_page_init_referrer</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_page_init_referring_domain</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;neo_session</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;getQuickQuoteModal</div><div><b>Host:</b>&nbsp;www.starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div></div></details>"
-      }
-    },
-    "gu": {
-      "acceptAll": "બધા સ્વીકારો",
-      "accept": "સ્વીકારો",
-      "decline": "બધાને નકારી કાઢો",
-      "acceptSelected": "પસંદ કરેલ સ્વીકારો",
-      "ok": "બધાને સ્વીકારો",
-      "consentNotice": {
-        "description": "અમે તમારી ગોપનીયતાનો આદર કરીએ છીએ અમે આવશ્યક સાઇટ કાર્યક્ષમતા, તેમજ માર્કેટિંગ, વ્યક્તિગતકરણ અને વિશ્લેષણને સક્ષમ કરવા માટે કૂકીઝ સંગ્રહિત કરીએ છીએ. \"બધા સ્વીકારો\" પર ક્લિક કરીને, તમે અમારા કૂકીઝના ઉપયોગ માટે સંમતિ આપો છો. તમે કોઈપણ સમયે તમારી સેટિંગ્સ બદલી શકો છો. કૂકી નીતિ.",
-        "learnMore": "કસ્ટમાઇઝ કરો",
-        "changeDescription": " "
-      },
-      "save": "સ્વીકારો",
-      "consentModal": {
-        "title": "સંમતિ પસંદગીઓને કસ્ટમાઇઝ કરો",
-        "description": "અમે તમને પૃષ્ઠો વચ્ચે અસરકારક રીતે નેવિગેટ કરવામાં, તમારી પસંદગીઓને સંગ્રહિત કરવામાં અને સામાન્ય રીતે વેબસાઇટના તમારા અનુભવને સુધારવામાં મદદ કરવા માટે કૂકીઝનો ઉપયોગ કરીએ છીએ. જો કે, અમે તમારા ગોપનીયતાના અધિકારને સ્વીકારીએ છીએ અને તેથી તમે અમુક પ્રકારની કૂકીઝને મંજૂરી ન આપવાનું પસંદ કરી શકો છો. વધુ જાણવા અને આપણી મૂળભૂત સેટિંગ્સ બદલવા માટે વિવિધ શ્રેણીના શીર્ષકો પર ક્લિક કરો. મહેરબાની કરીને નોંધ કરો કે અમુક પ્રકારની કૂકીઝને અવરોધિત કરવાથી સાઇટના તમારા અનુભવને અસર થઈ શકે છે.",
-        "buttons": {
-          "save": "સ્વીકારો",
-          "acceptAll": "બધા સ્વીકારો",
-          "decline": "બધાને નકારી કાઢો"
-        }
-      },
-      "poweredBy": "Powered by Seqrite",
-      "purposes": {},
-      "service": {
-        "disableAll": {
-          "description": "બધાને નકારી કાઢો",
-          "title": "બધાને નકારી કાઢો"
-        },
-        "optOut": {
-          "description": "Opt Out",
-          "title": "Opt Out"
-        }
-      },
-      "purposeItem": {
-        "service": "Cookie",
-        "services": "Cookies"
-      },
-      "contextualConsent": {
-        "description": "To show this content, we need your consent. Please accept the relevant cookies.",
-        "acceptOnce": "Accept once",
-        "acceptAlways": "Accept always"
-      },
-      "functional": {
-        "title": "Functional",
-        "description": "અમે આ કૂકીઝનો ઉપયોગ વેબસાઇટની કાર્યક્ષમતા વધારવા અને વપરાશકર્તા અનુભવને સુધારવા માટે કરીએ છીએ. માહિતીમાં લૉગિન ડેટા, પ્રદેશ, ભાષા અને ઉન્નત સામગ્રી શામેલ હોઈ શકે છે.<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">3 Cookies</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;ak_bmsc</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Functional Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;bm_sv</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Functional Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_abck</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Functional Cookies</div></div></div></details>"
-      },
-      "analytics": {
-        "title": "Analytics",
-        "description": "આ કૂકીઝ અમને વેબસાઇટ ટ્રાફિક, વપરાશકર્તા વર્તન અને જોડાણ પેટર્નનું વિશ્લેષણ કરવામાં મદદ કરે છે. એકત્રિત કરવામાં આવેલી આંતરદૃષ્ટિ આપણને સામગ્રીને શ્રેષ્ઠ બનાવવા, ઉપયોગીતા વધારવા અને એકંદર સાઇટ પ્રદર્શનમાં સુધારો કરવાની મંજૂરી આપે છે.<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">4 Cookies</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_ga</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Google Analytics</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_clck</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Analytics Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_clsk</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Analytics Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_ga_J59EYF8C12</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Google Analytics</div></div></div></details>"
-      },
-      "marketing": {
-        "title": "Marketing",
-        "description": "આ કૂકીઝનો ઉપયોગ અમારા જાહેરાત ભાગીદારો દ્વારા વ્યક્તિગત જાહેરાતો પહોંચાડવા અને માર્કેટિંગ ઝુંબેશની અસરકારકતાને માપવા માટે થાય છે. તેઓ વપરાશકર્તાની રુચિઓ અને બ્રાઉઝિંગ વર્તણૂકના આધારે સંબંધિત પ્રચાર પ્રદાન કરવામાં મદદ કરે છે.<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">2 Cookies</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_gcl_au</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Google Ads</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_fbp</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Facebook/Meta Pixel</div></div></div></details>"
-      },
-      "others": {
-        "title": "Others",
-        "description": "આ શ્રેણીમાં એવી કૂકીઝનો સમાવેશ થાય છે જે પૂર્વવ્યાખ્યાયિત શ્રેણીઓમાં બંધબેસતું નથી પરંતુ ચોક્કસ વેબસાઇટ કાર્યક્ષમતાઓ અથવા સુધારાઓ માટે જરૂરી હોઈ શકે છે.<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">13 Cookies</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;bm_sz</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;SH-SID</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;bm_mi</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;neo_sc</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_user_id</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_trait</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_group_id</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_group_trait</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_anonymous_id</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_page_init_referrer</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_page_init_referring_domain</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;neo_session</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;getQuickQuoteModal</div><div><b>Host:</b>&nbsp;www.starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div></div></details>"
       }
     },
     "kn": {
@@ -1434,33 +1434,33 @@ window.klaroConfig = {
         "description": "अस्मिन् वर्गे कुकीस् इत्येतानि अन्तर्भवन्ति यानि पूर्वनिर्धारितेषु वर्गेषु न योजयन्ति परन्तु कतिपय-जालपुट-क्रियात्मकतायै वा सुधाराय वा आवश्यकानि भवितुम् अर्हन्ति।<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">13 Cookies</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;bm_sz</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;SH-SID</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;bm_mi</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;neo_sc</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_user_id</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_trait</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_group_id</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_group_trait</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_anonymous_id</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_page_init_referrer</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_page_init_referring_domain</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;neo_session</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;getQuickQuoteModal</div><div><b>Host:</b>&nbsp;www.starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div></div></details>"
       }
     },
-    "mni-mtei": {
-      "acceptAll": "ꯄꯨꯝꯅꯃꯛ ꯌꯥꯕꯥ꯫",
-      "accept": "ꯌꯥꯕ",
-      "decline": "ꯄꯨꯝꯅꯃꯛ ꯔꯤꯖꯦꯛꯇ ꯇꯧꯕꯥ꯫",
-      "acceptSelected": "ꯑꯦꯛꯁꯦꯞꯇ ꯇꯧꯕꯥ ꯌꯥꯕꯥ꯫",
-      "ok": "ꯄꯨꯝꯅꯃꯛ ꯌꯥꯕꯥ꯫",
+    "gu": {
+      "acceptAll": "બધા સ્વીકારો",
+      "accept": "સ્વીકારો",
+      "decline": "બધાને નકારો",
+      "acceptSelected": "પસંદ કરેલ સ્વીકારો",
+      "ok": "બધા સ્વીકારો",
       "consentNotice": {
-        "description": "ꯑꯩꯈꯣꯌꯅꯥ ꯑꯗꯣꯃꯒꯤ ꯄ꯭ꯔꯥꯏꯕꯦꯁꯤꯕꯨ ꯏꯀꯥꯌ ꯈꯨꯝꯅꯩ ꯑꯩꯈꯣꯌꯅꯥ ꯇꯉꯥꯏ ꯐꯗꯕꯥ ꯁꯥꯏꯠ ꯐꯉ꯭ꯀꯁꯅꯦꯂꯤꯇꯤ, ꯂꯣꯌꯅꯅꯥ ꯃꯥꯔꯀꯦꯇꯤꯡ, ꯄꯔꯁꯣꯅꯦꯂꯥꯏꯖꯦꯁꯟ ꯑꯃꯁꯨꯡ ꯑꯦꯅꯥꯂꯥꯏꯇꯤꯛꯁ ꯏꯅꯦꯕꯜ ꯇꯧꯅꯕꯥ ꯀꯨꯀꯤꯖ ꯁ꯭ꯇꯣꯔ ꯇꯧꯏ꯫ “ꯄꯨꯝꯅꯃꯛ ꯌꯥꯕꯥ” ꯍꯥꯌꯕꯁꯤꯗꯥ ꯀ꯭ꯂꯤꯛ ꯇꯧꯔꯒꯥ, ꯅꯍꯥꯛꯅꯥ ꯑꯩꯈꯣꯌꯅꯥ ꯀꯨꯀꯤꯖ ꯁꯤꯖꯤꯟꯅꯕꯗꯥ ꯑꯌꯥꯕꯥ ꯄꯤꯔꯦ꯫ ꯅꯍꯥꯛꯀꯤ ꯁꯦꯇꯤꯡꯁꯤꯡ ꯑꯗꯨ ꯃꯇꯝ ꯑꯃꯠꯇꯗꯥ ꯍꯣꯡꯗꯣꯀꯄꯥ ꯌꯥꯏ꯫ ꯀꯨꯀꯤ ꯄꯣꯂꯤꯁꯤ꯫",
-        "learnMore": "ꯀꯁ꯭ꯇꯃꯁ ꯇꯧꯕꯥ꯫",
+        "description": "અમે તમારી ગોપનીયતાનો આદર કરીએ છીએ. અમે સાઇટની આવશ્યક કાર્યક્ષમતા, તેમજ માર્કેટિંગ, વૈયક્તિકરણ અને વિશ્લેષણને સક્ષમ કરવા માટે કૂકીઝનો સંગ્રહ કરીએ છીએ. &quot;બધા સ્વીકારો&quot; પર ક્લિક કરીને, તમે કૂકીઝના અમારા ઉપયોગ માટે સંમતિ આપો છો. તમે કોઈપણ સમયે તમારી સેટિંગ્સ બદલી શકો છો. કૂકી નીતિ.",
+        "learnMore": "કસ્ટમાઇઝ કરો",
         "changeDescription": " "
       },
-      "save": "ꯌꯥꯕ",
+      "save": "સ્વીકારો",
       "consentModal": {
-        "title": "ꯑꯌꯥꯕꯥ ꯄꯤꯕꯥ ꯄꯁꯟꯗꯁꯤꯡ ꯀꯁ꯭ꯇꯃꯁ ꯇꯧꯕꯥ꯫",
-        "description": "ꯑꯩꯈꯣꯌꯅꯥ ꯀꯨꯀꯤꯖ ꯑꯁꯤ ꯑꯗꯣꯃꯕꯨ ꯄꯦꯖꯁꯤꯡꯒꯤ ꯃꯔꯛꯇꯥ ꯏꯐꯤꯁꯤꯌꯦꯟꯇ ꯑꯣꯏꯅꯥ ꯆꯠꯄꯗꯥ ꯃꯇꯦꯡ ꯄꯥꯡꯅꯕꯥ, ꯑꯗꯣꯃꯒꯤ ꯄꯁꯟꯗꯁꯤꯡ ꯊꯝꯅꯕꯥ ꯑꯃꯁꯨꯡ ꯃꯍꯧꯁꯥꯅꯥ ꯋꯦꯕꯁꯥꯏꯠ ꯑꯃꯒꯤ ꯑꯦꯛꯁꯄꯔꯤꯌꯦꯟꯁ ꯐꯒꯠꯍꯅꯕꯗꯥ ꯃꯇꯦꯡ ꯄꯥꯡꯏ꯫ ꯑꯗꯨꯝ ꯑꯣꯏꯅꯃꯛ, ꯑꯩꯈꯣꯌꯅꯥ ꯅꯍꯥꯛꯀꯤ ꯄ꯭ꯔꯥꯏꯚꯦꯁꯤꯒꯤ ꯍꯛ ꯑꯗꯨ ꯌꯥꯔꯦ ꯑꯃꯁꯨꯡ ꯃꯔꯝ ꯑꯁꯤꯅꯥ ꯅꯍꯥꯛꯅꯥ ꯀꯨꯀꯤꯖ ꯃꯈꯜ ꯈꯔꯗꯤ ꯑꯌꯥꯕꯥ ꯄꯤꯗꯅꯕꯥ ꯈꯅꯕꯥ ꯌꯥꯏ꯫ ꯍꯦꯟꯅꯥ ꯈꯪꯅꯕꯒꯤꯗꯃꯛ ꯑꯃꯁꯨꯡ ꯑꯩꯈꯣꯌꯒꯤ ꯗꯤꯐꯣꯜꯇ ꯁꯦꯇꯤꯡꯁꯤꯡ ꯍꯣꯡꯗꯣꯛꯅꯕꯥ ꯇꯣꯉꯥꯟ-ꯇꯣꯉꯥꯅꯕꯥ ꯀꯦꯇꯦꯒꯣꯔꯤꯒꯤ ꯍꯦꯗꯤꯡꯁꯤꯡꯗꯥ ꯀ꯭ꯂꯤꯛ ꯇꯧꯕꯤꯌꯨ꯫ ꯆꯥꯅꯕꯤꯗꯨꯅꯥ ꯈꯪꯖꯤꯅꯕꯤꯌꯨ ꯃꯗꯨꯗꯤ ꯑꯀꯛꯅꯕꯥ ꯃꯈꯂꯒꯤ ꯀꯨꯀꯤꯖ ꯕ꯭ꯂꯣꯛ ꯇꯧꯕꯅꯥ ꯅꯍꯥꯛꯀꯤ ꯁꯥꯏꯠ ꯑꯗꯨꯒꯤ ꯑꯦꯛꯁꯄꯔꯤꯌꯦꯟꯁꯇꯥ ꯑꯀꯥꯌꯕꯥ ꯄꯤꯕꯥ ꯌꯥꯏ꯫",
+        "title": "સંમતિ પસંદગીઓને કસ્ટમાઇઝ કરો",
+        "description": "અમે કૂકીઝનો ઉપયોગ તમને પૃષ્ઠો વચ્ચે કાર્યક્ષમ રીતે નેવિગેટ કરવામાં, તમારી પસંદગીઓને સંગ્રહિત કરવામાં અને સામાન્ય રીતે વેબસાઇટના તમારા અનુભવને સુધારવામાં મદદ કરવા માટે કરીએ છીએ. જો કે, અમે તમારા ગોપનીયતાના અધિકારને સ્વીકારીએ છીએ અને તેથી તમે અમુક પ્રકારની કૂકીઝને મંજૂરી ન આપવાનું પસંદ કરી શકો છો. વધુ જાણવા અને અમારી ડિફોલ્ટ સેટિંગ્સ બદલવા માટે વિવિધ શ્રેણીના શીર્ષકો પર ક્લિક કરો. કૃપા કરીને નોંધ લો કે ચોક્કસ પ્રકારની કૂકીઝને અવરોધિત કરવાથી સાઇટના તમારા અનુભવને અસર થઈ શકે છે.",
         "buttons": {
-          "save": "ꯌꯥꯕ",
-          "acceptAll": "ꯄꯨꯝꯅꯃꯛ ꯌꯥꯕꯥ꯫",
-          "decline": "ꯄꯨꯝꯅꯃꯛ ꯔꯤꯖꯦꯛꯇ ꯇꯧꯕꯥ꯫"
+          "save": "સ્વીકારો",
+          "acceptAll": "બધા સ્વીકારો",
+          "decline": "બધાને નકારો"
         }
       },
       "poweredBy": "Powered by Seqrite",
       "purposes": {},
       "service": {
         "disableAll": {
-          "description": "ꯄꯨꯝꯅꯃꯛ ꯔꯤꯖꯦꯛꯇ ꯇꯧꯕꯥ꯫",
-          "title": "ꯄꯨꯝꯅꯃꯛ ꯔꯤꯖꯦꯛꯇ ꯇꯧꯕꯥ꯫"
+          "description": "બધાને નકારો",
+          "title": "બધાને નકારો"
         },
         "optOut": {
           "description": "Opt Out",
@@ -1478,19 +1478,19 @@ window.klaroConfig = {
       },
       "functional": {
         "title": "Functional",
-        "description": "ꯑꯩꯈꯣꯌꯅꯥ ꯀꯨꯀꯤꯖꯁꯤꯡ ꯑꯁꯤ ꯋꯦꯕꯁꯥꯏꯠꯀꯤ ꯐꯉ꯭ꯀꯁꯅꯦꯂꯤꯇꯤ ꯍꯦꯅꯒꯠꯍꯟꯅꯕꯥ ꯑꯃꯁꯨꯡ ꯌꯨꯖꯔ ꯑꯦꯛꯁꯄꯤꯔꯤꯑꯦꯟꯁ ꯐꯒꯠꯍꯟꯅꯕꯥ ꯁꯤꯖꯤꯟꯅꯩ꯫ ꯏꯅꯐꯣꯔꯃꯦꯁꯟ ꯑꯗꯨꯗꯥ ꯂꯣꯒꯏꯟ ꯗꯦꯇꯥ, ꯔꯤꯖꯟ, ꯂꯣꯜ, ꯑꯃꯁꯨꯡ ꯍꯦꯟꯅꯥ ꯐꯕꯥ ꯀꯟꯇꯦꯟꯇꯁꯤꯡ ꯌꯥꯎꯕꯥ ꯌꯥꯏ꯫<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">3 Cookies</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;ak_bmsc</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Functional Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;bm_sv</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Functional Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_abck</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Functional Cookies</div></div></div></details>"
+        "description": "અમે આ કૂકીઝનો ઉપયોગ વેબસાઇટની કાર્યક્ષમતા વધારવા અને વપરાશકર્તા અનુભવ સુધારવા માટે કરીએ છીએ. માહિતીમાં લોગિન ડેટા, પ્રદેશ, ભાષા અને ઉન્નત સામગ્રી શામેલ હોઈ શકે છે.<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">3 Cookies</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;ak_bmsc</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Functional Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;bm_sv</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Functional Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_abck</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Functional Cookies</div></div></div></details>"
       },
       "analytics": {
         "title": "Analytics",
-        "description": "ꯀꯨꯀꯤꯖꯁꯤꯡ ꯑꯁꯤꯅꯥ ꯑꯩꯈꯣꯌꯗꯥ ꯋꯦꯕꯁꯥꯏꯠꯀꯤ ꯇ꯭ꯔꯥꯐꯤꯛ, ꯌꯨꯖꯔꯒꯤ ꯂꯃꯆꯠ-ꯁꯥꯖꯠ, ꯑꯃꯁꯨꯡ ꯑꯦꯉ꯭ꯒꯦꯖꯃꯦꯟꯇ ꯄꯦꯇꯔꯅꯁꯤꯡ ꯑꯦꯅꯥꯂꯥꯏꯖ ꯇꯧꯕꯗꯥ ꯃꯇꯦꯡ ꯄꯥꯡꯏ꯫ ꯈꯣꯃꯖꯤꯜꯂꯀꯄꯥ ꯋꯥꯈꯜꯂꯣꯅꯁꯤꯡ ꯑꯁꯤꯅꯥ ꯑꯩꯈꯣꯌꯗꯥ ꯀꯟꯇꯦꯟꯇ ꯑꯣꯞꯇꯤꯃꯥꯏꯖ ꯇꯧꯕꯥ, ꯌꯨꯖꯕꯦꯂꯤꯇꯤ ꯍꯦꯅꯒꯠꯍꯅꯕꯥ ꯑꯃꯁꯨꯡ ꯑꯄꯨꯅꯕꯥ ꯁꯥꯏꯠꯀꯤ ꯄꯔꯐꯣꯃꯦꯟꯁ ꯐꯒꯠꯍꯅꯕꯥ ꯉꯃꯍꯜꯂꯤ꯫<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">4 Cookies</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_ga</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Google Analytics</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_clck</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Analytics Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_clsk</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Analytics Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_ga_J59EYF8C12</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Google Analytics</div></div></div></details>"
+        "description": "આ કૂકીઝ અમને વેબસાઇટ ટ્રાફિક, વપરાશકર્તા વર્તણૂક અને જોડાણ પેટર્નનું વિશ્લેષણ કરવામાં મદદ કરે છે. એકત્રિત કરેલી આંતરદૃષ્ટિ અમને સામગ્રીને ઑપ્ટિમાઇઝ કરવા, ઉપયોગીતા વધારવા અને એકંદર સાઇટ પ્રદર્શનને સુધારવાની મંજૂરી આપે છે.<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">4 Cookies</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_ga</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Google Analytics</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_clck</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Analytics Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_clsk</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Analytics Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_ga_J59EYF8C12</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Google Analytics</div></div></div></details>"
       },
       "marketing": {
         "title": "Marketing",
-        "description": "ꯀꯨꯀꯤꯖꯁꯤꯡ ꯑꯁꯤ ꯑꯩꯈꯣꯌꯒꯤ ꯑꯦꯗꯚꯥꯔꯇꯥꯏꯖꯃꯦꯟꯇ ꯄꯥꯔꯇꯅꯔꯁꯤꯡꯅꯥ ꯄꯔꯁꯣꯅꯦꯂꯥꯏꯖ ꯇꯧꯔꯕꯥ ꯑꯦꯗꯁꯤꯡ ꯄꯤꯅꯕꯥ ꯑꯃꯁꯨꯡ ꯃꯥꯔꯀꯦꯇꯤꯡ ꯀꯦꯝꯄꯦꯅꯁꯤꯡꯒꯤ ꯏꯐꯦꯛꯇꯤꯕꯅꯦꯁ ꯑꯗꯨ ꯌꯦꯡꯁꯤꯟꯅꯕꯥ ꯁꯤꯖꯤꯟꯅꯩ꯫ ꯃꯈꯣꯌꯅꯥ ꯌꯨꯖꯔꯒꯤ ꯏꯟꯇꯔꯦꯁ꯭ꯠ ꯑꯃꯁꯨꯡ ꯕ꯭ꯔꯥꯎꯖꯤꯡ ꯕꯤꯍꯦꯕꯤꯌꯔꯗꯥ ꯌꯨꯝꯐꯝ ꯑꯣꯏꯕꯥ ꯃꯔꯤ ꯂꯩꯅꯕꯥ ꯄ꯭ꯔꯣꯃꯣꯁꯅꯁꯤꯡ ꯄꯤꯕꯗꯥ ꯃꯇꯦꯡ ꯄꯥꯡꯏ꯫<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">2 Cookies</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_gcl_au</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Google Ads</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_fbp</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Facebook/Meta Pixel</div></div></div></details>"
+        "description": "આ કૂકીઝનો ઉપયોગ અમારા જાહેરાત ભાગીદારો દ્વારા વ્યક્તિગત જાહેરાતો પહોંચાડવા અને માર્કેટિંગ ઝુંબેશની અસરકારકતા માપવા માટે કરવામાં આવે છે. તે વપરાશકર્તાની રુચિઓ અને બ્રાઉઝિંગ વર્તણૂકના આધારે સંબંધિત પ્રમોશન પ્રદાન કરવામાં મદદ કરે છે.<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">2 Cookies</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_gcl_au</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Google Ads</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_fbp</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Facebook/Meta Pixel</div></div></div></details>"
       },
       "others": {
         "title": "Others",
-        "description": "ꯀꯦꯇꯦꯒꯣꯔꯤ ꯑꯁꯤꯗꯥ ꯃꯃꯥꯡꯗꯥ ꯁꯦꯃꯗꯣꯛ-ꯁꯦꯃꯖꯤꯟ ꯇꯧꯔꯕꯥ ꯀꯦꯇꯦꯒꯣꯔꯤꯁꯤꯡꯗꯥ ꯌꯥꯎꯗꯕꯥ ꯑꯗꯨꯕꯨ ꯑꯀꯛꯅꯕꯥ ꯋꯦꯕꯁꯥꯏꯇꯀꯤ ꯐꯉ꯭ꯀꯁꯅꯦꯂꯤꯇꯤꯁꯤꯡ ꯅꯠꯠꯔꯒꯥ ꯑꯍꯣꯡꯕꯥ ꯄꯨꯔꯛꯅꯕꯒꯤꯗꯃꯛ ꯃꯊꯧ ꯇꯥꯕꯥ ꯀꯨꯀꯤꯖꯁꯤꯡ ꯌꯥꯎꯏ꯫<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">13 Cookies</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;bm_sz</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;SH-SID</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;bm_mi</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;neo_sc</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_user_id</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_trait</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_group_id</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_group_trait</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_anonymous_id</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_page_init_referrer</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_page_init_referring_domain</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;neo_session</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;getQuickQuoteModal</div><div><b>Host:</b>&nbsp;www.starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div></div></details>"
+        "description": "આ શ્રેણીમાં એવી કૂકીઝનો સમાવેશ થાય છે જે પૂર્વવ્યાખ્યાયિત શ્રેણીઓમાં બંધબેસતી નથી પરંતુ ચોક્કસ વેબસાઇટ કાર્યક્ષમતા અથવા સુધારાઓ માટે જરૂરી હોઈ શકે છે.<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">13 Cookies</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;bm_sz</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;SH-SID</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;bm_mi</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;neo_sc</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_user_id</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_trait</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_group_id</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_group_trait</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_anonymous_id</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_page_init_referrer</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_page_init_referring_domain</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;neo_session</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;getQuickQuoteModal</div><div><b>Host:</b>&nbsp;www.starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div></div></details>"
       }
     }
   },
@@ -1505,9 +1505,9 @@ window.klaroConfig = {
   "declarative": false,
   "groupByPurpose": false,
   "hideToggleAll": false,
-  "appName": "test31",
+  "appName": "test32",
   "description": "We respects your privacy and is committed to protecting your personal data.",
-  "companyName": "test31",
+  "companyName": "test32",
   "companyAddress": " ",
   "services": [
     {
